@@ -10,7 +10,7 @@ import Footer from "components/Footers/Footer.jsx";
 import Introduction from "./IndexSections/Introduction.jsx";
 import Phi from "./IndexSections/Phi.jsx";
 import Presentation from "./IndexSections/Presentation.jsx";
-import ContactUs from "./IndexSections/ContactUs.jsx";
+import Strategies from "./IndexSections/Strategies.jsx";
 
 import { getLangList, getString } from "../core/lang";
 
@@ -104,7 +104,7 @@ class App extends React.Component {
             prefs={prefs}
             setLangId={this.setLangId}/>
           <div className="main" />
-            <ContactUs {...this.props}
+            <Strategies {...this.props}
             getString={getString}
             prefs={prefs}
             setLangId={this.setLangId}/>

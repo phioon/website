@@ -200,8 +200,8 @@ class NavbarScroll extends React.Component {
                   </NavItem>
 
                   <NavItem>
-                    <NavLink to="#contactus" onClick={e => this.scrollPage(e, "contactus")} tag={Link}>
-                    {getString(langId, compId, "contactus")}
+                    <NavLink to="#strategies" onClick={e => this.scrollPage(e, "strategies")} tag={Link}>
+                    {getString(langId, compId, "strategies")}
                     </NavLink>
                   </NavItem>
                   <NavItem>

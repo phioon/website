@@ -24,7 +24,7 @@ export function getLangList() {
         application: "Application", 
         technicalanalysis: "Technical Analysys",
         phi: "Phi",
-        contactus: "Contact Us",  
+        strategies: "Strategies",  
         
         login: "Login"
       },
@@ -58,17 +58,12 @@ export function getLangList() {
         suggestions3: "Techinical Analysys",
 
       },
-      contactus: {
-        getintouch: "Get in Touch",
-        moreinformation: "You need more information? Send us a message and we will return as soon as possible",
-        contactus: "Contact Us",
-        firstname: "First Name",
-        lastname: "Last Name",
-        email: "Email",
-        emailhere: "Email Here",
-        yourmessage: "Your Message",
-        notrobot: "I'm not a robot",
-        sendmessage: "Send Message"
+      strategies: {
+        titlesstrategies: "Strategies",
+        strategies1: "Strategies",
+        strategies2: "Strategies",
+        strategies3: "Strategies",
+
       },
       
       languages: {
@@ -82,7 +77,7 @@ export function getLangList() {
         application: "Aplicação",  
         technicalanalysis: "Análise Técnica",
         phi: "Phi",
-        contactus: "Contato",  
+        strategies: "Estratégias",  
         
         login: "Login"
       },
@@ -115,18 +110,12 @@ export function getLangList() {
         suggestions3: "Análise Técnica",
   
       },
-      contactus: {
-        getintouch: "Entre em contato",
-        moreinformation: "Precisa de mais informação? Nos mande uma mensagem e retornaremos o mais breve possível",
-        contactus: "Contate-nos",
-        firstname: "Primeiro Nome",
-        lastname: "Último Nome",
-        email: "Email",
-        emailhere: "Digite seu email",
-        yourmessage: "Mensagem",
-        notrobot: "Não sou robô",
-        sendmessage: "Enviar Mensagem"
-  
+      strategies: {
+        titlesstrategies: "Estratégias",
+        strategies1: "Estratégias",
+        strategies2: "Estratégias",
+        strategies3: "Estratégias",
+
       },
       languages: {
         enUS: "English",

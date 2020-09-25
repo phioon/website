@@ -44,6 +44,11 @@ class Footer extends React.Component {
               <Col md="3" xs="6">
               </Col>
               <Col md="3" xs="6">
+              <h3 className="title">Contact us:</h3>
+              <div className="btn-wrapper profile text-left">
+                <h6 className="title">naosei@phioon.com</h6>
+                
+              </div>
               </Col>
               <Col md="3">
                 <h3 className="title">Follow us:</h3>
