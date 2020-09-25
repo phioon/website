@@ -104,7 +104,7 @@
   }
 
   &.bg-info {
-    background-color: radial-gradient(ellipse at bottom, $info 30%, $background-black 80%) !important;
+    background-color: $primary;
   }
 
   &.bg-success {
