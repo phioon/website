@@ -92,7 +92,7 @@ class NavbarScroll extends React.Component {
     if (collapseOpen)
       newState["navbarColor"] = "navbar-transparent";
     else
-      newState["navbarColor"] = "bg-white";
+      newState["navbarColor"] = "navbar-transparent";
 
     this.setState(newState);
   };
@@ -143,12 +143,12 @@ class NavbarScroll extends React.Component {
         <Navbar className={"fixed-top " + this.state.navbarColor} expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand to="/index" onClick={e => this.scrollPage(e, "indexHeader")} tag={Link} id="tooltip6619950104">
+              <NavbarBrand to="/index" tag={Link} id="tooltip6619950104">
                 <img
-                  alt={project.img.branding.logo.white.alt}
-                  width={project.img.branding.logo.white.width * 0.06}
-                  height={project.img.branding.logo.white.heigth * 0.06}
-                  src={project.img.branding.logo.white.src}
+                  alt={project.img.branding.logo.black.alt}
+                  width={project.img.branding.logo.black.width * 0.06}
+                  height={project.img.branding.logo.black.heigth * 0.06}
+                  src={project.img.branding.logo.black.src}
                 />
               </NavbarBrand>
               <button
@@ -168,7 +168,17 @@ class NavbarScroll extends React.Component {
             </div>
             <UncontrolledCollapse navbar toggler="#navigation">
               <Nav className="ml-auto" navbar>
-                <UncontrolledDropdown className="btn-rotate" nav>
+                  <NavItem>
+                    <NavLink to="/index" tag={Link}>
+                      {getString(langId, compId, "aboutus")}
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink to="/products" tag={Link}>
+                    {getString(langId, compId, "products")}
+                    </NavLink>
+                  </NavItem>
+                  <UncontrolledDropdown className="btn-rotate" nav>
                   <DropdownToggle
                     aria-haspopup={true}
                     caret
@@ -183,27 +193,6 @@ class NavbarScroll extends React.Component {
                     {this.languageItems(langList)}
                   </DropdownMenu>
                 </UncontrolledDropdown> 
-                  <NavItem>
-                    <NavLink to="#introduction" onClick={e => this.scrollPage(e, "introduction")} tag={Link}>
-                      {getString(langId, compId, "aboutus")}
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink to="#phi" onClick={e => this.scrollPage(e, "phi")} tag={Link}>
-                    {getString(langId, compId, "phi")}
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink to="#presentation" onClick={e => this.scrollPage(e, "presentation")} tag={Link}>
-                    {getString(langId, compId, "technicalanalysis")}
-                    </NavLink>
-                  </NavItem>
-
-                  <NavItem>
-                    <NavLink to="#strategies" onClick={e => this.scrollPage(e, "strategies")} tag={Link}>
-                    {getString(langId, compId, "strategies")}
-                    </NavLink>
-                  </NavItem>
                   <NavItem>
                     <NavLink to={projApp}  href={projApp}>
                     {getString(langId, compId, "login")}

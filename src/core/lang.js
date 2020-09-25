@@ -1,5 +1,3 @@
-import macbookImage from "../assets/img/Exemplo/laptop-basics-pt.png";
-
 export function getLangList() {
     return Object.keys(strings)
   }
@@ -24,7 +22,7 @@ export function getLangList() {
         application: "Application", 
         technicalanalysis: "Technical Analysys",
         phi: "Phi",
-        strategies: "Strategies",  
+        products: "Products",  
         
         login: "Login"
       },
@@ -51,12 +49,19 @@ export function getLangList() {
         phiname3: "We realized that the chaotic environment of the market also respects PHI, so we decided to call this idea PHIOON. ;)",
 
       },
-      presentation: {
+      products: {
         titlesuggestions: "Techinical Analysys",
         suggestions1: "Techinical Analysys",
         suggestions2: "Techinical Analysys",
         suggestions3: "Techinical Analysys",
 
+      },
+      phitrader: {
+        titlesuggestions: "phitrader-en",
+        suggestions1: "phitrader-en",
+        suggestions2: "phitrader-en",
+        suggestions3: "phitrader-en",
+  
       },
       strategies: {
         titlesstrategies: "Strategies",
@@ -65,7 +70,12 @@ export function getLangList() {
         strategies3: "Strategies",
 
       },
-      
+      footer: {
+        contactus: "Contact Us",
+        followus: "Follow Us",
+        email: "helpme@phioon.com",
+        likeus: "Like Us",
+      },
       languages: {
         enUS: "English",
         ptBR: "Português (Brasil)",
@@ -77,7 +87,7 @@ export function getLangList() {
         application: "Aplicação",  
         technicalanalysis: "Análise Técnica",
         phi: "Phi",
-        strategies: "Estratégias",  
+        products: "Produtos",  
         
         login: "Login"
       },
@@ -103,11 +113,18 @@ export function getLangList() {
         phiname3: "Percebemos que o ambiente caótico do mercado também respeita PHI, então resolvemos chamar essa ideia de PHIOON. ;)",
   
       },
-      presentation: {
+      products: {
         titlesuggestions: "Análise Técnica",
         suggestions1: "Análise Técnica",
         suggestions2: "Análise Técnica",
         suggestions3: "Análise Técnica",
+  
+      },
+      phitrader: {
+        titlesuggestions: "phitrader",
+        suggestions1: "phitrader",
+        suggestions2: "phitrader",
+        suggestions3: "phitrader",
   
       },
       strategies: {
@@ -115,6 +132,13 @@ export function getLangList() {
         strategies1: "Estratégias",
         strategies2: "Estratégias",
         strategies3: "Estratégias",
+
+      },
+      footer: {
+        contactus: "Fale com a gente",
+        followus: "Siga-nos",
+        email: "meajuda@phioon.com",
+        likeus: "Curta",
 
       },
       languages: {

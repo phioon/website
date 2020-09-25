@@ -70,7 +70,7 @@
             border-radius: 50%;
             box-shadow: 0px 9px 35px -6px rgba(0, 0, 0, 0.3);
             font-size: $font-size-xs;
-            background-color: $white;
+            background-color: $black;
             position: relative;
 
             i{
@@ -90,7 +90,7 @@
     .info-title {
         margin: $margin-base-vertical + 10 0 $margin-base-vertical;
         padding: 0 15px;
-        color: $white;
+        color: $black;
     }
     p {
       color: $dark-gray;
@@ -182,7 +182,7 @@
     }
 
     &.icon-white{
-        color: $white;
+        color: $black;
     }
 }
 

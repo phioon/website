@@ -14,7 +14,7 @@
 
     .dropdown {
       float: right;
-      color: darken($white, 20%);
+      color: darken($black, 20%);
     }
   }
 
@@ -23,7 +23,7 @@
       color: $dark-gray;
       font-size: 1.4em;
       &:hover {
-        color: $white;
+        color: $black;
       }
     }
   }

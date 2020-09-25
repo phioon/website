@@ -1,7 +1,7 @@
 .footer{
     padding: 50px 0;
     border-top: 2px solid #435DB5;
-    background: radial-gradient(ellipse at bottom, $primary 30%, $background-black 80%);
+    background: radial-gradient(ellipse at bottom,  $background-black 15%, $primary 85%);
 
     [class*="container-"] {
       padding: 0;
@@ -20,7 +20,7 @@
     }
 
     .nav-link {
-      color: $white;
+      color: $black;
       padding: 10px 5px;
       font-size: $font-size-sm;
       text-transform: uppercase;
@@ -34,7 +34,7 @@
     .copyright{
         font-size: $font-size-sm;
         line-height: 1.8;
-        color: $white;
+        color: $black;
     }
 
     &:after{

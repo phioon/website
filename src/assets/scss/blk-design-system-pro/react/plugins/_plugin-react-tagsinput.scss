@@ -90,7 +90,7 @@
       @include badge-variant($danger);
     }
     &.bg-neutral {
-      @include badge-variant($white);
+      @include badge-variant($black);
       color: inherit;
     }
   }

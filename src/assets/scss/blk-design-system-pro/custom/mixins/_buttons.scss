@@ -22,7 +22,7 @@
         background-image: -webkit-linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
         background-image: -o-linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
         background-image: -moz-linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
-        color: $white;
+        color: $black;
         box-shadow: none;
     }
 
@@ -55,7 +55,7 @@
     }
 
     // btn-neutral style
-    @if $btn-color == $white{
+    @if $btn-color == $black{
         color: $primary;
 
         &.btn-danger{
@@ -122,7 +122,7 @@
         .show > &.dropdown-toggle,
         .show > &.dropdown-toggle:focus,
         .show > &.dropdown-toggle:hover {
-            background-color: $white;
+            background-color: $black;
             color: $primary-states;
             box-shadow: none;
         }
@@ -138,7 +138,7 @@
         }
 
     } @else {
-        color: $white;
+        color: $black;
     }
 
     &.btn-simple{
@@ -163,7 +163,7 @@
           &:focus,
           &:active,
           &:not(:disabled):not(.disabled):active{
-              color: $white;
+              color: $black;
               border-color: $btn-color;
               background-image: linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
               background-image: -webkit-linear-gradient(to bottom left, $btn-color, $btn-states-color, $btn-color) !important;
@@ -182,7 +182,7 @@
         &:active{
             background-color: $transparent-bg !important;
             background-image: none !important;
-            color: $white !important;
+            color: $black !important;
             text-decoration: none;
             box-shadow: none;
         }
@@ -298,7 +298,7 @@
 @mixin social-buttons-color ($color, $state-color){
   @include diagonal-gradient($color, darken($color,20%));
     //background-color: $color;
-    color: $white;
+    color: $black;
     background-size: 210% 210%;
     background-position: top right;
     background-repeat: space;
@@ -311,7 +311,7 @@
         background-image: -webkit-linear-gradient(to bottom left, $color, darken($color,20%), $color) !important;
         background-image: -o-linear-gradient(to bottom left, $color, darken($color,20%), $color) !important;
         background-image: -moz-linear-gradient(to bottom left, $color, darken($color,20%), $color) !important;
-        color: $white;
+        color: $black;
     }
 
     &.btn-simple{
@@ -331,7 +331,7 @@
 
     &.btn-neutral{
         color: $color;
-        background-color: $white;
+        background-color: $black;
 
 
         &:hover,

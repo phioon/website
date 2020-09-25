@@ -98,7 +98,7 @@
 .rdtPicker table {
   width: 100%;
   margin: 0;
-  border-color: $white !important;
+  border-color: $black !important;
 }
 .rdtPicker td,
 .rdtPicker th {
@@ -119,7 +119,7 @@
   &.rdtActive,
   &.rdtActive:hover {
     background-color: $info !important;
-    color: $white !important;
+    color: $black !important;
   }
 }
 .rdtDays {
@@ -384,7 +384,7 @@ td.rdtYear:hover {
 
     &.rdtActive {
       background-color: $info !important;
-      color: $white;
+      color: $black;
     }
   }
 }

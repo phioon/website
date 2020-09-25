@@ -16,7 +16,7 @@
     }
 
     .fa-cog{
-        color: $white;
+        color: $black;
         padding: 10px;
         border-radius: 0 0 6px 6px;
         width: auto;
@@ -44,7 +44,7 @@
     }
 
     .fa-circle-thin{
-        color: $white;
+        color: $black;
     }
 
     .active .fa-circle-thin{
@@ -71,7 +71,7 @@
     }
 
     .badge{
-        border: 2px solid $white;
+        border: 2px solid $black;
         border-radius: 50%;
         cursor: pointer;
         display: inline-block;
@@ -95,9 +95,9 @@
     }
 
     .light-badge{
-      background: $white;
+      background: $black;
       &:hover{
-        background: $white;
+        background: $black;
       }
     }
 
@@ -142,7 +142,7 @@
     }
 
     li.header-title{
-        color: $white;
+        color: $black;
         height: 30px;
         line-height: 25px;
         font-size: 12px;
@@ -174,7 +174,7 @@
               position: relative;
               left: -10px;
               font-size: $font-size-xs;
-              color: $white;
+              color: $black;
 
               &.label-right{
                 left: 10px;
@@ -190,7 +190,7 @@
           position: relative;
           top: -7px;
           font-size: $font-size-xs;
-          color: $white;
+          color: $black;
         }
 
         .dropdown-menu > li.adjustments-line > a{
@@ -210,8 +210,8 @@
                   font-size: $font-paragraph;
                   text-align: center;
                   border-radius: 10px;
-                  background-color: $white;
-                  border: 3px solid $white;
+                  background-color: $black;
+                  border: 3px solid $black;
                   padding-left: 0;
                   padding-right: 0;
                   opacity: 1;
@@ -242,7 +242,7 @@
         > .active > a.img-holder,
         > .active > a.img-holder{
             border-color: $active-blue;
-            background-color: $white;
+            background-color: $black;
         }
 
     }

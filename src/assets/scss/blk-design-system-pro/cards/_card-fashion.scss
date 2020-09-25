@@ -30,11 +30,11 @@
         }
 
         a{
-            color: $white !important;
+            color: $black !important;
 
             &:hover,
             &:focus{
-                border-color: $white !important;
+                border-color: $black !important;
             }
         }
     }
@@ -64,7 +64,7 @@
         z-index: 2;
         position: absolute;
         pointer-events: none;
-        border-color: rgba(255,255,255,0);
+        border-color: rgba(0,0,0,0);
         border-left-color: #ffffff;
         border-width: 10px;
         margin-top: -10px;

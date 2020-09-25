@@ -10,7 +10,7 @@
           position: absolute;
           top: -3px;
           left: -27px;
-          color: $white;
+          color: $black;
           font-size: $font-size-xs;
         }
       }
@@ -21,7 +21,7 @@
         margin-top: $margin-base-vertical;
     }
     .progress-badge{
-        color: $white;
+        color: $black;
         font-size: $font-size-sm;
         text-transform: uppercase;
 
@@ -44,7 +44,7 @@
             position: absolute;
             top: 2px;
             right: 0;
-            color: $white;
+            color: $black;
             font-size: $font-size-xs;
           }
         }
@@ -56,11 +56,11 @@
 
     &.progress-neutral{
         .progress{
-            background: rgba(255, 255, 255, .3);
+            background: rgba(0, 0, 0,.3);
         }
 
         .progress-bar{
-            background: $white;
+            background: $black;
         }
     }
 

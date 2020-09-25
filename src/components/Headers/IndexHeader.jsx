@@ -2,7 +2,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import { Container } from "reactstrap";
-import { project } from "../../core/projectData";
+
 
 class Index extends React.Component {
 
@@ -42,14 +42,6 @@ class Index extends React.Component {
 
           <Container>
             <div className="content-center brand">
-              <img
-                  alt={project.img.branding.logo.white.alt}
-                  //width={project.img.branding.logo.white.width * 0.14}
-                  //height={project.img.branding.logo.white.heigth * 0.14}
-                  src={project.img.branding.logo.white.src}
-               />
-               <br />
-               <br />
               <h3>{getString(langId, compId, "convenience")} - {getString(langId, compId, "efficiency")} - {getString(langId, compId, "control")}</h3>
             </div>
           </Container>

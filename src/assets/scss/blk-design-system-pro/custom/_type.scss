@@ -114,7 +114,7 @@ p{
 .card-category{
     text-transform: capitalize;
     font-weight: $font-weight-normal;
-    color: rgba($white, 0.6);
+    color: rgba($black, 0.6);
     font-size: $font-size-sm;
 }
 
@@ -154,7 +154,7 @@ p{
 
     &.blockquote-white{
         border-color: $opacity-8;
-        color: $white;
+        color: $black;
 
         small{
             color: $opacity-8;
@@ -163,7 +163,7 @@ p{
 }
 
 ul li, ol li{
-  color: $white;
+  color: $black;
 }
 
 pre{

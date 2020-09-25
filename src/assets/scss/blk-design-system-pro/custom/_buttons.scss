@@ -117,13 +117,13 @@
               }
 .btn-warning { @include btn-styles($warning, $warning-states);
                 &:not(:disabled):not(.disabled):active{
-                  color: $white;
+                  color: $black;
                 }
               }
 .btn-danger  { @include btn-styles($danger, $danger-states);
 
               }
-.btn-neutral { @include btn-styles($white, $white); }
+.btn-neutral { @include btn-styles($black, $black); }
 
 .btn{
      &:disabled,
@@ -232,7 +232,7 @@
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-    color: $white;
+    color: $black;
 }
 
 .btn-group label.btn.active {

@@ -60,7 +60,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
 .card {
   .map-title {
-    color: $white;
+    color: $black;
   }
 
   &.card-chart {
@@ -86,7 +86,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   }
 
   .blockquote, .blockquote p, .card p{
-    color: rgba($white,0.8);
+    color: rgba($black,0.8);
   }
   .bd-example {
     background: linear-gradient(#1e1e2f,#1e1e24);
@@ -97,7 +97,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     border-top: none;
 
     .navbar-nav .nav-link {
-      color: rgba(255,255,255,.8) !important;
+      color: rgba(0,0,0,.8) !important;
     }
   }
 
@@ -111,7 +111,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     }
 
     .tim-icons{
-      color: $white;
+      color: $black;
     }
 
     .popover .popover-header {
@@ -126,7 +126,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     }
 
     &.tooltip-demo p{
-      color: rgba($white,.8);
+      color: rgba($black,.8);
     }
   }
 
@@ -152,7 +152,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6 {
-      color: hsla(0,0%,100%,.8);
+      color: rgba(0, 0, 0, 0.8);
     }
 
     .datepicker{

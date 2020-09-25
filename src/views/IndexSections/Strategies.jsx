@@ -35,13 +35,7 @@ class Strategies extends React.Component {
         <div className="section section-basic" id="strategies">
         <Container>
             <Row>
-              <Col md="5">
-              <h2 >{getString(langId, compId, "titlestrategies")}</h2>
-                <h3 >{getString(langId, compId, "strategies1")}</h3>
-                <h4 >{getString(langId, compId, "strategies2")}</h4>
-                <h5 >{getString(langId, compId, "strategies3")}</h5>
-              </Col>              
-              <Col className="ml-auto mr-auto" md="5">
+            <Col className="ml-auto mr-auto" md="5">
                 <div>
                   <img
                     src={strategies}
@@ -49,7 +43,14 @@ class Strategies extends React.Component {
                     
                   /> 
                 </div>   
-              </Col>         
+              </Col>
+              <Col md="5">
+              <h2 >{getString(langId, compId, "titlestrategies")}</h2>
+                <h3 >{getString(langId, compId, "strategies1")}</h3>
+                <h4 >{getString(langId, compId, "strategies2")}</h4>
+                <h5 >{getString(langId, compId, "strategies3")}</h5>
+              </Col>              
+         
             </Row>
           </Container>
         </div>

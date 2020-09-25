@@ -62,7 +62,7 @@
     top: -5px;
     left: 10px;
     right: auto;
-    color: $white;
+    color: $black;
     border-bottom: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;
@@ -83,7 +83,7 @@
     bottom: -6px;
     right: auto;
     left: 10px;
-    color: $white;
+    color: $black;
     border-top: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;
@@ -286,7 +286,7 @@
 }
 .bootstrap-datetimepicker-widget table td.active > div, .bootstrap-datetimepicker-widget table td.active:hover > div {
   background-color: $primary;
-  color: $white;
+  color: $black;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .bootstrap-datetimepicker-widget table td.active.today:before > div {
@@ -361,7 +361,7 @@ input.datetimepicker[data-color] + .bootstrap-datetimepicker-widget{
     .separator,
     table td.minute > div,
     table td.hour > div{
-        color: $white;
+        color: $black;
     }
 
 
@@ -372,16 +372,16 @@ input.datetimepicker[data-color] + .bootstrap-datetimepicker-widget{
 
     table td.old > div,
     table td.new > div{
-        color: rgba(255,255,255, .4);
+        color: rgba(0,0,0, .4);
     }
 
     button[data-action]{
-        background-color: $white;
+        background-color: $black;
     }
 
     table td.active > div,
     table td.active:hover > div{
-        background-color: $white;
+        background-color: $black;
     }
 
     table td:not(.active).day:hover > div,

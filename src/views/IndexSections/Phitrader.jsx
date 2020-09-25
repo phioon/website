@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 
 import suggestions from "../../assets/img/Exemplo/suggestions.jpg";
 
-class Presentation extends React.Component {
+class Phitrader extends React.Component {
 
   constructor(props) {
     super(props);
@@ -32,7 +32,7 @@ class Presentation extends React.Component {
 
     return (
       <>
-        <div className="section section-basic" id="presentation">
+        <div className="section section-basic" id="phitrader">
         <Container>
             <Row>
               <Col md="5">
@@ -58,9 +58,9 @@ class Presentation extends React.Component {
   }
 }
 
-export default Presentation;
+export default Phitrader;
 
-Presentation.propTypes = {
+Phitrader.propTypes = {
   getString: PropTypes.func.isRequired,
   prefs: PropTypes.object.isRequired
 }

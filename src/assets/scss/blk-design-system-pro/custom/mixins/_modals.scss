@@ -5,11 +5,11 @@
     }
 
     .modal-body p{
-      color: rgba($white, 0.8);
+      color: rgba($black, 0.8);
     }
 
     //inputs
-    @include input-coloured-bg($opacity-5, $white, $white, $transparent-bg, $opacity-1, $opacity-2);
+    @include input-coloured-bg($opacity-5, $black, $black, $transparent-bg, $opacity-1, $opacity-2);
 
 
 }

@@ -34,7 +34,7 @@
             padding: $padding-btn-vertical $padding-round-horizontal;
             min-width: 100px;
             font-weight: $font-weight-normal;
-            color: rgba($white,0.5);
+            color: rgba($black,0.5);
             background-color: $card-black-background;
 
 
@@ -47,7 +47,7 @@
                 &:focus,
                 &:hover{
                     background-color: $dark-gray;
-                    color: $white;
+                    color: $black;
                     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
                 }
             }
@@ -70,13 +70,13 @@
         .nav-item {
             .nav-link{
                 background-color: $opacity-2;
-                color: $white;
+                color: $black;
 
                 &.active{
                     &,
                     &:focus,
                     &:hover{
-                        background-color: $white;
+                        background-color: $black;
                         color: $primary;
                     }
                 }
@@ -156,7 +156,7 @@
         padding-right: 15px;
     }
     .tab-pane{
-      color: rgba($white,0.5);
+      color: rgba($black,0.5);
     }
 }
 

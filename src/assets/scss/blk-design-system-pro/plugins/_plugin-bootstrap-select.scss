@@ -73,7 +73,7 @@ select.selectpicker {
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-info:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0,0.5);
 }
 .bootstrap-select > select {
   position: absolute !important;
@@ -250,7 +250,7 @@ select.selectpicker {
   position: relative;
 }
 .bootstrap-select .dropdown-menu li.active small {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(0, 0, 0,0.5) !important;
 }
 .bootstrap-select .dropdown-menu li.disabled a {
   cursor: not-allowed;

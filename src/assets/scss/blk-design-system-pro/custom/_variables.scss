@@ -12,7 +12,7 @@ $enable-print-styles:       true !default;
 
 // Color system
 
-$white:    #ffffff !default;
+$black:    #ffffff !default;
 $gray-100: #f6f9fc !default;
 $gray-200: #e9ecef !default;
 $gray-300: #e3e3e3 !default;
@@ -62,14 +62,14 @@ $opacity-gray-5:             rgba(222,222,222, .5) !default;
 $opacity-gray-8:             rgba(222,222,222, .8) !default;
 
 
-$opacity-5:                  rgba(255,255,255, .5) !default;
-$opacity-6:                  rgba(255,255,255, .6) !default;
-$opacity-8:                  rgba(255,255,255, .8) !default;
+$opacity-5:                  rgba(0,0,0, .5) !default;
+$opacity-6:                  rgba(0,0,0, .6) !default;
+$opacity-8:                  rgba(0,0,0, .8) !default;
 
 
 
-$opacity-1:                  rgba(255,255,255, .1) !default;
-$opacity-2:                  rgba(255,255,255, .2) !default;
+$opacity-1:                  rgba(0,0,0, .1) !default;
+$opacity-2:                  rgba(0,0,0, .2) !default;
 
 
 // end beniamin
@@ -176,7 +176,7 @@ $theme-colors: map-merge((
   "info":         $info,
   "warning":      $warning,
   "danger":       $danger,
-  "white":        $white,
+  "white":        $white
   "neutral":      $white,
   "dark":         $dark,
   "darker":       $darker
@@ -220,7 +220,7 @@ $yiq-contrasted-threshold:  200 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark:             $gray-900 !default;
-$yiq-text-light:            $white !default;
+$yiq-text-light:            $black !default;
 
 // Action colors
 
@@ -350,7 +350,7 @@ $box-shadow-raised:        0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 $box-shadow:               0 1px 20px 0px rgba(0, 0, 0, 0.1);
 $sidebar-box-shadow:       0px 2px 22px 0 rgba(0, 0, 0,.20), 0px 2px 30px 0 rgba(0, 0, 0,.35);
 
-$component-active-color:        $white !default;
+$component-active-color:        $black !default;
 $component-active-bg:           theme-color("primary") !default;
 $component-active-border-color: theme-color("primary") !default;
 
@@ -408,7 +408,7 @@ $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit !default;
 $headings-font-weight:        $font-weight-normal !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              $gray-800 !default;
+$headings-color:              $black !default;
 
 $heading-letter-spacing:      .025em !default;
 $heading-font-size:           .95rem !default;
@@ -493,8 +493,8 @@ $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;
 
 $table-dark-bg:               $gray-900 !default;
-$table-dark-accent-bg:        rgba($white, .05);
-$table-dark-hover-bg:         rgba($white, .075);
+$table-dark-accent-bg:        rgba($black, .05);
+$table-dark-hover-bg:         rgba($black, .075);
 $table-dark-border-color:     lighten($gray-900, 7.5%);
 $table-dark-color:            $body-bg !default;
 
@@ -590,7 +590,7 @@ $input-border-color:                    #cad1d7 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      none !default; // 0 1px 3px 0 $gray-400 !default;
 
-$input-focus-bg:                        $white !default;
+$input-focus-bg:                        $black !default;
 $input-focus-border-color:              rgba(50,151,211,.25);
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     0 !default;
@@ -691,7 +691,7 @@ $noui-origin-border-radius:       2px !default;
 
 // Dropdown
 
-$dropdown-bg:                       $white !default;
+$dropdown-bg:                       $black !default;
 $dropdown-border-width:             0 !default;
 $dropdown-border-color:             rgba($black, .15);
 $dropdown-border-radius:            $border-radius-xs !default;
@@ -712,7 +712,7 @@ $nav-pills-padding-x:               1rem !default;
 
 $nav-pills-space-x:                 1rem !default;
 
-$nav-pills-bg:                      $white;
+$nav-pills-bg:                      $black;
 $nav-pills-border-width:            1px !default;
 $nav-pills-border-color:            theme-color("primary") !default;
 $nav-pills-border-radius:           $border-radius !default;
@@ -742,12 +742,12 @@ $navbar-nav-link-border-radius:     $border-radius !default;
 /* navbar color */
 $navbar-color:                      #1a1e34 !default;
 $navbar-dark-bg:                    transparent !default;
-$navbar-dark-hover-bg:              rgba(255, 255, 255, .1);
-$navbar-dark-active-bg:             rgba(255, 255, 255, .1);
-$navbar-dark-color:                 rgba($white, .95);
-$navbar-dark-hover-color:           rgba($white, .65);
-$navbar-dark-active-color:          rgba($white, .65);
-$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-hover-bg:              rgba(0, 0, 0,.1);
+$navbar-dark-active-bg:             rgba(0, 0, 0,.1);
+$navbar-dark-color:                 rgba($black, .95);
+$navbar-dark-hover-color:           rgba($black, .65);
+$navbar-dark-active-color:          rgba($black, .65);
+$navbar-dark-disabled-color:        rgba($black, .25);
 $navbar-dark-toggler-border-color:  transparent !default;
 
 $navbar-light-bg:                   transparent !default;
@@ -776,7 +776,7 @@ $alert-color-level: 0 !default;
 
 // List group
 
-$list-group-bg:                     $white !default;
+$list-group-bg:                     $black !default;
 $list-group-border-color:           $border-color !default; //rgba($black, .125);
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
@@ -813,7 +813,7 @@ $close-text-shadow:                 none !default;
 // Popovers
 
 $popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $white !default;
+$popover-bg:                        $black !default;
 $popover-max-width:                 276px !default;
 $popover-border-width:              1px !default;
 $popover-border-color:              rgba($black, .05);
@@ -838,8 +838,8 @@ $popover-arrow-outer-color:         transparent !default;
 // Breadcrumbs
 
 $breadcrumb-bg:                     $black-states !default;
-$breadcrumb-divider-color:          $white !default;
-$breadcrumb-active-color:           $white !default;
+$breadcrumb-divider-color:          $black !default;
+$breadcrumb-active-color:           $black !default;
 
 
 
@@ -864,7 +864,7 @@ $pagination-padding-y:                0 !default;
 $pagination-padding-x:                .6875rem !default;
 
 
-$pagination-color:                  $white !default;
+$pagination-color:                  $black !default;
 $pagination-bg:                     transparent  !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-color:           $gray-300 !default;
@@ -894,7 +894,7 @@ $card-border-radius:                $border-radius-sm !default;
 $card-border-color:                 rgba($black, .05);
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 $card-cap-bg:                       $gray-100 !default;
-$card-bg:                           $white !default;
+$card-bg:                           $black !default;
 $card-black-background:             #1f2251 !default;
 $card-img-overlay-padding:          1.25rem !default;
 
@@ -910,7 +910,7 @@ $card-columns-margin:               $card-spacer-y !default;
 $tooltip-font-size:                 $font-size-sm !default;
 $tooltip-max-width:                 200px !default;
 $tooltip-color:                     $black !default;
-$tooltip-bg:                        $white !default;
+$tooltip-bg:                        $black !default;
 $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   .9 !default;
 $tooltip-padding-y:                 .25rem !default;
@@ -929,7 +929,7 @@ $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          380px !default;
 $modal-title-line-height:           1.1;
-$modal-content-bg:               $white !default;
+$modal-content-bg:               $black !default;
 $modal-content-border-color:     rgba($black, .2);
 $modal-content-border-width:     1px !default;
 $modal-content-border-radius:    $border-radius-sm !default;
@@ -950,7 +950,7 @@ $progress-height:                   .5rem !default;
 $progress-bg:                       rgba(0, 0, 0, 0.3) !default;
 $progress-border-radius:            $border-radius-xl !default;
 $progress-box-shadow:               0px 0px 0px 3px rgba(0, 0, 0, 0.3) !default;
-$progress-bar-color:                $white !default;
+$progress-bar-color:                $black !default;
 
 // Datepicker
 
@@ -968,17 +968,17 @@ $datepicker-disabled-old-new-color: $gray-500 !default;
 
 $datepicker-header-cell-border-radius: $border-radius !default;
 
-$datepicker-active-color: $white !default;
+$datepicker-active-color: $black !default;
 $datepicker-active-background: theme-color("primary") !default;
 $datepicker-active-box-shadow:      none !default;
 
 $datepicker-range-background: theme-color("primary") !default;
 $datepicker-range-cell-focused-background: darken($datepicker-range-background, 5%);
-$datepicker-range-color: $white !default;
+$datepicker-range-color: $black !default;
 $datepicker-range-highlighted-bg: $gray-200 !default;
 
 $datepicker-dropdown-border: lighten($gray-400, 40%);
-$datepicker-dropdown-bg: $white !default;
+$datepicker-dropdown-bg: $black !default;
 $datepicker-highlighted-bg: $datepicker-active-background !default;
 
 

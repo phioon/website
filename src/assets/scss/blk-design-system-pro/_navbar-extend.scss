@@ -34,20 +34,20 @@
     justify-content: space-between !important;
   }
   .navbar-collapse {
-    position: absolute;
+    position: relative;
     width: calc(100% - 1.4rem);
     height: auto !important;
     left: 0;
     top: 0;
     margin: 0.7rem;
-    background: #1f2251;
+    background: #f4f3ef;
     border-radius: 0.2857rem;
     padding: 1.4rem;
 
   }
 
   .navbar.bg-white .navbar-nav .nav-item a.nav-link{
-    color: $white !important;
+    color: $black !important;
   }
 
 }

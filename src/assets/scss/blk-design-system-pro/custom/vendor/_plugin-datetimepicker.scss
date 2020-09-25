@@ -63,7 +63,7 @@
       color: $dark-gray;
 
       &.active {
-        color: $white;
+        color: $black;
       }
     }
   }
@@ -113,7 +113,7 @@
     bottom: -6px;
     right: auto;
     left: 10px;
-    color: $white;
+    color: $black;
     border-top: .4em solid;
     border-right: .4em solid transparent;
     border-left: .4em solid transparent;
@@ -319,11 +319,11 @@
 }
 .bootstrap-datetimepicker-widget table td.active > div, .bootstrap-datetimepicker-widget table td.active:hover > div {
   background-color: $primary;
-  color: $white;
+  color: $black;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .bootstrap-datetimepicker-widget table td.active.today:before > div {
-  border-bottom-color: $white;
+  border-bottom-color: $black;
 }
 .bootstrap-datetimepicker-widget table td.disabled > div, .bootstrap-datetimepicker-widget table td.disabled:hover > div {
   background: none;
@@ -403,16 +403,16 @@ input.datetimepicker[data-color] + .bootstrap-datetimepicker-widget{
 
     table td.old > div,
     table td.new > div{
-        color: rgba(255,255,255, .4);
+        color: rgba(0,0,0, .4);
     }
 
     button[data-action]{
-        background-color: $white;
+        background-color: $black;
     }
 
     table td.active > div,
     table td.active:hover > div{
-        background-color: $white;
+        background-color: $black;
     }
 
     table td:not(.active).day:hover > div,
@@ -495,7 +495,7 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget{
   &.dropdown-black {
     .datepicker-days {
       .day, .minute{
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(0, 0, 0,0.7);
 
         &:hover {
           color: #212529;
@@ -504,11 +504,11 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget{
     }
 
     table td span, table td.minute, table td.hour{
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(0, 0, 0,0.7);
     }
     table td span:hover, table td.minute:hover, table td.hour:hover {
       background: transparent;
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(0, 0, 0,0.4);
 
     div{
       background: transparent;
@@ -517,7 +517,7 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget{
     }
 
     table td .btn[data-action] {
-      color: $white;
+      color: $black;
     }
 
     table td .btn[data-action="togglePeriod"] {

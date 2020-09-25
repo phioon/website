@@ -5,13 +5,12 @@ import React from "react";
 import NavbarScroll from "components/Navbars/NavbarScroll.jsx";
 import Footer from "components/Footers/Footer.jsx";
 
-
-import Introduction from "./IndexSections/Introduction.jsx";
-import Phi from "./IndexSections/Phi.jsx";
+import Phitrader from "./IndexSections/Phitrader.jsx";
+import Strategies from "./IndexSections/Strategies.jsx";
 
 import { getLangList, getString } from "../core/lang";
 
-class App extends React.Component {
+class Products extends React.Component {
   constructor() {
     super()
 
@@ -26,7 +25,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    document.body.classList.add("index-page");
+    document.body.classList.add("products-page");
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.wrapper.scrollTop = 0;
@@ -44,7 +43,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-    document.body.classList.remove("index-page");
+    document.body.classList.remove("products-page");
   }
 
   // Set Prefs
@@ -85,12 +84,12 @@ class App extends React.Component {
           <br></br>
           <br></br>
           <div className="main">
-            <Introduction {...this.props}
+            <Strategies {...this.props}
             getString={getString}
             prefs={prefs}
             setLangId={this.setLangId}/>
           <div className="main" />
-            <Phi {...this.props}
+            <Phitrader {...this.props}
             getString={getString}
             prefs={prefs}
             setLangId={this.setLangId}/>
@@ -110,4 +109,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Products;

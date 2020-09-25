@@ -37,7 +37,7 @@
     .modal-profile{
         width: 70px;
         height: 70px;
-        background-color: $white;
+        background-color: $black;
         border-radius: 50%;
         text-align: center;
         line-height: 5.7;
@@ -51,7 +51,7 @@
 
         &[class*="modal-profile-"]{
             i{
-                color: $white;
+                color: $black;
             }
         }
 
@@ -127,27 +127,27 @@
 .modal{
 
     &.modal-default{
-        @include modal-colors($white, $black);
+        @include modal-colors($black, $black);
     }
 
     &.modal-primary{
-        @include modal-colors($primary, $white);
+        @include modal-colors($primary, $black);
     }
 
     &.modal-danger{
-        @include modal-colors($danger, $white);
+        @include modal-colors($danger, $black);
     }
 
     &.modal-warning{
-        @include modal-colors($warning, $white);
+        @include modal-colors($warning, $black);
     }
 
     &.modal-success{
-        @include modal-colors($success, $white);
+        @include modal-colors($success, $black);
     }
 
     &.modal-info{
-        @include modal-colors($info, $white);
+        @include modal-colors($info, $black);
     }
 
     .modal-header .close{
@@ -182,7 +182,7 @@
         .modal-footer{
             button{
                 text-transform: uppercase;
-                color: $white;
+                color: $black;
 
                 &:first-child{
                     opacity: .5;
@@ -194,20 +194,20 @@
     &.modal-black{
       .modal-content{
         background: $card-black-background;
-        color: rgba($white, 0.8);
+        color: rgba($black, 0.8);
         .modal-header{
           .modal-title, .title{
-            color: rgba($white, 0.9);
+            color: rgba($black, 0.9);
           }
         }
         .modal-body{
           p{
-            color: rgba($white, 0.8);
+            color: rgba($black, 0.8);
           }
         }
       }
       h1, h2, h3, h4, h5, h6, p{
-        color: $white;
+        color: $black;
       }
     }
 }

@@ -34,7 +34,7 @@
   }
 
   .navbar-text {
-    color: $white;
+    color: $black;
   }
 
   .btn{
@@ -119,7 +119,7 @@
     position: relative;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
-    color: $white;
+    color: $black;
     text-transform: capitalize;
     font-size: $font-paragraph;
     span{
@@ -150,7 +150,7 @@
 
 .notification {
   background: $danger;
-	color: $white;
+	color: $black;
 	border-radius: $border-radius-xl;
 	height: 6px;
 	width: 6px;
@@ -166,7 +166,7 @@
 .navbar-nav li{
   padding: 0 10px;
   a{
-    color: $white;
+    color: $black;
   }
   i{
     vertical-align: middle;
@@ -210,7 +210,7 @@
 
             .collapse-brand{
               font-size: $font-size-xl;
-              color: $white;
+              color: $black;
               a{
                 font-weight: $font-weight-bold;
               }
@@ -218,7 +218,7 @@
 
             .collapse-close{
               .navbar-toggler{
-                color: $white;
+                color: $black;
                 font-size: $font-size-xl;
               }
             }
@@ -262,7 +262,7 @@
             p{
               display: inline-block;
               margin-left: 7px;
-              color: $white;
+              color: $black;
             }
           }
 
@@ -311,7 +311,7 @@
 
       .dropdown-menu .dropdown-item:focus,
       .dropdown-menu .dropdown-item:hover{
-          color: $white;
+          color: $black;
       }
 
       &.bg-white .dropdown-menu .dropdown-item:focus,
@@ -329,7 +329,7 @@
           width: 22px;
           height: 1px;
           border-radius: 1px;
-          background: $white;
+          background: $black;
 
           &.navbar-kebab{
             height: 4px;

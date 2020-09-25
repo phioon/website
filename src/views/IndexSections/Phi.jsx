@@ -8,8 +8,8 @@ Row
 
 import PropTypes from "prop-types";
 
-//import phisymbol from "../../assets/img/Exemplo/phi.png";
-import phisymbol from "../../assets/img/Exemplo/phiwhite.png";
+import phisymbol from "../../assets/img/Exemplo/phi.png";
+//import phisymbol from "../../assets/img/Exemplo/phiwhite.png";
 
 class Phi extends React.Component {
 
@@ -36,13 +36,7 @@ class Phi extends React.Component {
         <div className="section section-basic" id="phi">
         <Container>
             <Row>
-              <Col md="5">
-                <h2 >{getString(langId, compId, "titlephiname")}</h2>
-                <h3 >{getString(langId, compId, "phiname1")}</h3>
-                <h4 >{getString(langId, compId, "phiname2")}</h4>
-                <h5 >{getString(langId, compId, "phiname3")}</h5>
-              </Col>              
-              <Col className="ml-auto mr-auto" md="5">
+            <Col className="ml-auto mr-auto" md="5">
                 <div>
                   <img
                     src={phisymbol}
@@ -50,7 +44,14 @@ class Phi extends React.Component {
                     
                   /> 
                 </div>   
-              </Col>         
+              </Col>  
+              <Col md="5">
+                <h2 >{getString(langId, compId, "titlephiname")}</h2>
+                <h3 >{getString(langId, compId, "phiname1")}</h3>
+                <h4 >{getString(langId, compId, "phiname2")}</h4>
+                <h5 >{getString(langId, compId, "phiname3")}</h5>
+              </Col>              
+       
             </Row>
           </Container>
         </div>
