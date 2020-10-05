@@ -23,7 +23,7 @@ import {
 import PropTypes from "prop-types";
 
 class NavbarScroll extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -81,7 +81,7 @@ class NavbarScroll extends React.Component {
     }
   };
 
-    // this function opens and closes the collapse on small devices
+  // this function opens and closes the collapse on small devices
   // it also adds navbar-transparent class to the navbar when closed
   // ad bg-white when opened
   toggleCollapse() {
@@ -99,6 +99,8 @@ class NavbarScroll extends React.Component {
 
   scrollPage = (e, id) => {
     e.preventDefault();
+
+    console.log(`id: ${id}`)
     if (document.getElementById(id) !== null) {
       document.getElementById(id).scrollIntoView();
     }
@@ -119,7 +121,7 @@ class NavbarScroll extends React.Component {
     this.props.setLangId(langId)
     this.setCollapse(false)
   }
-  
+
   setCollapse(value = false) {
     let newState = { collapseOpen: value };
 
@@ -139,7 +141,7 @@ class NavbarScroll extends React.Component {
 
     return (
       <>
-        
+
         <Navbar className={"fixed-top " + this.state.navbarColor} expand="lg">
           <Container>
             <div className="navbar-translate">
@@ -152,13 +154,13 @@ class NavbarScroll extends React.Component {
                 />
               </NavbarBrand>
               <button
-                id="navigation"      
+                id="navigation"
                 aria-controls="navigation-index"
                 aria-expanded={false}
                 aria-label="Toggle navigation"
                 className="navbar-toggler"
                 data-toggle="collapse"
-                type="button"                
+                type="button"
                 onClick={() => this.toggleCollapse()}
               >
                 <span className="navbar-toggler-bar navbar-kebab" />
@@ -168,17 +170,17 @@ class NavbarScroll extends React.Component {
             </div>
             <UncontrolledCollapse navbar toggler="#navigation">
               <Nav className="ml-auto" navbar>
-                  <NavItem>
-                    <NavLink to="/index" tag={Link}>
-                      {getString(langId, compId, "aboutus")}
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink to="/products" tag={Link}>
+                <NavItem>
+                  <NavLink to="/index" tag={Link}>
+                    {getString(langId, compId, "aboutus")}
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/products" tag={Link}>
                     {getString(langId, compId, "products")}
-                    </NavLink>
-                  </NavItem>
-                  <UncontrolledDropdown className="btn-rotate" nav>
+                  </NavLink>
+                </NavItem>
+                <UncontrolledDropdown className="btn-rotate" nav>
                   <DropdownToggle
                     aria-haspopup={true}
                     caret
@@ -192,12 +194,12 @@ class NavbarScroll extends React.Component {
                   <DropdownMenu aria-labelledby="dropdown_languages" right>
                     {this.languageItems(langList)}
                   </DropdownMenu>
-                </UncontrolledDropdown> 
-                  <NavItem>
-                    <NavLink to={projApp}  href={projApp}>
+                </UncontrolledDropdown>
+                <NavItem>
+                  <NavLink to={projApp} href={projApp}>
                     {getString(langId, compId, "login")}
-                    </NavLink>
-                  </NavItem>
+                  </NavLink>
+                </NavItem>
               </Nav>
             </UncontrolledCollapse>
           </Container>
@@ -213,5 +215,5 @@ export default NavbarScroll;
 NavbarScroll.propTypes = {
   getString: PropTypes.func.isRequired,
   prefs: PropTypes.object.isRequired,
-  
+
 }
