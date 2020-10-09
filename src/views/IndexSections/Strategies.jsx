@@ -1,9 +1,10 @@
 import React from "react";
 
 // reactstrap components
-import {Container,
-Col,
-Row
+import {
+  Container,
+  Col,
+  Row
 } from "reactstrap";
 
 import PropTypes from "prop-types";
@@ -28,29 +29,29 @@ class Strategies extends React.Component {
 
   render() {
     let { getString } = this.props
-    let {langId, compId} = this.state
+    let { langId, compId } = this.state
 
     return (
       <>
         <div className="section section-basic" id="strategies">
-        <Container>
-            <Row>
-            <Col className="ml-auto mr-auto" md="5">
+          <Container>
+            <Row className="justify-content-center">
+              <Col md="5">
                 <div>
                   <img
                     src={strategies}
                     alt="strategies"
-                    
-                  /> 
-                </div>   
+
+                  />
+                </div>
               </Col>
               <Col md="5">
-              <h2 >{getString(langId, compId, "titlestrategies")}</h2>
+                <h2 >{getString(langId, compId, "titlestrategies")}</h2>
                 <h3 >{getString(langId, compId, "strategies1")}</h3>
                 <h4 >{getString(langId, compId, "strategies2")}</h4>
                 <h5 >{getString(langId, compId, "strategies3")}</h5>
-              </Col>              
-         
+              </Col>
+
             </Row>
           </Container>
         </div>

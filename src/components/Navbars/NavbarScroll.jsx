@@ -52,21 +52,10 @@ class NavbarScroll extends React.Component {
     window.removeEventListener("scroll", this.changeNavbarColor);
   }
   changeNavbarColor = () => {
-    if (
-      document.documentElement.scrollTop > 299 ||
-      document.body.scrollTop > 299
-    ) {
-      this.setState({
-        navbarColor: "bg-info"
-      });
-    } else if (
-      document.documentElement.scrollTop < 300 ||
-      document.body.scrollTop < 300
-    ) {
-      this.setState({
-        navbarColor: "navbar-transparent"
-      });
-    }
+    if (document.documentElement.scrollTop > 99 || document.body.scrollTop > 99)
+      this.setState({ navbarColor: "bg-info" });
+    else if (document.documentElement.scrollTop < 100 || document.body.scrollTop < 100)
+      this.setState({ navbarColor: "navbar-transparent" });
   };
 
   updateColor() {
@@ -75,11 +64,9 @@ class NavbarScroll extends React.Component {
         navbarColor: "bg-white"
       });
     } else {
-      this.setState({
-        navbarColor: "navbar-transparent"
-      });
+      this.setState({ navbarColor: "navbar-transparent" });
     }
-  };
+  }
 
   // this function opens and closes the collapse on small devices
   // it also adds navbar-transparent class to the navbar when closed
@@ -100,7 +87,6 @@ class NavbarScroll extends React.Component {
   scrollPage = (e, id) => {
     e.preventDefault();
 
-    console.log(`id: ${id}`)
     if (document.getElementById(id) !== null) {
       document.getElementById(id).scrollIntoView();
     }
@@ -134,23 +120,21 @@ class NavbarScroll extends React.Component {
     this.setState(newState);
   };
 
-  // onClick={e => this.scrollPage(e, "headers")}
   render() {
     let { getString } = this.props;
-    let { langId, compId, langList } = this.state;
+    let { langId, compId, langList, navbarColor } = this.state;
 
     return (
       <>
-
-        <Navbar className={"fixed-top " + this.state.navbarColor} expand="lg">
+        <Navbar className={"fixed-top " + navbarColor} expand="lg">
           <Container>
             <div className="navbar-translate">
               <NavbarBrand to="/index" tag={Link} id="tooltip6619950104">
                 <img
-                  alt={project.img.branding.logo.black.alt}
-                  width={project.img.branding.logo.black.width * 0.06}
-                  height={project.img.branding.logo.black.heigth * 0.06}
-                  src={project.img.branding.logo.black.src}
+                  alt={navbarColor == "navbar-transparent" ? project.img.branding.logo.black.alt : project.img.branding.logo.white.alt}
+                  width={project.img.branding.logo.original.width * 0.06}
+                  height={project.img.branding.logo.original.heigth * 0.06}
+                  src={navbarColor == "navbar-transparent" ? project.img.branding.logo.black.src : project.img.branding.logo.white.src}
                 />
               </NavbarBrand>
               <button
