@@ -67,10 +67,14 @@ $colors: map-merge(
   $colors
 );
 
-$primary: $blue !default;
-$secondary: $gray-600 !default;
-$success: $green !default;
-$info: $cyan !default;
+// $primary: $blue !default;
+$primary: lighten($brand-petro-color, 10%) !default;
+// $secondary: $gray-600 !default;
+$secondary: $brand-dark-color !default;
+// $success: $green !default;
+$success: $brand-green-color !default;
+// $info: $cyan !default;
+$info: $primary !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;

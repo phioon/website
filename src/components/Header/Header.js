@@ -18,11 +18,15 @@ import Close from "@material-ui/icons/Close";
 // core components
 import styles from "assets/jss/material-kit-pro-react/components/headerStyle.js";
 
+import { project } from "../../core/projectData";
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
   const classes = useStyles();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isLogoHidden, setLogoHidden] = React.useState(true)
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -41,34 +45,40 @@ export default function Header(props) {
 
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
+      setLogoHidden(false)
+
+      document.body.getElementsByTagName("header")[0].classList.remove(classes[color]);
+      document.body.getElementsByTagName("header")[0].classList.add(classes[changeColorOnScroll.color]);
     } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
+      setLogoHidden(true)
+      document.body.getElementsByTagName("header")[0].classList.add(classes[color]);
+      document.body.getElementsByTagName("header")[0].classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, links, brand, fixed, absolute } = props;
+  const { color, links, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
+
+  console.log(appBarClasses)
   return (
-    <AppBar className={appBarClasses}>
+    < AppBar className={appBarClasses} >
       <Toolbar className={classes.container}>
-        <Button className={classes.title}>
-          <Link to="/">{brand}</Link>
-        </Button>
+        {!isLogoHidden &&
+          <Button className={classes.title}>
+            <Link to="/">
+              <img
+                alt={project.img.branding.logo.white.alt}
+                width={project.img.branding.logo.white.width * 0.06}
+                height={project.img.branding.logo.white.heigth * 0.06}
+                src={project.img.branding.logo.white.src}
+              />
+            </Link>
+          </Button>
+        }
         <Hidden smDown implementation="css" className={classes.hidden}>
           <div className={classes.collapse}>{links}</div>
         </Hidden>
@@ -103,7 +113,7 @@ export default function Header(props) {
           <div className={classes.appResponsive}>{links}</div>
         </Drawer>
       </Hidden>
-    </AppBar>
+    </AppBar >
   );
 }
 

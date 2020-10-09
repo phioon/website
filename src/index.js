@@ -39,12 +39,22 @@ import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
 
+import { getString } from "core/lang";
+
 var hist = createBrowserHistory();
+
+var prefs = {
+  langId: "ptBR",
+  currency: {
+    code: "BRL",
+    symbol: "R$",
+  }
+}
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/about-us" component={AboutUsPage} />
+      <Route path="/about-us" render={props => <AboutUsPage {...props} getString={getString} prefs={prefs} />} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
@@ -59,7 +69,7 @@ ReactDOM.render(
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
       <Route path="/signup-page" component={SignupPage} />
       <Route path="/error-page" component={ErrorPage} />
-      <Route path="/" component={PresentationPage} />
+      <Route path="/" render={props => <PresentationPage {...props} getString={getString} prefs={prefs} />} />
     </Switch>
   </Router>,
   document.getElementById("root")

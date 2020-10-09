@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -27,9 +28,11 @@ import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
 
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
+import { project } from "../../core/projectData";
+
 const useStyles = makeStyles(presentationStyle);
 
-export default function PresentationPage() {
+export default function PresentationPage(props) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -38,13 +41,13 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand={project.info.name}
+        links={<HeaderLinks {...props} dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
-          color: "info"
+          height: 350,
+          color: "primary"
         }}
       />
       <Parallax
@@ -55,12 +58,14 @@ export default function PresentationPage() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1>
-                  Material Kit React
-                  <span className={classes.proBadge}>PRO</span>
-                </h1>
+                <img
+                  alt={project.img.branding.logo.original.alt}
+                  width={project.img.branding.logo.original.width * 0.3}
+                  height={project.img.branding.logo.original.heigth * 0.3}
+                  src={project.img.branding.logo.original.src}
+                />
                 <h3 className={classes.title}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Alguma frase top impactante
                 </h3>
               </div>
             </GridItem>
@@ -83,13 +88,14 @@ export default function PresentationPage() {
         content={
           <div>
             <div className={classes.left}>
-              <a
-                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-presentation"
-                target="_blank"
-                className={classes.footerBrand}
-              >
-                Material Kit PRO React
-              </a>
+              <Link to="/" className={classes.footerBrand}>
+                <img
+                  alt={project.img.branding.logo.original.alt}
+                  width={project.img.branding.logo.original.width * 0.06}
+                  height={project.img.branding.logo.original.heigth * 0.06}
+                  src={project.img.branding.logo.original.src}
+                />
+              </Link>
             </div>
             <div className={classes.pullCenter}>
               <List className={classes.list}>
