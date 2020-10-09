@@ -1,224 +1,273 @@
-# [Blk• Design System PRO React](https://demos.creative-tim.com/blk-design-system-pro-react?ref=blkdspr-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fblk-design-system-pro-react%2F%23%2Fpresentation&text=BLK%E2%80%A2%20Design%20System%20PRO%20React%20-%20Premium%20Bootstrap%20UI%20Kit&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fblk-design-system-pro-react%2F&via=creativetim&hashtags=blkdesignsystempro%2Cblkdesignsystemproreact%2Cdesignsystem%2Creactdesignsystem%2Creact%2Cbootstrap4%2Cbootstrap4%2Creactstrap%2Creactrouter%2Creact-router%2Creactrouterdom%2Creact-router-dom%2Clogin%2Cform%2Ctable%2Ctables%2Ccalendar%2Ccard%2Ccards%2Cnavbar%2Cmodal%2Cicons%2Cicons%2Cmap%2Cchat%2Ccarousel%2Cmenu%2Cdatepicker%2Cgallery%2Cslider%2Cdate%2Csidebar%2Csocial%2Cdropdown%2Csearch%2Ctab%2Cnav%2Cfooter%2Cdatepicker%2Creactdatetime%2Creactdate-time%2Cforms%2Ctabs%2Ctime%2Cbutton%2Cselect%2Creactselect%2Creact-select%2Cinput%2Ctimeline%2Ccart%2Ccar%2Cfullcalendar%2Caboutus%2Cinvoice%2Caccount%2Cchat%2Clogin%2Cblog%2Cprofile%2Cportfolio%2Clandingpage%2Cecommerce%2Cshop%2Clanding%2Cregister%2Capp%2Ccontact%2Conepage%2Csignup%2Csignup%2Cstore)
+# [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.1.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-blk-design-system-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-blk-design-system-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-blk-design-system-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-blk-design-system-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.9.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-material-kit-pro-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
+![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/opt_mkp_react_thumbnail.jpg)
 
-![Product Thumbnail](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system-pro-react/blk-design-system-pro-react.jpg)
+**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** is a beautiful resource built for Material Design. It was made over the powerful Material-UI. We used and have redesigned all components to make it look flat, minimalist and easy to use. We are proud of this new Material-UI skin and the possibilities for customisation.
 
-Start your development with **[Blk• Design System PRO React](https://demos.creative-tim.com/blk-design-system-pro-react/#/index?ref=blkdspr-github-readme)**. It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
+Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate ReactJS plugins that take a little bit more effort. In the end the result will be worth it.
 
-Now will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
-
-# Complex Documentation
-
-Each element is well presented in a very complex documentation. You can read more about the idea behind this design system [here](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-github-readme). You can check the components [here](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/alert?ref=blkdspr-github-readme) and the foundation [here](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/colors?ref=blkdspr-github-readme).
-
-# Bootstrap 4 Support
-
-Blk• Design System PRO React is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Blk• Design System PRO style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
+**[Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/components)** uses a framework built by our friend Olivier and his team - [Material-UI](https://material-ui.com/) and was created starting with [create-react-app](https://github.com/facebook/create-react-app), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
 
 ## Table of Contents
 
-* [Getting Started](#getting-started)
-* [Versions](#versions)
-* [Example Pages](#exaple-pages)
+
+* [Demo](#demo)
+* [Quick Start](#quick-start)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
 * [Resources](#resources)
 * [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
-## Getting Started
-
-To get started with this product we've created [this page](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/tutorial?ref=blkdspr-github-readme) that shows you all the necessary steps.
-
-You can also check [this page](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/build-tools?ref=blkdspr-github-readme) that shows you all the available commands that come with it.
-
-_You can also check our react tutorials here:_
-* https://medium.freecodecamp.org/how-to-use-reactjs-with-webpack-4-babel-7-and-material-design-ff754586f618
-* https://medium.freecodecamp.org/how-to-use-redux-in-reactjs-with-real-life-examples-687ab4441b85
-* https://medium.freecodecamp.org/how-to-connect-a-react-design-system-with-firebase-and-redux-9646ca1c733f
-
-
-* https://www.youtube.com/watch?v=raKV5Rb8oOM&list=PLWxSJr7LCl87rGlQtTo2PoX8hboUU0R8a
-* https://www.youtube.com/watch?v=no2PD2kq-dE&list=PLWxSJr7LCl87OomktWFQVW30QDWtBqFlx
-* https://www.youtube.com/watch?v=BMPHfnAA9iI&list=PLWxSJr7LCl87rxd7A4j9WEFUbJz4gTNLa
-
-
-* https://www.udemy.com/learn-reactjs-with-webpack-4-babel-7-and-material-design/
-* https://www.udemy.com/how-to-use-react-with-firebase-and-redux/
-
-
-_If you've liked what you saw, help me with a comment, like, share or subscribe._
-
-
-## Versions
-
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-pro?ref=blkdspr-github-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-pro-react?ref=blkdspr-github-readme)
 
 
 
-| HTML | React |
-| --- | --- |
-| [![Blk• Design System PRO HTML](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-pro/blk-design-system-pro.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-pro?ref=blkdspr-github-readme)  | [![Blk• Design System PRO React](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-pro-react/blk-design-system-pro-react.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-pro-react?ref=blkdspr-github-readme)
+## Demo
+
+- [Index Page](https://demos.creative-tim.com/material-kit-pro-react/#/components)
+- [Buttons Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#buttons)
+- [Navigation Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#navigation)
+- [Notifications Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#notifications)
+- [User profile page](https://demos.creative-tim.com/material-kit-pro-react/#/profile-page)
+- [Landing page](https://demos.creative-tim.com/material-kit-pro-react/#/landing-page)
+
+[View More](https://demos.creative-tim.com/material-kit-pro-react/#/components).
 
 
-## Example Pages
+## Quick start
 
-If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
-
--   [Live Preview](https://demos.creative-tim.com/blk-design-system-pro-react/#/index?ref=blkdspr-github-readme)
--   [About Us](https://demos.creative-tim.com/blk-design-system-pro-react/#/about-us?ref=blkdspr-github-readme)
--   [Product Page](https://demos.creative-tim.com/blk-design-system-pro-react/#/product-page?ref=blkdspr-github-readme)
--   [Landing Page](https://demos.creative-tim.com/blk-design-system-pro-react/#/landing-page?ref=blkdspr-github-readme)
--   [Ecommerce Page](https://demos.creative-tim.com/blk-design-system-pro-react/#/ecommerce?ref=blkdspr-github-readme)
--   [Account Page](https://demos.creative-tim.com/blk-design-system-pro-react/#/account-settings?ref=blkdspr-github-readme)
--   [Chat Page](https://demos.creative-tim.com/blk-design-system-pro-react/#/chat-page?ref=blkdspr-github-readme)
-
-
-[View More](https://demos.creative-tim.com/blk-design-system-pro-react?ref=blkdspr-github-readme)
+- Buy from [Creative Tim](https://www.creative-tim.com/product/material-kit-pro-react)
 
 
 ## Documentation
-The documentation for the Blk• Design System PRO React is hosted at our [website](https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-github-readme).
+The documentation for the Material Kit PRO React is hosted at our [website](https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial).
 
 
 ## File Structure
 Within the download you'll find the following directories and files:
 
 ```
-Blk• Design System PRO React
+material-kit-pro
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── README.md
+├── gulpfile.js
 ├── jsconfig.json
 ├── package.json
 ├── Documentation
-│   └── documentation.html
+│   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   │   │   └── faces
+│   │   └── js
+│   └── tutorial-components.html
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── index.js
-    ├── variables
-    │   └── charts.js
     ├── assets
     │   ├── css
-    │   │   ├── blk-design-system-pro-react.css
-    │   │   ├── blk-design-system-pro-react.css.map
-    │   │   ├── blk-design-system-pro-react.min.css
-    │   │   └── nucleo-icons.css
-    │   ├── demo
-    │   │   ├── demo.css
-    │   │   └── react-demo.css
-    │   ├── fonts
+    │   │   ├── material-kit-pro-react.css
+    │   │   ├── material-kit-pro-react.css.map
+    │   │   └── material-kit-pro-react.min.css
     │   ├── img
-    │   │   ├── feature-blob
-    │   │   └── presentation-page
-    │   │       └── pages
+    │   │   ├── arrow-left.cur
+    │   │   ├── arrow-right.cur
+    │   │   ├── assets-for-demo
+    │   │   │   ├── example-pages
+    │   │   │   ├── ourClients
+    │   │   │   ├── presentationViewSectionComponent
+    │   │   │   └── sections
+    │   │   │       └── imgs.js
+    │   │   ├── examples
+    │   │   ├── faces
+    │   │   ├── flags
+    │   │   ├── loading-bubbles.svg
+    │   │   └── sections
+    │   ├── jss
+    │   │   ├── material-kit-pro-react
+    │   │   │   ├── components
+    │   │   │   └── views
+    │   │   │       ├── aboutUsSections
+    │   │   │       ├── blogPostSections
+    │   │   │       ├── blogPostsSections
+    │   │   │       ├── componentsSections
+    │   │   │       ├── ecommerceSections
+    │   │   │       ├── landingPageSections
+    │   │   │       ├── presentationSections
+    │   │   │       ├── pricingSections
+    │   │   │       ├── sectionsSections
+    │   │   └── material-kit-pro-react.js
     │   └── scss
-    │       ├── blk-design-system-pro
-    │       │   ├── avatars
-    │       │   ├── bootstrap
-    │       │   │   ├── bootstrap-grid.scss
-    │       │   │   ├── bootstrap-reboot.scss
-    │       │   │   ├── bootstrap.scss
-    │       │   │   ├── mixins
-    │       │   │   ├── utilities
-    │       │   │   └── vendor
-    │       │   ├── cards
-    │       │   ├── custom
-    │       │   │   ├── cards
-    │       │   │   ├── mixins
-    │       │   │   ├── sections
-    │       │   │   ├── utilities
-    │       │   │   └── vendor
+    │       ├── core
     │       │   ├── mixins
-    │       │   ├── plugins
-    │       │   ├── react
-    │       │   │   ├── custom
-    │       │   │   ├── plugins
-    │       │   │   └── react-differences.scss
-    │       │   └── sections
-    │       └── blk-design-system-pro-react.scss
+    │       │   └── variables
+    │       ├── plugins
+    │       └── material-kit-pro-react.scss
     ├── components
+    │   ├── Accordion
+    │   │   └── Accordion.js
+    │   ├── Badge
+    │   │   └── Badge.js
+    │   ├── Card
+    │   │   ├── Card.js
+    │   │   ├── CardAvatar.js
+    │   │   ├── CardBody.js
+    │   │   ├── CardFooter.js
+    │   │   └── CardHeader.js
+    │   ├── Clearfix
+    │   │   └── Clearfix.js
+    │   ├── CustomButtons
+    │   │   └── Button.js
+    │   ├── CustomDropdown
+    │   │   └── CustomDropdown.js
+    │   ├── CustomFileInput
+    │   │   └── CustomFileInput.js
+    │   ├── CustomInput
+    │   │   └── CustomInput.js
+    │   ├── CustomLinearProgress
+    │   │   └── CustomLinearProgress.js
+    │   ├── CustomTabs
+    │   │   └── CustomTabs.js
     │   ├── CustomUpload
     │   │   └── ImageUpload.js
-    │   ├── Footers
-    │   │   └── DemoFooter.js
-    │   ├── Headers
-    │   │   ├── IndexHeader.js
-    │   │   └── PresentationHeader.js
-    │   └── Navbars
-    │       ├── ColorNavbar.js
-    │       └── ScrollNavbar.js
+    │   ├── Footer
+    │   │   └── Footer.js
+    │   ├── Grid
+    │   │   ├── GridContainer.js
+    │   │   └── GridItem.js
+    │   ├── Header
+    │   │   ├── Header.js
+    │   │   └── HeaderLinks.js
+    │   ├── InfoArea
+    │   │   └── InfoArea.js
+    │   ├── Instruction
+    │   │   └── Instruction.js
+    │   ├── Media
+    │   │   └── Media.js
+    │   ├── NavPills
+    │   │   └── NavPills.js
+    │   ├── Pagination
+    │   │   └── Pagination.js
+    │   ├── Parallax
+    │   │   └── Parallax.js
+    │   ├── Snackbar
+    │   │   └── SnackbarContent.js
+    │   ├── Table
+    │   │   └── Table.js
+    │   └── Typography
+    │       ├── Danger.js
+    │       ├── Info.js
+    │       ├── Muted.js
+    │       ├── Primary.js
+    │       ├── Quote.js
+    │       ├── Rose.js
+    │       ├── Small.js
+    │       ├── Success.js
+    │       └── Warning.js
+    ├── index.js
+    ├── logo.svg
     └── views
-        ├── Index.js
-        ├── IndexSections
-        │   ├── Basic.js
-        │   ├── Cards.js
-        │   ├── ContentAreas.js
-        │   ├── Footers.js
-        │   ├── JavaScript.js
-        │   ├── Navbars.js
-        │   ├── Notifications.js
-        │   ├── NucleoIcons.js
-        │   ├── Pagination.js
-        │   ├── Pills.js
-        │   ├── PlainCards.js
-        │   ├── PreFooter.js
-        │   ├── Tabs.js
-        │   └── Typography.js
-        ├── Presentation.js
-        ├── PresentationSections
-        │   ├── BasicComponents.js
-        │   ├── Cards.js
-        │   ├── Content.js
-        │   ├── Examples.js
-        │   ├── Features.js
-        │   ├── FreeDemo.js
-        │   ├── Icons.js
-        │   ├── Info.js
-        │   ├── Pricing.js
-        │   ├── Sections.js
-        │   └── Testimonials.js
-        ├── Sections.js
-        ├── SectionsSections
-        │   ├── Accordion.js
-        │   ├── Blogs.js
-        │   ├── ContactUs.js
-        │   ├── Features.js
-        │   ├── Headers.js
-        │   ├── Pricing.js
-        │   ├── Projects.js
-        │   ├── Tables.js
-        │   ├── Teams.js
-        │   └── Testimonials.js
-        └── examples
-            ├── AboutUs.js
-            ├── AccountSettings.js
-            ├── BlogPost.js
-            ├── BlogPosts.js
-            ├── ChatPage.js
-            ├── CheckoutPage.js
-            ├── ContactUs.js
-            ├── Ecommerce.js
-            ├── Error404.js
-            ├── Error500.js
-            ├── InvoicePage.js
-            ├── LandingPage.js
-            ├── LoginPage.js
-            ├── Pricing.js
-            ├── ProductPage.js
-            ├── ProfilePage.js
-            ├── RegisterPage.js
-            └── ResetPage.js
+        ├── AboutUsPage
+        │   ├── AboutUsPage.js
+        │   └── Sections
+        │       ├── SectionContact.js
+        │       ├── SectionDescription.js
+        │       ├── SectionOffice.js
+        │       ├── SectionServices.js
+        │       └── SectionTeam.js
+        ├── BlogPostPage
+        │   ├── BlogPostPage.js
+        │   └── Sections
+        │       ├── SectionBlogInfo.js
+        │       ├── SectionComments.js
+        │       ├── SectionSimilarStories.js
+        │       └── SectionText.js
+        ├── BlogPostsPage
+        │   ├── BlogPostsPage.js
+        │   └── Sections
+        │       ├── SectionImage.js
+        │       ├── SectionInterested.js
+        │       ├── SectionPills.js
+        │       └── SubscribeLine.js
+        ├── ComponentsPage
+        │   ├── ComponentsPage.js
+        │   └── Sections
+        │       ├── SectionBasics.js
+        │       ├── SectionCards.js
+        │       ├── SectionCarousel.js
+        │       ├── SectionContentAreas.js
+        │       ├── SectionFooter.js
+        │       ├── SectionJavascript.js
+        │       ├── SectionNavbars.js
+        │       ├── SectionNotifications.js
+        │       ├── SectionPills.js
+        │       ├── SectionPreFooter.js
+        │       ├── SectionTabs.js
+        │       └── SectionTypography.js
+        ├── ContactUsPage
+        │   └── ContactUsPage.js
+        ├── EcommercePage
+        │   ├── EcommercePage.js
+        │   └── Sections
+        │       ├── SectionBlog.js
+        │       ├── SectionLatestOffers.js
+        │       └── SectionProducts.js
+        ├── ErrorPage
+        │   └── ErrorPage.js
+        ├── LandingPage
+        │   ├── LandingPage.js
+        │   └── Sections
+        │       ├── SectionProduct.js
+        │       ├── SectionTeam.js
+        │       └── SectionWork.js
+        ├── LoginPage
+        │   └── LoginPage.js
+        ├── PresentationPage
+        │   ├── PresentationPage.js
+        │   └── Sections
+        │       ├── SectionCards.js
+        │       ├── SectionComponents.js
+        │       ├── SectionContent.js
+        │       ├── SectionDescription.js
+        │       ├── SectionExamples.js
+        │       ├── SectionFreeDemo.js
+        │       ├── SectionOverview.js
+        │       ├── SectionPricing.js
+        │       └── SectionSections.js
+        ├── PricingPage
+        │   ├── PricingPage.js
+        │   └── Sections
+        │       ├── SectionFeatures.js
+        │       └── SectionPricing.js
+        ├── ProductPage
+        │   └── ProductPage.js
+        ├── ProfilePage
+        │   └── ProfilePage.js
+        ├── SectionsPage
+        │   ├── Sections
+        │   │   ├── SectionBlogs.js
+        │   │   ├── SectionContacts.js
+        │   │   ├── SectionFeatures.js
+        │   │   ├── SectionHeaders.js
+        │   │   ├── SectionPricing.js
+        │   │   ├── SectionProjects.js
+        │   │   ├── SectionTeams.js
+        │   │   └── SectionTestimonials.js
+        │   └── SectionsPage.js
+        ├── ShoppingCartPage
+        │   └── ShoppingCartPage.js
+        └── SignupPage
+            └── SignupPage.js
 ```
 
 
@@ -226,56 +275,64 @@ Blk• Design System PRO React
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
-
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 
 ## Resources
-- Demo: <https://demos.creative-tim.com/blk-design-system-pro-react/#/?ref=blkdspr-github-readme>
-- Download Page: <https://www.creative-tim.com/product/blk-design-system-pro-react?ref=blkdspr-github-readme>
-- Documentation: <https://demos.creative-tim.com/blk-design-system-pro-react/#/documentation/overview?ref=blkdspr-github-readme>
-- License Agreement: <https://www.creative-tim.com/license?ref=blkdspr-github-readme>
-- Support: <https://www.creative-tim.com/contact-us?ref=blkdspr-github-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-blk-design-system-pro-react/issues?ref=creativetim)
-- **Dashboard:**
+- Demo: <https://demos.creative-tim.com/material-kit-pro-react/#/components>
+- Download Page: <https://www.creative-tim.com/product/material-kit-pro-react>
+- Documentation: <https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-pro-react/issues)
++ [Material Kit Free React](https://demos.creative-tim.com/material-kit-react/#/)
++ [Material Kit Free](https://demos.creative-tim.com/material-kit/index.html)
++ [Material Dashboard Free React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard)
++ [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
++ [Material Dashboard Free HTML](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
++ [Material Dashboard Pro HTML](https://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html)
++ [Material Dashboard Free Angular](https://demos.creative-tim.com/material-dashboard-angular2/dashboard)
++ [Material Dashboard Pro Angular](https://demos.creative-tim.com/material-dashboard-pro-angular2/dashboard)
 
-| HTML | Vue | React |
-| --- | --- | --- |
-| [![Black Dashboard PRO  HTML](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard-pro/black-dashboard-pro.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-pro?ref=blkdspr-github-readme) | [![Vue Black Dashboard PRO](https://github.com/creativetimofficial/public-assets/blob/master/vue-black-dashboard-pro/vue-black-dashboard-pro.jpg?raw=true)](https://www.creative-tim.com/product/vue-black-dashboard-pro) | [![Black Dashboard PRO React](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard-pro-react/black-dashboard-pro-react.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-pro-react?ref=blkdspr-github-readme) |
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Blk• Design System PRO React. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Material Kit PRO React. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Blk• Design System PRO React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=blkdspr-github-readme).
+1. Make sure that you are using the latest version of the Material Kit PRO React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+
+
+
 ## Licensing
 
-- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=blkdspr-github-readme)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/)
 
-- Licensed under MIT (https://github.com/creativetimofficial/ct-blk-design-system-pro-react/blob/master/LICENSE.md?ref=creativetim)
+- Creative Tim [license](https://www.creative-tim.com/license)
+
+
 
 ## Useful Links
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=blkdspr-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=blkdspr-github-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=blkdspr-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=blkdspr-github-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=blkdspr-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=blkdspr-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=blkdspr-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=blkdspr-github-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=blkdspr-github-readme)
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 
-### Social Media
+##### Social Media
 
-Twitter: <https://twitter.com/CreativeTim?ref=creativetim>
+Twitter: <https://twitter.com/CreativeTim>
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=creativetim>
+Facebook: <https://www.facebook.com/CreativeTim>
 
-Dribbble: <https://dribbble.com/creativetim?ref=creativetim>
+Dribbble: <https://dribbble.com/creativetim>
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
