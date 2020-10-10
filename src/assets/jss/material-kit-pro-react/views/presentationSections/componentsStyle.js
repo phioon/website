@@ -69,32 +69,35 @@ const componentsStyle = theme => ({
     WebkitAnimation: "Floatingx 14s ease-in-out infinite",
     float: "left"
   },
-  shareButton: {
+  cardStrategy1: {
     [theme.breakpoints.down("md")]: {
-      top: "12%"
+      top: "-10%",
+      left: "18%",
     },
     [theme.breakpoints.down("sm")]: {
-      top: "7%"
+      left: "-10%",
+      top: "0%"
     },
     ...reusableStylesForImgs,
     left: "3%",
     top: "-3%",
-    height: "25px",
+    height: "125px",
+    borderRadius: "3px",
     WebkitAnimation: "Floatingy 11s ease-in-out infinite"
   },
-  cardImage: {
+  cardStrategy2: {
     [theme.breakpoints.down("md")]: {
-      top: "-2%",
+      top: "-8%",
       left: "65%"
     },
     [theme.breakpoints.down("sm")]: {
-      top: "-2%"
+      top: "-3%"
     },
     ...reusableStylesForImgs,
     left: "35%",
     top: "2%",
     height: "125px",
-    borderRadius: "6px",
+    borderRadius: "3px",
     WebkitAnimation: "Floatingy 18s ease-in-out infinite"
   },
   twitterImage: {
@@ -123,9 +126,9 @@ const componentsStyle = theme => ({
     height: "40px",
     WebkitAnimation: "Floatingx 16s ease-in-out infinite"
   },
-  repostImage: {
+  actionsImage: {
     [theme.breakpoints.down("md")]: {
-      top: "54%"
+      top: "56%"
     },
     ...reusableStylesForImgs,
     left: "0%",

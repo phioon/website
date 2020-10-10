@@ -12,10 +12,14 @@ import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import { makeStyles } from "@material-ui/core/styles";
 
 import descriptionStyle from "assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle.js";
+import { sectionDescription } from "assets/jss/material-kit-pro-react";
+import { getString } from "core/lang";
 
 const useStyles = makeStyles(descriptionStyle);
 
-export default function SectionDescription() {
+export default function SectionDescription(props) {
+  const compId = "sectiondescription"
+
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -23,11 +27,9 @@ export default function SectionDescription() {
         <GridContainer justify="center">
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              Material Kit React PRO is a Material-UI Kit with a fresh, new
-              design inspired by Google{"'"}s Material Design. You asked for it,
-              so we built it. It{"'"}s a great pleasure to introduce to you the
-              material concepts in an easy to use and beautiful set of
-              components.
+              {props.getString(props.prefs.langId, compId, "label_desc_p1")}
+              <br />
+              {props.getString(props.prefs.langId, compId, "label_desc_p2")}
             </h4>
           </GridItem>
         </GridContainer>

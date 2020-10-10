@@ -17,7 +17,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
-import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
+import SectionStrategies from "views/PresentationPage/Sections/SectionStrategies.js";
 import SectionCards from "views/PresentationPage/Sections/SectionCards.js";
 import SectionContent from "views/PresentationPage/Sections/SectionContent.js";
 import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
@@ -29,10 +29,14 @@ import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
 import { project } from "../../core/projectData";
+import { getString } from "core/lang";
 
 const useStyles = makeStyles(presentationStyle);
 
 export default function PresentationPage(props) {
+  const compId = "presentationpage"
+  console.log(props)
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -46,12 +50,12 @@ export default function PresentationPage(props) {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 350,
+          height: 280,
           color: "primary"
         }}
       />
       <Parallax
-        image={require("assets/img/bg4.jpg")}
+        image={project.img.bg.app_clean_reverse.src}
         className={classes.parallax}
       >
         <div className={classes.container}>
@@ -60,21 +64,21 @@ export default function PresentationPage(props) {
               <div className={classes.brand}>
                 <img
                   alt={project.img.branding.logo.original.alt}
-                  width={project.img.branding.logo.original.width * 0.3}
-                  height={project.img.branding.logo.original.heigth * 0.3}
+                  width={project.img.branding.logo.original.width * 0.15}
+                  height={project.img.branding.logo.original.heigth * 0.15}
                   src={project.img.branding.logo.original.src}
                 />
-                <h3 className={classes.title}>
-                  Alguma frase top impactante
-                </h3>
+                <h4 className={classes.title}>
+                  {props.getString(props.prefs.langId, compId, "label_title")}
+                </h4>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionDescription />
-        <SectionComponents />
+        <SectionDescription {...props} />
+        <SectionStrategies {...props} />
         <SectionCards />
         <SectionContent />
         <SectionSections />

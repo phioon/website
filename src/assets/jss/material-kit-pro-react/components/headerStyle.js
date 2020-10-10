@@ -138,7 +138,7 @@ const headerStyle = theme => ({
     backgroundColor: "transparent !important",
     boxShadow: "none",
     paddingTop: "25px",
-    color: whiteColor
+    color: blackColor
   },
   dark: {
     color: whiteColor,

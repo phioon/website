@@ -25,7 +25,7 @@ const useStyles = makeStyles(styles);
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [isLogoHidden, setLogoHidden] = React.useState(true)
+  const [showBrandIcon, setShowBrandIcon] = React.useState(true)
 
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
@@ -45,12 +45,12 @@ export default function Header(props) {
 
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
-      setLogoHidden(false)
+      setShowBrandIcon(false)
 
       document.body.getElementsByTagName("header")[0].classList.remove(classes[color]);
       document.body.getElementsByTagName("header")[0].classList.add(classes[changeColorOnScroll.color]);
     } else {
-      setLogoHidden(true)
+      setShowBrandIcon(true)
       document.body.getElementsByTagName("header")[0].classList.add(classes[color]);
       document.body.getElementsByTagName("header")[0].classList.remove(classes[changeColorOnScroll.color]);
     }
@@ -63,22 +63,27 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
 
-  console.log(appBarClasses)
   return (
     < AppBar className={appBarClasses} >
       <Toolbar className={classes.container}>
-        {!isLogoHidden &&
-          <Button className={classes.title}>
-            <Link to="/">
+        <Button className={classes.title}>
+          <Link to="/">
+            {showBrandIcon ?
+              <img
+                alt={project.img.branding.icon.original.alt}
+                width={project.img.branding.icon.original.width * 0.025}
+                height={project.img.branding.icon.original.heigth * 0.025}
+                src={project.img.branding.icon.original.src}
+              /> :
               <img
                 alt={project.img.branding.logo.white.alt}
                 width={project.img.branding.logo.white.width * 0.06}
                 height={project.img.branding.logo.white.heigth * 0.06}
                 src={project.img.branding.logo.white.src}
               />
-            </Link>
-          </Button>
-        }
+            }
+          </Link>
+        </Button>
         <Hidden smDown implementation="css" className={classes.hidden}>
           <div className={classes.collapse}>{links}</div>
         </Hidden>
@@ -97,9 +102,7 @@ export default function Header(props) {
           variant="temporary"
           anchor={"right"}
           open={mobileOpen}
-          classes={{
-            paper: classes.drawerPaper
-          }}
+          classes={{ paper: classes.drawerPaper }}
           onClose={handleDrawerToggle}
         >
           <IconButton

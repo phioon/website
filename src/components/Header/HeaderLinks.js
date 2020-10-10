@@ -88,12 +88,11 @@ export default function HeaderLinks(props) {
   };
   var onClickSections = {};
 
-  const { dropdownHoverColor } = props;
   const classes = useStyles();
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
+        <Link to="/" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_home")}
         </Link>
       </ListItem>
@@ -124,16 +123,15 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-navbar"
-          color={window.innerWidth < 960 ? "info" : "white"}
-          target="_blank"
+          href="https://app.phioon.com/auth/register" target="_blank"
+          color={"success"}
           className={classes.navButton}
           round
         >
           {props.getString(props.prefs.langId, compId, "label_signUp")}
         </Button>
       </ListItem>
-    </List>
+    </List >
   );
 }
 

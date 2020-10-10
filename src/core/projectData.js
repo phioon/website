@@ -4,7 +4,7 @@ export const projWebsite = "https://phioon.com";
 // imgs
 export const project = {
   info: {
-    name: "P H I O O N",
+    name: "PHIOON",
     website: "https://phioon.com",
   },
   img: {

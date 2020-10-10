@@ -1,3 +1,4 @@
+import { blackColor } from "assets/jss/material-kit-pro-react";
 import {
   container,
   title,
@@ -26,10 +27,10 @@ const presentationStyle = {
   },
   title: {
     ...title,
-    color: whiteColor
+    color: blackColor
   },
   brand: {
-    color: whiteColor,
+    color: blackColor,
     textAlign: "center",
     "& h1": {
       fontSize: "4.2rem",
