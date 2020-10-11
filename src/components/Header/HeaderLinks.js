@@ -102,7 +102,7 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
+        <Link to="/products/strategies" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_strategies")}
         </Link>
       </ListItem>
@@ -128,7 +128,7 @@ export default function HeaderLinks(props) {
           className={classes.navButton}
           round
         >
-          {props.getString(props.prefs.langId, compId, "label_signUp")}
+          {props.getString(props.prefs.langId, compId, "label_goToApp")}
         </Button>
       </ListItem>
     </List >

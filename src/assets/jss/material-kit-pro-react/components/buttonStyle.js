@@ -691,9 +691,12 @@ const buttonStyle = {
     width: "100% !important"
   },
   link: {
-    "&,&:hover,&:focus": {
+    backgroundColor: "transparent",
+    color: grayColor[0],
+    boxShadow: "none",
+    "&:hover,&:focus": {
       backgroundColor: "transparent",
-      color: grayColor[0],
+      color: successColor[0],
       boxShadow: "none"
     }
   },

@@ -91,6 +91,10 @@ export const project = {
     twitter: {
       label: "@phioon_app",
       href: "https://twitter.com/phioon_app"
+    },
+    youtube: {
+      label: "phioon",
+      href: "https://www.youtube.com/channel/UCwqBySgPRbirNwtjyRdprvA"
     }
   }
 }

@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -29,13 +29,13 @@ import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
 import { project } from "../../core/projectData";
-import { getString } from "core/lang";
 
 const useStyles = makeStyles(presentationStyle);
 
 export default function PresentationPage(props) {
   const compId = "presentationpage"
-  console.log(props)
+
+  const [redirectTo, setRedirectTo] = React.useState(undefined)
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,8 +44,9 @@ export default function PresentationPage(props) {
   const classes = useStyles();
   return (
     <div>
+      {redirectTo && <Redirect to={redirectTo} />}
       <Header
-        brand={project.info.name}
+        brand={props.project.info.name}
         links={<HeaderLinks {...props} dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -91,6 +92,7 @@ export default function PresentationPage(props) {
         theme="white"
         content={
           <div>
+            {/* Brand */}
             <div className={classes.left}>
               <Link to="/" className={classes.footerBrand}>
                 <img
@@ -101,75 +103,61 @@ export default function PresentationPage(props) {
                 />
               </Link>
             </div>
+            {/* Footer Menu */}
             <div className={classes.pullCenter}>
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-presentation"
-                    target="_blank"
+                  <Button
                     className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
+                    onClick={() => setRedirectTo("/about-us")}
+                    link >
+                    {props.getString(props.prefs.langId, "footerlinks", "label_aboutUs")}
+                  </Button>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-presentation"
-                    target="_blank"
+                  <Button
                     className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
+                    onClick={() => setRedirectTo("/contact-us")}
+                    link>
+                    {props.getString(props.prefs.langId, "footerlinks", "label_contactUs")}
+                  </Button>
                 </ListItem>
               </List>
             </div>
+            {/* Social */}
             <div className={classes.rightLinks}>
               <ul>
                 <li>
                   <Button
-                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    href={project.social.facebook.href}
                     target="_blank"
-                    color="twitter"
+                    color="facebook"
                     justIcon
                     simple
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-facebook" />
                   </Button>
                 </li>
                 <li>
                   <Button
-                    href="https://dribbble.com/creativetim?ref=creativetim"
-                    target="_blank"
-                    color="dribbble"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="https://instagram.com/CreativeTimOfficial?ref=creativetim"
+                    href={project.social.instagram.href}
                     target="_blank"
                     color="instagram"
                     justIcon
                     simple
                   >
                     <i className="fab fa-instagram" />
+                  </Button>
+                </li>
+                <li>
+                  <Button
+                    href={project.social.youtube.href}
+                    target="_blank"
+                    color="youtube"
+                    justIcon
+                    simple
+                  >
+                    <i className="fab fa-youtube" />
                   </Button>
                 </li>
               </ul>

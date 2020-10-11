@@ -19,7 +19,7 @@ const reusableStylesForImgs = {
     ", 0.2)"
 };
 
-const componentsStyle = theme => ({
+const strategiesStyle = theme => ({
   container,
   mlAuto,
   title: {
@@ -75,12 +75,12 @@ const componentsStyle = theme => ({
       left: "18%",
     },
     [theme.breakpoints.down("sm")]: {
+      top: "5%",
       left: "-10%",
-      top: "0%"
     },
     ...reusableStylesForImgs,
+    top: "-14%",
     left: "3%",
-    top: "-3%",
     height: "125px",
     borderRadius: "3px",
     WebkitAnimation: "Floatingy 11s ease-in-out infinite"
@@ -94,8 +94,8 @@ const componentsStyle = theme => ({
       top: "-3%"
     },
     ...reusableStylesForImgs,
-    left: "35%",
-    top: "2%",
+    left: "82%",
+    top: "-8%",
     height: "125px",
     borderRadius: "3px",
     WebkitAnimation: "Floatingy 18s ease-in-out infinite"
@@ -130,13 +130,16 @@ const componentsStyle = theme => ({
     [theme.breakpoints.down("md")]: {
       top: "56%"
     },
+    [theme.breakpoints.down("sm")]: {
+      top: "52%"
+    },
     ...reusableStylesForImgs,
+    top: "56%",
     left: "0%",
-    top: "68%",
     height: "25px",
     borderRadius: "3px",
     WebkitAnimation: "Floatingy 15s ease-in-out infinite"
   }
 });
 
-export default componentsStyle;
+export default strategiesStyle;

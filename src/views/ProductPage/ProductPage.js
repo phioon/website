@@ -106,7 +106,7 @@ export default function ProductPage() {
                   startIndex={3}
                   items={images}
                   showThumbnails={true}
-                  renderLeftNav={(onClick,disabled) => {
+                  renderLeftNav={(onClick, disabled) => {
                     return (
                       <button
                         className='image-gallery-left-nav'
@@ -115,7 +115,7 @@ export default function ProductPage() {
                       />
                     );
                   }}
-                  renderRightNav={(onClick,disabled) => {
+                  renderRightNav={(onClick, disabled) => {
                     return (
                       <button
                         className='image-gallery-right-nav'
