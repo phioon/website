@@ -4,7 +4,8 @@ import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
 
 import "assets/scss/material-kit-pro-react.scss?v=1.9.0";
-
+// core components
+import Footer from "components/Footer/Footer.js";
 // pages for this product
 import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
 import BlogPostPage from "views/BlogPostPage/BlogPostPage.js";
@@ -26,6 +27,7 @@ import PresentationPage from "views/PresentationPage/PresentationPage.js";
 import StrategiesPage from "views/StrategiesPage/StrategiesPage.js";
 
 import { getString } from "core/lang";
+import { getImage } from "core/images";
 import { project } from "core/projectData";
 
 var hist = createBrowserHistory();
@@ -40,6 +42,7 @@ var prefs = {
 
 var initial_props = {
   getString: getString,
+  getImage: getImage,
   prefs: prefs,
   project: project,
 }
@@ -65,6 +68,7 @@ ReactDOM.render(
       <Route path="/error-page" component={ErrorPage} />
       <Route path="/" render={() => <PresentationPage {...initial_props} />} />
     </Switch>
+    <Footer theme="white" {...initial_props} />
   </Router>,
   document.getElementById("root")
 );

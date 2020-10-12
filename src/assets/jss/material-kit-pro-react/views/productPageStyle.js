@@ -7,13 +7,15 @@ import {
   mainRaised,
   title,
   description,
-  primaryColor,
   blackColor,
   whiteColor,
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
+import footerStyle from "assets/jss/material-kit-pro-react/views/componentsSections/footerStyle.js";
+
 const features = {
+  ...footerStyle,
   container,
   section: {
     ...section,
@@ -24,7 +26,10 @@ const features = {
   mlAuto,
   mrAuto,
   title,
-  description,
+  description: {
+    ...description,
+    margin: "0 10px"
+  },
   pageHeader: {
     minHeight: "60vh",
     maxHeight: "600px",
@@ -120,7 +125,21 @@ const features = {
     margin: "0 auto",
     padding: "10px 0 0px"
   },
-  infoArea5: {}
+  infoArea5: {},
+  iframeContainer: {
+    margin: "30px 0",
+    "& > iframe": {
+      width: "100%",
+      boxShadow:
+        "0 16px 38px -12px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.56), 0 4px 25px 0px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.12), 0 8px 10px -5px rgba(" +
+        hexToRgb(blackColor) +
+        ", 0.2)"
+    }
+  },
 };
 
 export default features;

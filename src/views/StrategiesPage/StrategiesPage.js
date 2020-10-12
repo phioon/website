@@ -4,21 +4,12 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
-import GroupWork from "@material-ui/icons/GroupWork";
-import Airplay from "@material-ui/icons/Airplay";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Extension from "@material-ui/icons/Extension";
+import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
+import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
+import TrendingUp from "@material-ui/icons/TrendingUp";
+import Business from "@material-ui/icons/Business";
 import ChildFriendly from "@material-ui/icons/ChildFriendly";
 import WatchLater from "@material-ui/icons/WatchLater";
-import Code from "@material-ui/icons/Code";
-import FormatPaint from "@material-ui/icons/FormatPaint";
-import Dashboard from "@material-ui/icons/Dashboard";
-import ViewCarousel from "@material-ui/icons/ViewCarousel";
-import AccessTime from "@material-ui/icons/AccessTime";
-import AttachMoney from "@material-ui/icons/AttachMoney";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -28,10 +19,6 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import productPageStyle from "assets/jss/material-kit-pro-react/views/productPageStyle.js";
-
-import iphone from "assets/img/sections/iphone.png";
-import iphone2 from "assets/img/sections/iphone2.png";
-import bg9 from "assets/img/bg9.jpg";
 
 const useStyles = makeStyles(productPageStyle);
 
@@ -60,339 +47,115 @@ export default function StrategiesPage(props) {
         filter={"primary"}>
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
-      <div className={classNames(classes.section, classes.sectionGray)}>
-        <div className={classes.container}>
-          <div className={classNames(classes.main, classes.mainRaised)}>
-            {/* Touch user's pain */}
-            <div className={classes.features1}>
-              <GridContainer>
-                <GridItem xs={12} sm={8} md={8} className={classes.mlAuto + " " + classes.mrAuto}>
-                  <h2 className={classes.title}>Why our product is the best</h2>
-                  <h5 className={classes.description}>
-                    This is the paragraph where you can write more details about
-                    your product. Keep you user engaged by providing meaningful
-                    information. Remember that by this time, the user is curious,
-                otherwise he wouldn{"'"}t scroll to get here. Add a button if
-                you want the user to see more.
-              </h5>
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={4} md={4}>
-                  <InfoArea
-                    vertical
-                    icon={Chat}
-                    title="Free Chat"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough"
-                    iconColor="info"
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={4} md={4}>
-                  <InfoArea
-                    vertical
-                    icon={VerifiedUser}
-                    title="Verified Users"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="success"
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={4} md={4}>
-                  <InfoArea
-                    vertical
-                    icon={Fingerprint}
-                    title="Fingerprint"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="danger"
-                  />
-                </GridItem>
-              </GridContainer>
-            </div>
-            {/* Feature 2 */}
-            <div className={classes.features2}>
-              <GridContainer>
-                <GridItem
-                  xs={12}
-                  sm={8}
-                  md={8}
-                  className={
-                    classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-                  }
-                >
-                  <h2 className={classes.title}>Why our product is the best</h2>
-                  <h5 className={classes.description}>
-                    This is the paragraph where you can write more details about
-                    your product. Keep you user engaged by providing meaningful
-                    information.
-              </h5>
-                </GridItem>
-              </GridContainer>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={6} md={4}>
-                  <InfoArea
-                    icon={GroupWork}
-                    title="Collaborate"
-                    description={
-                      <span>
-                        <p>
-                          The moment you use Material Kit, you know you’ve never
-                          felt anything like it. With a single use, this powerfull
-                          UI Kit lets you do more than ever before.
-                    </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Find more...
-                    </a>
-                      </span>
-                    }
-                    iconColor="info"
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={4}>
-                  <InfoArea
-                    icon={Airplay}
-                    title="Airplay"
-                    description={
-                      <span>
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing a feature will be enough.
-                    </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Find more...
-                    </a>
-                      </span>
-                    }
-                    iconColor="danger"
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={4}>
-                  <InfoArea
-                    icon={LocationOn}
-                    title="Location Integrated"
-                    description={
-                      <span>
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing a feature will be enough.
-                    </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Find more...
-                    </a>
-                      </span>
-                    }
-                    iconColor="success"
-                  />
-                </GridItem>
-              </GridContainer>
-            </div>
-            {/* Feature 3 */}
-            <div className={classes.features3}>
-              <GridContainer>
-                <GridItem xs={12} sm={6} md={6}>
-                  <div className={classes.phoneContainer}>
-                    <img src={iphone} alt="..." />
-                  </div>
-                </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
-                  <h2 className={classes.title}>Your life will be much easier</h2>
-                  <InfoArea
-                    className={classes.infoArea}
-                    icon={Extension}
-                    title="Hundreds of Components"
-                    description="The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
-                    iconColor="primary"
-                  />
-                  <InfoArea
-                    className={classes.infoArea}
-                    icon={ChildFriendly}
-                    title="Easy to Use"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="primary"
-                  />
-                  <InfoArea
-                    className={classes.infoArea}
-                    icon={WatchLater}
-                    title="Fast Prototyping"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="primary"
-                  />
-                </GridItem>
-              </GridContainer>
-            </div>
-            {/* Feature 4 */}
-            <div className={classes.features4}>
-              <GridContainer>
-                <GridItem
-                  xs={12}
-                  sm={8}
-                  md={8}
-                  className={
-                    classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-                  }
-                >
-                  <h2 className={classes.title}>Your life will be much easier</h2>
-                  <h5 className={classes.description}>
-                    This is the paragraph where you can write more details about
-                    your product. Keep you user engaged by providing meaningful
-                    information.
-              </h5>
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mlAuto}>
-                  <InfoArea
-                    icon={Code}
-                    title="For Developers"
-                    description="The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
-                    iconColor="info"
-                  />
-                  <InfoArea
-                    icon={FormatPaint}
-                    title="For Designers"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="danger"
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={12} lg={4}>
-                  <div className={classes.phoneContainer}>
-                    <img src={iphone2} alt="..." />
-                  </div>
-                </GridItem>
-                <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mrAuto}>
-                  <InfoArea
-                    icon={Dashboard}
-                    title="Material-UI Grid"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="primary"
-                  />
-                  <InfoArea
-                    icon={ViewCarousel}
-                    title="Example Pages Included"
-                    description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                    iconColor="success"
-                  />
-                </GridItem>
-              </GridContainer>
-            </div>
-          </div>
-          {/* Feature 5 */}
-          <div
-            className={classes.features5}
-            style={{ backgroundImage: `url(${bg9})` }}
-          >
+      <div className={classes.container}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          {/* Description */}
+          <div className={classes.features1}>
             <GridContainer>
-              <GridItem
-                xs={12}
-                sm={8}
-                md={8}
-                className={
-                  classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-                }
-              >
-                <h2 className={classes.title}>Your life will be much easier</h2>
+              <GridItem xs={12} sm={8} md={8} className={classes.mlAuto + " " + classes.mrAuto}>
+                <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "desc_title")}</h2>
+                <h5 className={classes.description}>
+                  {props.getString(props.prefs.langId, compId, "desc_p1")}
+                  {" "}
+                  <strong>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</strong>
+                  {" "}
+                  {props.getString(props.prefs.langId, compId, "desc_p2")}
+                  {" "}
+                  <strong>{props.getString(props.prefs.langId, "keywords", "label_time")}</strong>.
+                </h5>
               </GridItem>
-              <div className={classes.container}>
-                <GridContainer className={classes.gridContainer}>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={Code}
-                      title="For Developers"
-                      description={
-                        <p>
-                          The moment you use Material Kit, you know you’ve never
-                          felt anything like it. With a single use, this powerfull
-                          UI Kit lets you do more than ever before.
-                    </p>
-                      }
-                      iconColor="info"
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={FormatPaint}
-                      title="For Designers"
-                      description={
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing a feature will be enough.
-                    </p>
-                      }
-                      iconColor="danger"
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={Dashboard}
-                      title="Material-UI Grid"
-                      description={
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing a feature will be enough.
-                    </p>
-                      }
-                      iconColor="primary"
-                    />
-                  </GridItem>
-                </GridContainer>
-                <GridContainer className={classes.gridContainer}>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={ViewCarousel}
-                      title="Example Pages Included"
-                      description={
-                        <p>
-                          The moment you use Material Kit, you know you’ve never
-                          felt anything like it. With a single use, this powerfull
-                          UI Kit lets you do more than ever before.
-                    </p>
-                      }
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={AccessTime}
-                      title="Save Time"
-                      description={
-                        <p>
-                          The moment you use Material Kit, you know you’ve never
-                          felt anything like it. With a single use, this powerfull
-                          UI Kit lets you do more than ever before.
-                    </p>
-                      }
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={4} className={classes.gridItem}>
-                    <InfoArea
-                      vertical
-                      className={classes.infoArea5}
-                      icon={AttachMoney}
-                      title="Save Money"
-                      description={
-                        <p>
-                          The moment you use Material Kit, you know you’ve never
-                          felt anything like it. With a single use, this powerfull
-                          UI Kit lets you do more than ever before.
-                    </p>
-                      }
-                    />
-                  </GridItem>
-                </GridContainer>
-              </div>
+            </GridContainer>
+            <GridContainer>
+              <GridItem sm={12} md={4}>
+                <InfoArea
+                  vertical
+                  icon={AddCircleOutline}
+                  title={props.getString(props.prefs.langId, compId, "sec1_infoarea1_title")}
+                  description={props.getString(props.prefs.langId, compId, "sec1_infoarea1_desc")}
+                  iconColor="warning"
+                />
+              </GridItem>
+              <GridItem sm={12} md={4}>
+                <InfoArea
+                  vertical
+                  icon={PlayCircleOutline}
+                  title={props.getString(props.prefs.langId, compId, "sec1_infoarea2_title")}
+                  description={props.getString(props.prefs.langId, compId, "sec1_infoarea2_desc")}
+                  iconColor="info"
+                />
+              </GridItem>
+              <GridItem sm={12} md={4}>
+                <InfoArea
+                  vertical
+                  icon={TrendingUp}
+                  title={props.getString(props.prefs.langId, compId, "sec1_infoarea3_title")}
+                  description={props.getString(props.prefs.langId, compId, "sec1_infoarea3_desc")}
+                  iconColor="success"
+                />
+              </GridItem>
             </GridContainer>
           </div>
+        </div>
+        {/* Section 2 */}
+        <div className={classes.features3}>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}>
+              <div className={classes.phoneContainer}>
+                <img src={props.getImage(props.prefs.langId, compId, "iphone")} alt="..." />
+              </div>
+            </GridItem>
+            <GridItem xs={12} sm={6} md={6}>
+              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec2_title")}</h2>
+              <InfoArea
+                className={classes.infoArea}
+                icon={Business}
+                title={props.getString(props.prefs.langId, compId, "sec2_infoarea1_title")}
+                description={props.getString(props.prefs.langId, compId, "sec2_infoarea1_desc")}
+                iconColor="primary"
+              />
+              <InfoArea
+                className={classes.infoArea}
+                icon={ChildFriendly}
+                title={props.getString(props.prefs.langId, compId, "sec2_infoarea2_title")}
+                description={props.getString(props.prefs.langId, compId, "sec2_infoarea2_desc")}
+                iconColor="primary"
+              />
+              <InfoArea
+                className={classes.infoArea}
+                icon={WatchLater}
+                title={props.getString(props.prefs.langId, compId, "sec2_infoarea3_title")}
+                description={props.getString(props.prefs.langId, compId, "sec2_infoarea3_desc")}
+                iconColor="primary"
+              />
+            </GridItem>
+          </GridContainer>
+        </div>
+        {/* Section 3 */}
+        <div className={classes.features4}>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}
+              className={
+                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
+              }
+            >
+              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
+              <h5 className={classes.description}>
+                {props.getString(props.prefs.langId, compId, "sec3_desc")}
+              </h5>
+            </GridItem>
+            <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
+              <div className={classes.iframeContainer}>
+                <iframe
+                  height="250"
+                  src="https://www.youtube.com/embed/IN6QnLpVEPI?ref=creativetim"
+                  frameBorder="0"
+                  allow="encrypted-media"
+                  allowFullScreen
+                  title="Strategies"
+                />
+              </div>
+            </GridItem>
+          </GridContainer>
         </div>
       </div>
     </div>

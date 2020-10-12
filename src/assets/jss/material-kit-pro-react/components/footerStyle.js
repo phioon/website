@@ -10,7 +10,12 @@ import {
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
-const footerStyle = {
+import imagesStyles from "assets/jss/material-kit-pro-react/imagesStyles.js";
+import footerStyle from "assets/jss/material-kit-pro-react/views/componentsSections/footerStyle.js";
+
+const style = {
+  ...imagesStyles,
+  ...footerStyle,
   left: {
     float: "left!important",
     display: "block"
@@ -169,4 +174,4 @@ const footerStyle = {
     clear: "both"
   }
 };
-export default footerStyle;
+export default style;
