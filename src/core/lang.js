@@ -55,7 +55,7 @@ const strings = {
     strategiespage: {
       label_title: "Strategies",
 
-      desc_title: "Automated Technical Analysis",
+      desc_title: "Smart Technical Analysis",
       desc_p1: "Our goal is to optimize the way you look for opportunities that market offers... So, we developed",
       desc_p2: "to save your most precious asset:",
 
@@ -148,7 +148,7 @@ const strings = {
     strategiespage: {
       label_title: "Estratégias",
 
-      desc_title: "Análise Técnica Automatizada",
+      desc_title: "Análise Técnica Inteligente",
       desc_p1: "Nosso objetivo é otimizar a procura pelas oportunidades que o mercado oferece... Então desenvolvemos",
       desc_p2: "para poupar o seu ativo mais precioso: o",
 
