@@ -70,7 +70,7 @@ const strings = {
       sec2_infoarea1_title: "Hundreds of Assets",
       sec2_infoarea1_desc: "Before, it used to take a lot out of you looking for opportunities in 10, 20, 30 assets everyday... Now, you filter hundreds of them in just one click.",
       sec2_infoarea2_title: "Easy to Use",
-      sec2_infoarea2_desc: "Focusing only on the last two periods (candles) of a chart, we noticed not only the correlation between price and other indicators, but also its transitions and moviments, such as: when price crosses a moving average.",
+      sec2_infoarea2_desc: "Focusing on the last two periods (candles) of a chart, we noticed not only the correlation between price and other indicators, but also its transitions and moviments, such as: when price crosses a moving average.",
       sec2_infoarea3_title: "Always Up to Date",
       sec2_infoarea3_desc: "We work hard to keep everything organized as soon as possible, so that you receive the most up to date information.",
 
@@ -163,7 +163,7 @@ const strings = {
       sec2_infoarea1_title: "Centenas de Ativos",
       sec2_infoarea1_desc: "Antes, você se desgastava procurando oportunidades em 10, 20, 30 ativos por dia... Agora, você filtra centenas em apenas um clique.",
       sec2_infoarea2_title: "Fácil de Usar",
-      sec2_infoarea2_desc: "Observando apenas para os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço atravessa uma média móvel.",
+      sec2_infoarea2_desc: "Observando os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço atravessa uma média móvel.",
       sec2_infoarea3_title: "Do seu Jeito",
       sec2_infoarea3_desc: "Continue utilizando os seus métodos, suas estratégias, seus setups. Nada melhor que seu conhecimento e experiências alinhados à oportunidade. Facilidade e eficiência na hora de investir.",
 
