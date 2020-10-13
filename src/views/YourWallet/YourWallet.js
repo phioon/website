@@ -9,7 +9,7 @@ import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 import TrendingUp from "@material-ui/icons/TrendingUp";
 import Business from "@material-ui/icons/Business";
 import ChildFriendly from "@material-ui/icons/ChildFriendly";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import WatchLater from "@material-ui/icons/WatchLater";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -23,7 +23,7 @@ import productPageStyle from "assets/jss/material-kit-pro-react/views/productPag
 const useStyles = makeStyles(productPageStyle);
 
 export default function StrategiesPage(props) {
-  const compId = "strategiespage"
+  const compId = "yourwalletpage"
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -122,7 +122,7 @@ export default function StrategiesPage(props) {
               />
               <InfoArea
                 className={classes.infoArea}
-                icon={Fingerprint}
+                icon={WatchLater}
                 title={props.getString(props.prefs.langId, compId, "sec2_infoarea3_title")}
                 description={props.getString(props.prefs.langId, compId, "sec2_infoarea3_desc")}
                 iconColor="primary"
