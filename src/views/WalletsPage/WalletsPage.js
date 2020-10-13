@@ -22,8 +22,8 @@ import productPageStyle from "assets/jss/material-kit-pro-react/views/productPag
 
 const useStyles = makeStyles(productPageStyle);
 
-export default function StrategiesPage(props) {
-  const compId = "yourwalletpage"
+export default function WalletsPage(props) {
+  const compId = "walletspage"
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,7 +44,7 @@ export default function StrategiesPage(props) {
       />
       <Parallax
         className={classes.pageHeader}
-        filter={"primary"}>
+        filter={"success"}>
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
       <div className={classes.container}>
@@ -101,7 +101,7 @@ export default function StrategiesPage(props) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div className={classes.phoneContainer}>
-                <img src={props.getImage(props.prefs.langId, compId, "iphone")} alt="..." />
+                <img src={props.getImage(props.prefs.langId, "strategies_iphone")} alt="..." />
               </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>

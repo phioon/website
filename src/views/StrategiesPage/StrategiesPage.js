@@ -101,7 +101,7 @@ export default function StrategiesPage(props) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div className={classes.phoneContainer}>
-                <img src={props.getImage(props.prefs.langId, compId, "iphone")} alt="..." />
+                <img src={props.getImage(props.prefs.langId, "strategies_iphone")} alt="..." />
               </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>

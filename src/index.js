@@ -25,6 +25,7 @@ import ErrorPage from "views/ErrorPage/ErrorPage.js";
 
 import PresentationPage from "views/PresentationPage/PresentationPage.js";
 import StrategiesPage from "views/StrategiesPage/StrategiesPage.js";
+import WalletsPage from "views/WalletsPage/WalletsPage.js";
 
 import { getString } from "core/lang";
 import { getImage } from "core/images";
@@ -61,11 +62,12 @@ ReactDOM.render(
       <Route path="/pricing" component={PricingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/product-page" component={ProductPage} />
-      <Route path="/products/strategies" render={() => <StrategiesPage {...initial_props} />} />
       <Route path="/sections" component={SectionsPage} />
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
       <Route path="/signup-page" component={SignupPage} />
       <Route path="/error-page" component={ErrorPage} />
+      <Route path="/products/strategies" render={() => <StrategiesPage {...initial_props} />} />
+      <Route path="/products/wallets" render={() => <WalletsPage {...initial_props} />} />
       <Route path="/" render={() => <PresentationPage {...initial_props} />} />
     </Switch>
     <Footer theme="white" {...initial_props} />

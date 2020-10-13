@@ -27,7 +27,7 @@ const strings = {
     },
     headerlinks: {
       label_home: "Home",
-      label_yourWallet: "Your Wallet",
+      label_wallets: "Wallets",
       label_strategies: "Strategies",
       label_phiTrader: "Phi Trader",
       label_pricing: "Pricing",
@@ -47,8 +47,10 @@ const strings = {
       label_desc: "A new way to invest... in yourself.",
       btn_details: "Learn more"
     },
-    sectionyourwallet: {
-
+    sectionwallets: {
+      label_title: "Wallets",
+      label_desc: "Bring your wallets to PHIOON",
+      btn_details: "Take a look at the benefits"
     },
     strategiespage: {
       label_title: "Strategies",
@@ -75,8 +77,8 @@ const strings = {
       sec3_title: "How does it work?",
       sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, they're super objective. ;)"
     },
-    yourwalletpage: {
-      label_title: "Your Wallet",
+    walletspage: {
+      label_title: "Wallets",
 
       desc_title: "Automated Technical Analysis",
       desc_p1: "Our goal is to optimize the way you look for opportunities that market offers... So, we developed",
@@ -112,7 +114,7 @@ const strings = {
     },
     headerlinks: {
       label_home: "Início",
-      label_yourWallet: "Sua Carteira",
+      label_wallets: "Carteiras",
       label_strategies: "Estratégias",
       label_phiTrader: "Phi Trader",
       label_pricing: "Planos",
@@ -138,8 +140,10 @@ const strings = {
       label_desc: "Um jeito novo de investir... em você mesmo.",
       btn_details: "Saiba como funciona"
     },
-    sectionyourwallet: {
-
+    sectionwallets: {
+      label_title: "Carteiras",
+      label_desc: "Traga sua carteira para o PHIOON.",
+      btn_details: "Se liga nos benefícios"
     },
     strategiespage: {
       label_title: "Estratégias",
@@ -166,8 +170,8 @@ const strings = {
       sec3_title: "Como funciona na prática?",
       sec3_desc: "Preparamos uma playlist para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)"
     },
-    yourwalletpage: {
-      label_title: "Sua Carteira",
+    walletspage: {
+      label_title: "Carteiras",
 
       desc_title: "Análise Técnica Automatizada",
       desc_p1: "Nosso objetivo é otimizar a procura pelas oportunidades que o mercado oferece... Então desenvolvemos",

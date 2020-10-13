@@ -13,7 +13,7 @@ import GridItem from "components/Grid/GridItem.js";
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionStrategies from "views/PresentationPage/Sections/SectionStrategies.js";
-import SectionCards from "views/PresentationPage/Sections/SectionCards.js";
+import SectionWallets from "views/PresentationPage/Sections/SectionWallets.js";
 import SectionContent from "views/PresentationPage/Sections/SectionContent.js";
 import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
 import SectionExamples from "views/PresentationPage/Sections/SectionExamples.js";
@@ -70,7 +70,7 @@ export default function PresentationPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription {...props} />
         <SectionStrategies {...props} />
-        <SectionCards />
+        <SectionWallets {...props} />
         <SectionContent />
         <SectionSections />
         <SectionExamples />

@@ -68,8 +68,8 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
-          {props.getString(props.prefs.langId, compId, "label_yourWallet")}
+        <Link to="/products/wallets" className={classes.navLink}>
+          {props.getString(props.prefs.langId, compId, "label_wallets")}
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
