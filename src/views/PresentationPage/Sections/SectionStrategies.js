@@ -9,11 +9,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "components/CustomButtons/Button.js";
 import componentsFloatingStyle from "assets/jss/material-kit-pro-react/views/presentationSections/componentsFloatingStyle.js";
 
-import macbookImage from "assets/img/phioon_app/strategies/laptop-basics.png";
-import cardStrategy1 from "assets/img/phioon_app/strategies/card-strategy-1.png";
-import cardStrategy2 from "assets/img/phioon_app/strategies/card-strategy-2.png";
-import actionsImage from "assets/img/phioon_app/strategies/actions.png";
-
 const useStyles = makeStyles(componentsFloatingStyle);
 
 export default function SectionStrategies(props) {
@@ -42,22 +37,22 @@ export default function SectionStrategies(props) {
           <GridItem sm={12} md={6} lg={6} className={classes.mlAuto}>
             <div className={classes.imageContainer}>
               <img
-                src={macbookImage}
+                src={props.getImage(props.prefs.langId, "strategies_macbook")}
                 alt="Strategies"
                 className={classes.componentsMacbook}
               />
               <img
-                src={cardStrategy1}
+                src={props.getImage(props.prefs.langId, "strategies_card1")}
                 alt="Strategies"
                 className={classes.cardStrategy1}
               />
               <img
-                src={cardStrategy2}
+                src={props.getImage(props.prefs.langId, "strategies_card2")}
                 alt="Strategies"
                 className={classes.cardStrategy2}
               />
               <img
-                src={actionsImage}
+                src={props.getImage(props.prefs.langId, "strategies_actions")}
                 alt="Strategies"
                 className={classes.actionsImage}
               />
