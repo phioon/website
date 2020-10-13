@@ -50,7 +50,7 @@ const strings = {
     sectionwallets: {
       label_title: "Wallets",
       label_desc: "Bring your wallets to PHIOON",
-      btn_details: "Take a look at the benefits"
+      btn_details: "See features"
     },
     strategiespage: {
       label_title: "Strategies",
@@ -143,7 +143,7 @@ const strings = {
     sectionwallets: {
       label_title: "Carteiras",
       label_desc: "Traga sua carteira para o PHIOON.",
-      btn_details: "Se liga nos benefícios"
+      btn_details: "Ver funcionalidades"
     },
     strategiespage: {
       label_title: "Estratégias",
