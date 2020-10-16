@@ -19,7 +19,7 @@ const reusableStylesForImgs = {
     ", 0.2)"
 };
 
-const strategiesStyle = theme => ({
+const componentsFloatingStyle = theme => ({
   container,
   mlAuto,
   title: {
@@ -142,4 +142,4 @@ const strategiesStyle = theme => ({
   }
 });
 
-export default strategiesStyle;
+export default componentsFloatingStyle;

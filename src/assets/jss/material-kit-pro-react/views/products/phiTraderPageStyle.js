@@ -12,11 +12,21 @@ import {
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
+import iconStyle from "assets/jss/material-kit-pro-react/components/iconStyle.js";
 import footerStyle from "assets/jss/material-kit-pro-react/views/componentsSections/footerStyle.js";
 
-const features = {
+const styles = {
+  ...iconStyle,
   ...footerStyle,
   container,
+  fullContainer: {
+    ...container,
+    zIndex: "2",
+    position: "relative",
+    "& h1, & h4, & h6": {
+      color: whiteColor
+    }
+  },
   section: {
     ...section,
     padding: "70px 0px"
@@ -104,7 +114,7 @@ const features = {
     "& $infoArea5": {
       textAlign: "center",
       maxWidth: "310px",
-      minHeight: "320px",
+      minHeight: "420px",
       "& h4,& p,& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
         color: whiteColor
       }
@@ -142,4 +152,4 @@ const features = {
   },
 };
 
-export default features;
+export default styles;

@@ -24,7 +24,7 @@ export default function SectionWallets(props) {
         <GridContainer justify="center">
           <GridItem md={7} sm={7}>
             <div className={classes.imageContainer}>
-              <img src={props.getImage(props.prefs.langId, "wallets_cards")} alt="views" />
+              <img src={props.getImage(props.prefs.langId, "wallets_cards1")} alt="Wallets" />
             </div>
           </GridItem>
           <GridItem md={4} sm={5} className={classes.mlAuto}>

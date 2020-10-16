@@ -5,11 +5,11 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
-import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
-import TrendingUp from "@material-ui/icons/TrendingUp";
 import Business from "@material-ui/icons/Business";
 import ChildFriendly from "@material-ui/icons/ChildFriendly";
 import Fingerprint from "@material-ui/icons/Fingerprint";
+import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
+import TrendingUp from "@material-ui/icons/TrendingUp";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -18,9 +18,9 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import productPageStyle from "assets/jss/material-kit-pro-react/views/productPageStyle.js";
+import strategyPageStyle from "assets/jss/material-kit-pro-react/views/products/strategyPageStyle.js";
 
-const useStyles = makeStyles(productPageStyle);
+const useStyles = makeStyles(strategyPageStyle);
 
 export default function StrategiesPage(props) {
   const compId = "strategiespage"
@@ -57,7 +57,7 @@ export default function StrategiesPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</strong>
+                  <strong>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</strong>,
                   {" "}
                   {props.getString(props.prefs.langId, compId, "desc_p2")}
                   {" "}
@@ -69,6 +69,7 @@ export default function StrategiesPage(props) {
               <GridItem sm={12} md={4}>
                 <InfoArea
                   vertical
+                  className={classes.infoArea}
                   icon={AddCircleOutline}
                   title={props.getString(props.prefs.langId, compId, "sec1_infoarea1_title")}
                   description={props.getString(props.prefs.langId, compId, "sec1_infoarea1_desc")}
@@ -78,6 +79,7 @@ export default function StrategiesPage(props) {
               <GridItem sm={12} md={4}>
                 <InfoArea
                   vertical
+                  className={classes.infoArea}
                   icon={PlayCircleOutline}
                   title={props.getString(props.prefs.langId, compId, "sec1_infoarea2_title")}
                   description={props.getString(props.prefs.langId, compId, "sec1_infoarea2_desc")}
@@ -87,6 +89,7 @@ export default function StrategiesPage(props) {
               <GridItem sm={12} md={4}>
                 <InfoArea
                   vertical
+                  className={classes.infoArea}
                   icon={TrendingUp}
                   title={props.getString(props.prefs.langId, compId, "sec1_infoarea3_title")}
                   description={props.getString(props.prefs.langId, compId, "sec1_infoarea3_desc")}
@@ -99,12 +102,12 @@ export default function StrategiesPage(props) {
         {/* Section 2 */}
         <div className={classes.features3}>
           <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
+            <GridItem xs={12} sm={5}>
               <div className={classes.phoneContainer}>
                 <img src={props.getImage(props.prefs.langId, "strategies_iphone")} alt="..." />
               </div>
             </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
+            <GridItem xs={12} sm={7}>
               <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec2_title")}</h2>
               <InfoArea
                 className={classes.infoArea}

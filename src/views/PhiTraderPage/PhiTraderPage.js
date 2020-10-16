@@ -33,11 +33,11 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import productPageStyle from "assets/jss/material-kit-pro-react/views/productPageStyle.js";
+import phiTraderPageStyle from "assets/jss/material-kit-pro-react/views/products/phiTraderPageStyle.js";
 
 import iphone2 from "assets/img/sections/iphone2.png";
 
-const useStyles = makeStyles(productPageStyle);
+const useStyles = makeStyles(phiTraderPageStyle);
 
 export default function PhiTraderPage(props) {
   const compId = "phitraderpage"

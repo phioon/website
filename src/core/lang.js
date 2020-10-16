@@ -86,24 +86,23 @@ const strings = {
     walletspage: {
       label_title: "Wallets",
 
-      desc_title: "Automated Technical Analysis",
-      desc_p1: "Our goal is to optimize the way you look for opportunities that market offers... So, we developed",
-      desc_p2: "to save your most precious asset:",
+      desc_title: "Everything under control",
+      desc_p1: "We believe it's important to know",
+      desc_p2: "where we are",
+      desc_p3: ", then we can plan",
+      desc_p4: "where we are going to.",
 
-      sec1_infoarea1_title: "Create",
-      sec1_infoarea1_desc: "There is a correlation between the price and its indicators over a given period of time. We call this correlation Strategy.",
-      sec1_infoarea2_title: "Execute",
-      sec1_infoarea2_desc: "It works like a radar. When we find an asset that matches the given technical condition, we add it into a list for you.",
-      sec1_infoarea3_title: "Analyze",
-      sec1_infoarea3_desc: "Done! You have a list of potential opportunities waiting for you. ;)",
+      sec1_infoarea1_title: "Investment Income",
+      sec1_infoarea1_desc: "Designed for stock market, real estate funds and indexes funds.",
+      sec1_infoarea2_title: "Dashboards",
+      sec1_infoarea2_desc: "Charts and metrics designed to assist your behavioral and psychological development.",
+      sec1_infoarea3_title: "Insights",
+      sec1_infoarea3_desc: "Extract the most relevant informations from your wallet.",
 
-      sec2_title: "Simple is better than complex",
-      sec2_infoarea1_title: "Hundreds of Assets",
-      sec2_infoarea1_desc: "Before, it used to take a lot out of you looking for opportunities in 10, 20, 30 assets everyday... Now, you filter hundreds of them in just one click.",
-      sec2_infoarea2_title: "Easy to Use",
-      sec2_infoarea2_desc: "Looking only at the last two periods (candles) of a chart, we can see not only the correlation between price and other indicators, but also its transitions and moviments, such as: when price crosses a moving average.",
-      sec2_infoarea3_title: "Your Way",
-      sec2_infoarea3_desc: "Keep using your methods, your strategies, your setups. Nothing better than your knowledge and experiences aligned to an opportunity. Ease and efficiency when investing.",
+      sec2_infoarea1_title: "Filters and Dimensions",
+      sec2_infoarea1_desc: "The way you invest says a lot about you. Explore your behavior in the financial market from different perspectives that each chart offers.",
+      sec2_infoarea2_title: "Metrics and formats",
+      sec2_infoarea2_desc: "The data is the same... How should they be presented? You decide. ;)",
 
       sec3_title: "How does it work?",
       sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)"
@@ -186,7 +185,7 @@ const strings = {
       label_title: "Estratégias",
 
       desc_title: "Análise Técnica Inteligente",
-      desc_p1: "Nosso objetivo é otimizar a procura pelas oportunidades que o mercado oferece... Então desenvolvemos",
+      desc_p1: "Nosso objetivo é otimizar a procura pelas oportunidades que o mercado oferece... Então, desenvolvemos",
       desc_p2: "para poupar o seu ativo mais precioso: o",
 
       sec1_infoarea1_title: "Crie",
@@ -210,24 +209,23 @@ const strings = {
     walletspage: {
       label_title: "Carteiras",
 
-      desc_title: "Análise Técnica Automatizada",
-      desc_p1: "Nosso objetivo é otimizar a procura pelas oportunidades que o mercado oferece... Então desenvolvemos",
-      desc_p2: "para poupar o seu ativo mais precioso: o",
+      desc_title: "Tudo sob controle",
+      desc_p1: "Acreditamos que é importante saber",
+      desc_p2: "onde estamos",
+      desc_p3: ", para então planejar",
+      desc_p4: "onde queremos chegar.",
 
-      sec1_infoarea1_title: "Crie",
-      sec1_infoarea1_desc: "Existe uma correlação entre o preço e seus indicadores em um determinado espaço de tempo. Chamamos essa correlação de Estratégia.",
-      sec1_infoarea2_title: "Execute",
-      sec1_infoarea2_desc: "Funciona como um radar. E quando identificamos um ativo em certa condição técnica, separamos ele pra você dar uma olhada também.",
-      sec1_infoarea3_title: "Analise",
-      sec1_infoarea3_desc: "Pronto! Você tem uma lista de potenciais oportunidades te esperando. ;)",
+      sec1_infoarea1_title: "Renda Variável",
+      sec1_infoarea1_desc: "Feito para o mercado de ações, fundos imobiliários e fundos de índice.",
+      sec1_infoarea2_title: "Dashboards",
+      sec1_infoarea2_desc: "Gráficos e métricas planejados para auxiliar seu desenvolvimento comportamental e psicológico.",
+      sec1_infoarea3_title: "Insights",
+      sec1_infoarea3_desc: "Extraia as informações mais relevantes da sua carteira.",
 
-      sec2_title: "Simples é melhor que complexo",
-      sec2_infoarea1_title: "Centenas de Ativos",
-      sec2_infoarea1_desc: "Antes, você se desgastava procurando oportunidades em 10, 20, 30 ativos por dia... Agora, você filtra centenas em apenas um clique.",
-      sec2_infoarea2_title: "Fácil de Usar",
-      sec2_infoarea2_desc: "Observando apenas para os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço atravessa uma média móvel.",
-      sec2_infoarea3_title: "Sempre atualizado(a)",
-      sec2_infoarea3_desc: "Trabalhamos sem parar para deixar tudo organizado o quanto antes, para que você receba a informação mais atualizada possível.",
+      sec2_infoarea1_title: "Dimensões e Filtros",
+      sec2_infoarea1_desc: "A forma como investe diz muito sobre você. Explore melhor seu comportamento no mercado financeiro a partir das diferentes perspectivas que cada gráfico oferece.",
+      sec2_infoarea2_title: "Métricas e Formatos",
+      sec2_infoarea2_desc: "Os dados são os mesmos... Como eles devem ser aprensentados? Você decide. ;)",
 
       sec3_title: "Como funciona na prática?",
       sec3_desc: "Preparamos uma playlist para você se familiarizar com o produto. Nem precisa de pipoca, os videos são super objetivos. ;)"
