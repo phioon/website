@@ -14,7 +14,7 @@ import GridItem from "components/Grid/GridItem.js";
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionStrategies from "views/PresentationPage/Sections/SectionStrategies.js";
 import SectionWallets from "views/PresentationPage/Sections/SectionWallets.js";
-import SectionContent from "views/PresentationPage/Sections/SectionContent.js";
+import SectionPhiTrader from "views/PresentationPage/Sections/SectionPhiTrader.js";
 import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
 import SectionExamples from "views/PresentationPage/Sections/SectionExamples.js";
 import SectionFreeDemo from "views/PresentationPage/Sections/SectionFreeDemo.js";
@@ -71,7 +71,7 @@ export default function PresentationPage(props) {
         <SectionDescription {...props} />
         <SectionStrategies {...props} />
         <SectionWallets {...props} />
-        <SectionContent />
+        <SectionPhiTrader {...props} />
         <SectionSections />
         <SectionExamples />
         <SectionFreeDemo />

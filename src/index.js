@@ -26,6 +26,7 @@ import ErrorPage from "views/ErrorPage/ErrorPage.js";
 import PresentationPage from "views/PresentationPage/PresentationPage.js";
 import StrategiesPage from "views/StrategiesPage/StrategiesPage.js";
 import WalletsPage from "views/WalletsPage/WalletsPage.js";
+import PhiTraderPage from "views/PhiTraderPage/PhiTraderPage.js";
 
 import { getString } from "core/lang";
 import { getImage } from "core/images";
@@ -68,6 +69,7 @@ ReactDOM.render(
       <Route path="/error-page" component={ErrorPage} />
       <Route path="/products/strategies" render={() => <StrategiesPage {...initial_props} />} />
       <Route path="/products/wallets" render={() => <WalletsPage {...initial_props} />} />
+      <Route path="/products/phitrader" render={() => <PhiTraderPage {...initial_props} />} />
       <Route path="/" render={() => <PresentationPage {...initial_props} />} />
     </Switch>
     <Footer theme="white" {...initial_props} />

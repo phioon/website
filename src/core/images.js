@@ -6,13 +6,18 @@ import strategies_card2_enus from "assets/img/phioon_app/strategies/card-2_enus.
 import strategies_iphone_enus from "assets/img/phioon_app/strategies/iphone_enus.png";
 import strategies_macbook_enus from "assets/img/phioon_app/strategies/macbook_enus.png";
 import wallets_cards_enus from "assets/img/phioon_app/wallets/wallets_cards_enus.png";
+import phitrader_ipad_enus from "assets/img/phioon_app/phitrader/ipad_enus.png";
+import phitrader_analysis_enus from "assets/img/phioon_app/phitrader/analysis_enus.png";
+import phitrader_conditions_enus from "assets/img/phioon_app/phitrader/conditions_enus.png";
 // ptBR
 import strategies_card1_ptbr from "assets/img/phioon_app/strategies/card-1_ptbr.png";
 import strategies_card2_ptbr from "assets/img/phioon_app/strategies/card-2_ptbr.png";
 import strategies_iphone_ptbr from "assets/img/phioon_app/strategies/iphone_ptbr.png";
 import strategies_macbook_ptbr from "assets/img/phioon_app/strategies/macbook_ptbr.png";
 import wallets_cards_ptbr from "assets/img/phioon_app/wallets/wallets_cards_ptbr.png";
-
+import phitrader_ipad_ptbr from "assets/img/phioon_app/phitrader/ipad_ptbr.png";
+import phitrader_analysis_ptbr from "assets/img/phioon_app/phitrader/analysis_ptbr.png";
+import phitrader_conditions_ptbr from "assets/img/phioon_app/phitrader/conditions_ptbr.png";
 
 export function getImage(langId, strId) {
   if (langId in images && strId in images[langId])
@@ -34,6 +39,10 @@ const images = {
     strategies_macbook: strategies_macbook_enus,
 
     wallets_cards: wallets_cards_enus,
+
+    phitrader_ipad: phitrader_ipad_enus,
+    phitrader_analysis: phitrader_analysis_enus,
+    phitrader_conditions: phitrader_conditions_enus,
   },
   ptBR: {
     strategies_actions: strategies_actions,
@@ -43,5 +52,9 @@ const images = {
     strategies_macbook: strategies_macbook_ptbr,
 
     wallets_cards: wallets_cards_ptbr,
+
+    phitrader_ipad: phitrader_ipad_ptbr,
+    phitrader_analysis: phitrader_analysis_ptbr,
+    phitrader_conditions: phitrader_conditions_ptbr,
   }
 }

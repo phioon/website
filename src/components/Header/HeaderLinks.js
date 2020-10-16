@@ -78,7 +78,7 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
+        <Link to="/products/phitrader" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_phiTrader")}
         </Link>
       </ListItem>
