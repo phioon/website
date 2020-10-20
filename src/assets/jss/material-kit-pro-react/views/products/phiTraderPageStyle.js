@@ -130,6 +130,20 @@ const styles = {
       width: "100%"
     }
   },
+  imageContainer: {
+    maxWidth: "1000",
+    position: "relative",
+    height: "550px",
+    marginTop: "58px",
+
+    "& img": {
+        maxWidth: "1000px",
+        left: "100px",
+        top: "0",
+        height: "100%",
+        position: "absolute",
+    }
+  },
   infoArea: {
     maxWidth: "none",
     margin: "0 auto",

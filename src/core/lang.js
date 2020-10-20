@@ -129,8 +129,16 @@ const strings = {
       sec2_infoarea3_title: "Your Way",
       sec2_infoarea3_desc: "Keep using your methods, your strategies, your setups. Nothing better than your knowledge and experiences aligned to an opportunity. Ease and efficiency when investing.",
 
-      sec3_title: "How does it work?",
-      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)"
+      sec3_infoarea1_title: "Technical Condition",
+      sec3_infoarea1_desc:  "More experience and information for your decision making",
+      sec3_infoarea2_title: "Success Rate",
+      sec3_infoarea2_desc: "Setup's success rate for this Asset in the las four years",
+      sec3_infoarea3_title: "Estimated Time",
+      sec3_infoarea3_desc: "Base on its history, that's an estimative of how long it may take to reach the target",
+      sec3_infoarea4_title: "Occurrencies",
+      sec3_infoarea4_desc: "Amount of times this Technical Condition occurred for this asset in the last four years",
+      sec3_infoarea5_title: "Last Occurrence",
+      sec3_infoarea5_desc: "Last time this Technical Condition occurred for this asset",
     }
   },
   ptBR: {
@@ -254,9 +262,18 @@ const strings = {
       sec2_infoarea4_desc: "Estimativa de onde o preço pode alcançar. Em sua maoria é utilizado a sequência de Fibonacci.",
       sec2_infoarea5_title: "Risco / Retorno",
       sec2_infoarea5_desc: "Ganho potencial dividido pela possível perda. Quanto maior este número melhor",
+
+      sec3_infoarea1_title: "Condição Técnica",
+      sec3_infoarea1_desc:  "Mais experiência e informação para sua tomada de decisão ",
+      sec3_infoarea2_title: "Taxa de Sucesso",
+      sec3_infoarea2_desc: "Porcentagem de sucesso desse Setup para este ativo nos últimos anos.",
+      sec3_infoarea3_title: "Prazo Estimado",
+      sec3_infoarea3_desc: "Previsão estimada para que o papel alcance o alvo com base histórica.",
+      sec3_infoarea4_title: "Ocorrências",
+      sec3_infoarea4_desc: "Quantidade de vezes que está condição técnica ocorreu para esse ativo nos últimos anos.",
+      sec3_infoarea5_title: "Última Ocorrência",
+      sec3_infoarea5_desc: "Última vez que está condição ocorreu para este Ativo.",
       
-      sec3_title: "Como funciona na prática?",
-      sec3_desc: "Preparamos uma playlist para você se familiarizar com o produto. Nem precisa de pipoca, os videos são super objetivos. ;)"
     }
   }
 }
