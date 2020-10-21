@@ -75,14 +75,15 @@ const strings = {
     keywords: {
       label_strategies: "Strategies",
       label_time: "time",
-      label_opportunities: "opportunities",
     },
     phitraderpage: {
-      label_title: "Wallets",
+      label_title: "Phi Trader",
 
-      desc_title: "Automated Technical Analysis",
-      desc_p1: "Our goal is to optimize the way you look for opportunities that market offers... So, we developed",
-      desc_p2: "to save your most precious asset:",
+      desc_title: "Technical Analysis with AI",
+      desc_p1: "Nothing like technology working to our advantage...",
+      desc_p2: "Phi",
+      desc_p3: "is one more tool that we developed to assist your",
+      desc_p4: "dicision making",
 
       sec1_infoarea1_title: "Create",
       sec1_infoarea1_desc: "There is a correlation between the price and its indicators over a given period of time. We call this correlation Strategy.",
@@ -178,8 +179,8 @@ const strings = {
     },
     sectionphitrader: {
       label_title: "Phi Trader",
-      label_desc: "Our Artificial Intelligence in constant learning.",
-      btn_details: "See more about our product"
+      label_desc: "The Artificial Intelligence that operates with you.",
+      btn_details: "Learn more"
     },
     sectionstrategies: {
       label_title: "Strategies",
@@ -305,9 +306,11 @@ const strings = {
     phitraderpage: {
       label_title: "Phi Trader",
 
-      desc_title: "Nossa Inteligência Artificial em constante aprendizado",
-      desc_p1: "Diariamente, procura por ",
-      desc_p2: "nos mais de 400 ativos da bolsa de valores brasileira.",
+      desc_title: "Análise Técnica com IA",
+      desc_p1: "Nada como a tecnologia trabalhando ao nosso favor... O",
+      desc_p2: "Phi",
+      desc_p3: "é mais uma ferramenta que desenvolvemos para auxiliar a sua",
+      desc_p4: "tomada de decisão",
 
       sec1_infoarea1_title: "Phi",
       sec1_infoarea1_desc: "Sou o Phi, a Inteligência Artificial por trás das estratégias de mercado do PHIOON.",
@@ -405,8 +408,8 @@ const strings = {
     },
     sectionphitrader: {
       label_title: "Phi Trader",
-      label_desc: "Nossa Inteligência Artificial em constante aprendizado.",
-      btn_details: "Conheça nosso produto"
+      label_desc: "A Inteligência Artificial que opera com você.",
+      btn_details: "Saiba como funciona"
     },
     sectionstrategies: {
       label_title: "Estratégias",

@@ -9,9 +9,9 @@ import strategies_card2_enus from "assets/img/phioon_app/strategies/card-2_enus.
 import strategies_iphone_enus from "assets/img/phioon_app/strategies/iphone_enus.png";
 import strategies_macbook_enus from "assets/img/phioon_app/strategies/macbook_enus.png";
 import phitrader_ipad_enus from "assets/img/phioon_app/phitrader/ipad_enus.png";
-import phitrader_analysis_enus from "assets/img/phioon_app/phitrader/analysis_enus.png";
-import phitrader_conditions_enus from "assets/img/phioon_app/phitrader/conditions_enus.png";
-import phitrader_summary_enus from "assets/img/phioon_app/phitrader/iphone_enus.png";
+import phitrader_analysis_enus from "assets/img/phioon_app/phitrader/summary_enus.png";
+import phitrader_technicalConditions_enus from "assets/img/phioon_app/phitrader/conditions_enus.png";
+import phitrader_summary_iphone_enus from "assets/img/phioon_app/phitrader/summary_iphone_enus.png";
 import phitrader_technical_enus from "assets/img/phioon_app/phitrader/ipad3_enus.png";
 
 // ptBR
@@ -23,9 +23,9 @@ import strategies_card2_ptbr from "assets/img/phioon_app/strategies/card-2_ptbr.
 import strategies_iphone_ptbr from "assets/img/phioon_app/strategies/iphone_ptbr.png";
 import strategies_macbook_ptbr from "assets/img/phioon_app/strategies/macbook_ptbr.png";
 import phitrader_ipad_ptbr from "assets/img/phioon_app/phitrader/ipad_ptbr.png";
-import phitrader_analysis_ptbr from "assets/img/phioon_app/phitrader/analysis_ptbr.png";
-import phitrader_conditions_ptbr from "assets/img/phioon_app/phitrader/conditions_ptbr.png";
-import phitrader_summary_ptbr from "assets/img/phioon_app/phitrader/iphone_ptbr.png";
+import phitrader_summary_ptbr from "assets/img/phioon_app/phitrader/summary_ptbr.png";
+import phitrader_technicalConditions_ptbr from "assets/img/phioon_app/phitrader/technicalCondition_ptbr.png";
+import phitrader_summary_iphone_ptbr from "assets/img/phioon_app/phitrader/summary_iphone_ptbr.png";
 import phitrader_technical_ptbr from "assets/img/phioon_app/phitrader/ipad3_ptbr.png";
 
 
@@ -53,9 +53,9 @@ const images = {
     strategies_macbook: strategies_macbook_enus,
 
     phitrader_ipad: phitrader_ipad_enus,
-    phitrader_analysis: phitrader_analysis_enus,
-    phitrader_conditions: phitrader_conditions_enus,
-    phitrader_summary: phitrader_summary_enus,
+    phitrader_summary: phitrader_analysis_enus,
+    phitrader_technicalConditions: phitrader_technicalConditions_enus,
+    phitrader_summary_iphone: phitrader_summary_iphone_enus,
     phitrader_technical: phitrader_technical_enus,
 
   },
@@ -71,9 +71,9 @@ const images = {
     strategies_macbook: strategies_macbook_ptbr,
 
     phitrader_ipad: phitrader_ipad_ptbr,
-    phitrader_analysis: phitrader_analysis_ptbr,
-    phitrader_conditions: phitrader_conditions_ptbr,
     phitrader_summary: phitrader_summary_ptbr,
+    phitrader_technicalConditions: phitrader_technicalConditions_ptbr,
+    phitrader_summary_iphone: phitrader_summary_iphone_ptbr,
     phitrader_technical: phitrader_technical_ptbr,
   }
 }

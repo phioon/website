@@ -149,7 +149,7 @@ export default function StrategiesPage(props) {
               <div className={classes.iframeContainer}>
                 <iframe
                   height="250"
-                  src="https://www.youtube.com/embed/IN6QnLpVEPI?ref=creativetim"
+                  src="https://www.youtube.com/embed/videoseries?list=PL07A92TyrGLl0lLBzMChQIPOZN8u-f-hv"
                   frameBorder="0"
                   allow="encrypted-media"
                   allowFullScreen

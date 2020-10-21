@@ -65,9 +65,11 @@ export default function PhiTraderPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, "keywords", "label_opportunities")}</strong>
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p2")}</b>
                   {" "}
-                  {props.getString(props.prefs.langId, compId, "desc_p2")}
+                  {props.getString(props.prefs.langId, compId, "desc_p3")}
+                  {" "}
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p4")}</b>.
                 </h5>
               </GridItem>
             </GridContainer>
@@ -138,7 +140,7 @@ export default function PhiTraderPage(props) {
               <div className={classes.phoneContainer}>
                 <img
                   src={props.getImage(props.prefs.langId, "phitrader_summary")}
-                  alt="PhiTrader"
+                  alt="Phi Trader"
                 />
               </div>
             </GridItem>

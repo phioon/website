@@ -9,7 +9,7 @@ import {
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
-const contentStyle = theme => ({
+const style = theme => ({
   container,
   section: {
     ...section,
@@ -39,12 +39,12 @@ const contentStyle = theme => ({
     width: "100%"
   },
   mlAuto,
-  areaImg: {
-    height: "300px",
-    width: "250px",
+  img1: {
+    width: "323px",
+    height: "294px",
     zIndex: 2,
-    top: "10%",
-    left: "60%",
+    top: "-4%",
+    left: "57%",
     boxShadow:
       "0 8px 10px 1px rgba(" +
       hexToRgb(blackColor) +
@@ -54,13 +54,13 @@ const contentStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.2)",
     [theme.breakpoints.down("sm")]: {
-      maxWidth: "130px",
-      maxHeight: "170px"
+      maxWidth: "162px",
+      maxHeight: "147px"
     }
   },
-  infoImg: {
-    height: "200px",
-    width: "300px",
+  img2: {
+    width: "323px",
+    height: "352px",
     top: "50%",
     left: "0%",
     boxShadow:
@@ -72,20 +72,20 @@ const contentStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.2)",
     [theme.breakpoints.down("sm")]: {
-      maxWidth: "170px",
-      maxHeight: "120px"
+      maxWidth: "162px",
+      maxHeight: "176px"
     }
   },
-  animeInfoImg: {
-    top: "50%",
-    left: "0%",
+  animeImg1: {
+    top: "-4%",
+    left: "57%",
     position: "absolute"
   },
-  animeAreaImg: {
-    top: "10%",
-    left: "60%",
+  animeImg2: {
+    top: "50%",
+    left: "-3%",
     position: "absolute"
-  }
+  },
 });
 
-export default contentStyle;
+export default style;
