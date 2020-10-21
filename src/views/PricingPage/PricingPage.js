@@ -40,7 +40,9 @@ export default function PricingPage(props) {
         }}
       />
 
-      <Parallax image={props.project.img.bg.app_clean.src} filter="dark" small>
+      <Parallax small
+        // image={props.project.img.bg.app_clean.src}
+        filter="success" >
         <div className={classes.container}>
           <GridContainer>
             <GridItem

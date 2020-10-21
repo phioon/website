@@ -15,7 +15,7 @@ const pricingStyle = {
   mlAuto,
   container: {
     ...container,
-    zIndex: 1
+    zIndex: 2
   },
   title: {
     ...title,
