@@ -5,20 +5,18 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
 // @material-ui icons
-import Apps from "@material-ui/icons/Apps";
-import ViewDay from "@material-ui/icons/ViewDay";
-import ViewCarousel from "@material-ui/icons/ViewCarousel";
+import Schedule from "@material-ui/icons/Schedule";
+import TouchApp from "@material-ui/icons/TouchApp";
+import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 import descriptionStyle from "assets/jss/material-kit-pro-react/views/presentationSections/descriptionStyle.js";
-import { sectionDescription } from "assets/jss/material-kit-pro-react";
-import { getString } from "core/lang";
 
 const useStyles = makeStyles(descriptionStyle);
 
 export default function SectionDescription(props) {
-  const compId = "sectiondescription"
+  const compId = "presentationdescription"
 
   const classes = useStyles();
   return (
@@ -37,28 +35,28 @@ export default function SectionDescription(props) {
           <GridContainer>
             <GridItem md={4} sm={4}>
               <InfoArea
-                title="Huge Number of Components"
-                description="Every element that you need in a product comes built in as a component. All components fit perfectly with each other and can take variations in colour."
-                icon={Apps}
+                title={props.getString(props.prefs.langId, compId, "label_infoarea1_title")}
+                description={props.getString(props.prefs.langId, compId, "label_infoarea1_desc")}
+                icon={TouchApp}
                 iconColor="danger"
                 vertical={true}
               />
             </GridItem>
             <GridItem md={4} sm={4}>
               <InfoArea
-                title="Multi-Purpose Sections"
-                description="Putting together a page has never been easier than matching together sections. From team presentation to pricing options, you can easily customise and built your pages."
-                icon={ViewDay}
-                iconColor="primary"
+                title={props.getString(props.prefs.langId, compId, "label_infoarea2_title")}
+                description={props.getString(props.prefs.langId, compId, "label_infoarea2_desc")}
+                icon={Schedule}
+                iconColor="success"
                 vertical={true}
               />
             </GridItem>
             <GridItem md={4} sm={4}>
               <InfoArea
-                title="Example Pages"
-                description="If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages."
-                icon={ViewCarousel}
-                iconColor="success"
+                title={props.getString(props.prefs.langId, compId, "label_infoarea3_title")}
+                description={props.getString(props.prefs.langId, compId, "label_infoarea3_desc")}
+                icon={PlayCircleOutline}
+                iconColor="info"
                 vertical={true}
               />
             </GridItem>

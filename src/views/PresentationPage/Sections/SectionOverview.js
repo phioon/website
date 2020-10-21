@@ -17,10 +17,6 @@ import AttachMoney from "@material-ui/icons/AttachMoney";
 import { makeStyles } from "@material-ui/core/styles";
 
 // images
-import Vodafone from "assets/img/assets-for-demo/ourClients/vodafone.jpg";
-import Microsoft from "assets/img/assets-for-demo/ourClients/microsoft.jpg";
-import Harvard from "assets/img/assets-for-demo/ourClients/harvard.jpg";
-import Standford from "assets/img/assets-for-demo/ourClients/stanford.jpg";
 import profilePic1 from "assets/img/assets-for-demo/test1.jpg";
 import profilePic2 from "assets/img/assets-for-demo/test2.jpg";
 import profilePic3 from "assets/img/assets-for-demo/test3.jpg";
@@ -29,15 +25,15 @@ import overviewStyle from "assets/jss/material-kit-pro-react/views/presentationS
 
 const useStyles = makeStyles(overviewStyle);
 
-export default function SectionOverview() {
+export default function SectionOverview(props) {
+  const compId = "sectionoverview"
+
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <div
-        className={classes.features5}
-        style={{
-          backgroundImage: `url(${require("assets/img/assets-for-demo/features-5.jpg")})`
-        }}
+      <div className={classes.features5} style={{
+        backgroundImage: `url(${require("assets/img/assets-for-demo/features-5.jpg")})`
+      }}
       >
         <GridItem md={8} className={classNames(classes.mlAuto, classes.mrAuto)}>
           <h2 className={classes.title}>Your work will get much easier</h2>
@@ -236,22 +232,6 @@ export default function SectionOverview() {
               </Card>
             </GridItem>
           </GridContainer>
-          <div className={classes.ourClients}>
-            <GridContainer justify="center">
-              <GridItem md={3} sm={3}>
-                <img src={Vodafone} alt="vodafone" />
-              </GridItem>
-              <GridItem md={3} sm={3}>
-                <img src={Microsoft} alt="microsoft" />
-              </GridItem>
-              <GridItem md={3} sm={3}>
-                <img src={Harvard} alt="harvard" />
-              </GridItem>
-              <GridItem md={3} sm={3}>
-                <img src={Standford} alt="stanford" />
-              </GridItem>
-            </GridContainer>
-          </div>
         </div>
       </div>
     </div>

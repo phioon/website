@@ -7,9 +7,9 @@ import GridItem from "components/Grid/GridItem.js";
 import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Button from "components/CustomButtons/Button.js";
-import componentsFloatingStyle from "assets/jss/material-kit-pro-react/views/presentationSections/componentsFloatingStyle.js";
+import strategiesStyle from "assets/jss/material-kit-pro-react/views/presentationSections/strategiesStyle.js";
 
-const useStyles = makeStyles(componentsFloatingStyle);
+const useStyles = makeStyles(strategiesStyle);
 
 export default function SectionStrategies(props) {
   const compId = "sectionstrategies"

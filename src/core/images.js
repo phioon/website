@@ -3,6 +3,7 @@ import strategies_actions from "assets/img/phioon_app/strategies/actions.png";
 // enUS
 import wallets_cards1_enus from "assets/img/phioon_app/wallets/cards1_enus.png";
 import wallets_cards2_enus from "assets/img/phioon_app/wallets/cards2_enus.png";
+import wallets_cards3_enus from "assets/img/phioon_app/wallets/cards3_enus.png";
 import strategies_card1_enus from "assets/img/phioon_app/strategies/card-1_enus.png";
 import strategies_card2_enus from "assets/img/phioon_app/strategies/card-2_enus.png";
 import strategies_iphone_enus from "assets/img/phioon_app/strategies/iphone_enus.png";
@@ -43,6 +44,7 @@ const images = {
   enUS: {
     wallets_cards1: wallets_cards1_enus,
     wallets_cards2: wallets_cards2_enus,
+    wallets_cards3: wallets_cards3_enus,
 
     strategies_actions: strategies_actions,
     strategies_card1: strategies_card1_enus,

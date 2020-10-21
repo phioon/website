@@ -11,7 +11,7 @@ import {
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
-const pricingStyle = {
+const styles = {
   container,
   mlAuto,
   mrAuto,
@@ -94,4 +94,4 @@ const pricingStyle = {
   }
 };
 
-export default pricingStyle;
+export default styles;

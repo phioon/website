@@ -55,14 +55,14 @@ const hexToRgb = input => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#062229",
-  "#062229",
-  "#062229",
-  "#062229",
-  "#062229",
-  "#062229"
+  "#253941",
+  "#3a5966",
+  "#3a5966",
+  "#3a5966",
+  "#dee8ed",
+  "#253941"
 ];
-const secondaryColor = ["#fafafa"];
+const secondaryColor = ["#07242b"];
 const warningColor = [
   "#ff9800",
   "#ffa726",
@@ -391,7 +391,7 @@ const sectionDark = {
     "radial-gradient(ellipse at center," +
     grayColor[4] +
     " 0," +
-    grayColor[5] +
+    primaryColor[5] +
     " 100%)"
 };
 

@@ -11,7 +11,9 @@ import descriptionStyle from "assets/jss/material-kit-pro-react/views/aboutUsSec
 
 const useStyles = makeStyles(descriptionStyle);
 
-export default function SectionDescription() {
+export default function SectionDescription(props) {
+  const compId = "aboutusdescription"
+
   const classes = useStyles();
   return (
     <div className={classNames(classes.aboutDescription, classes.textCenter)}>
@@ -22,11 +24,7 @@ export default function SectionDescription() {
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            {props.getString(props.prefs.langId, compId, "label_desc")}
           </h5>
         </GridItem>
       </GridContainer>

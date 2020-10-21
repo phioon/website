@@ -6,15 +6,12 @@ import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Business from "@material-ui/icons/Business";
 import Dashboard from "@material-ui/icons/Dashboard";
 import ShowChart from "@material-ui/icons/ShowChart";
 import TableChart from "@material-ui/icons/TableChart";
 import Extension from "@material-ui/icons/Extension";
-import WatchLater from "@material-ui/icons/WatchLater";
 import WbIncandescentOutlined from "@material-ui/icons/WbIncandescentOutlined";
 // core components
-import Button from "components/CustomButtons/Button.js";
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -23,14 +20,6 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import walletsPageStyle from "assets/jss/material-kit-pro-react/views/products/walletsPageStyle.js";
-
-import presentationiPad from "assets/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg";
-
-import dg1 from "assets/img/dg1.jpg";
-import dg2 from "assets/img/dg2.jpg";
-import dg3 from "assets/img/dg3.jpg";
-
-import bg9 from "assets/img/bg9.jpg";
 
 const useStyles = makeStyles(walletsPageStyle);
 
@@ -54,8 +43,9 @@ export default function WalletsPage(props) {
   return (
     <div>
       <Header
-        brand={props.project.info.name}
-        links={<HeaderLinks {...props} dropdownHoverColor="info" />}
+        brandIconId="original"
+        brandLogoId="white"
+        links={<HeaderLinks {...props} dropdownHoverColor="primary" />}
         fixed
         color="white"
         changeColorOnScroll={{
@@ -69,7 +59,6 @@ export default function WalletsPage(props) {
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
       <div className={classes.container}>
-        {/* Section 1: raised container */}
         <div className={classNames(classes.main, classes.mainRaised)}>
           {/* Description */}
           <div className={classes.features1}>
@@ -79,10 +68,10 @@ export default function WalletsPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, compId, "desc_p2")}</strong>
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p2")}</b>
                   {props.getString(props.prefs.langId, compId, "desc_p3")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, compId, "desc_p4")}</strong>
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p4")}</b>
                 </h5>
               </GridItem>
             </GridContainer>
@@ -178,31 +167,31 @@ export default function WalletsPage(props) {
         </Carousel>
       </div>
       {/* Section 3 */}
-      <div className={classes.features4}>
-        <GridContainer>
-          <GridItem xs={12} sm={6} md={6}
-            className={
-              classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-            }
-          >
-            <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
-            <h5 className={classes.description}>
-              {props.getString(props.prefs.langId, compId, "sec3_desc")}
-            </h5>
-          </GridItem>
-          <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
-            <div className={classes.iframeContainer}>
-              <iframe
-                height="250"
-                src="https://www.youtube.com/embed/IN6QnLpVEPI?ref=creativetim"
-                frameBorder="0"
-                allow="encrypted-media"
-                allowFullScreen
-                title="Strategies"
-              />
-            </div>
-          </GridItem>
-        </GridContainer>
+      <div className={classes.container}>
+        <div className={classes.features4}>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}
+              className={classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter}
+            >
+              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
+              <h5 className={classes.description}>
+                {props.getString(props.prefs.langId, compId, "sec3_desc")}
+              </h5>
+            </GridItem>
+            <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
+              <div className={classes.iframeContainer}>
+                <iframe
+                  height="250"
+                  src="https://www.youtube.com/embed/IN6QnLpVEPI?ref=creativetim"
+                  frameBorder="0"
+                  allow="encrypted-media"
+                  allowFullScreen
+                  title="Strategies"
+                />
+              </div>
+            </GridItem>
+          </GridContainer>
+        </div>
       </div>
     </div>
   );

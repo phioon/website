@@ -7,9 +7,12 @@ import {
   hexToRgb
 } from "assets/jss/material-kit-pro-react.js";
 
+import popoverStyles from "assets/jss/material-kit-pro-react/popoverStyles.js";
+
 const pricingStyle = {
   mrAuto,
   mlAuto,
+  ...popoverStyles,
   cardTitle,
   cardTitleWhite: {
     ...cardTitle,

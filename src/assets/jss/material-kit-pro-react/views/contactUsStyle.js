@@ -4,7 +4,8 @@ import {
   main,
   mainRaised,
   mlAuto,
-  description
+  description,
+  whiteColor
 } from "assets/jss/material-kit-pro-react.js";
 
 const contactUsStyle = {
@@ -13,6 +14,17 @@ const contactUsStyle = {
   title,
   mlAuto,
   description,
+  pageHeader: {
+    minHeight: "60vh",
+    maxHeight: "600px",
+    height: "auto",
+    backgroundPosition: "top center",
+    "& $title": {
+      paddingLeft: "60px",
+      zIndex: "2",
+      color: whiteColor
+    },
+  },
   container: {
     ...container,
     maxWidth: "970px !important"

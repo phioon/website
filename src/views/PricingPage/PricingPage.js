@@ -4,26 +4,23 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Footer from "components/Footer/Footer.js";
 // sections for this page
-import SectionPricing from "views/PricingPage/Sections/SectionPricing.js";
-import SectionFeatures from "views/PricingPage/Sections/SectionFeatures.js";
+import SectionSubscriptions from "views/PricingPage/Sections/SectionSubscriptions.js";
+import SectionFAQ from "views/PricingPage/Sections/SectionFAQ.js";
 
 import pricingStyle from "assets/jss/material-kit-pro-react/views/pricingStyle.js";
 
 const useStyles = makeStyles(pricingStyle);
 
-export default function PricingPage() {
+export default function PricingPage(props) {
+  const compId = "pricingpage"
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -32,17 +29,18 @@ export default function PricingPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brandIconId="original"
+        brandLogoId="white"
+        links={<HeaderLinks {...props} dropdownHoverColor="info" />}
         fixed
-        color="transparent"
+        color="white"
         changeColorOnScroll={{
-          height: 300,
-          color: "info"
+          height: 280,
+          color: "primary"
         }}
       />
 
-      <Parallax image={require("assets/img/bg2.jpg")} filter="dark" small>
+      <Parallax image={props.project.img.bg.app_clean.src} filter="dark" small>
         <div className={classes.container}>
           <GridContainer>
             <GridItem
@@ -54,11 +52,9 @@ export default function PricingPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Let{"'"}s get started</h1>
+              <h1 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h1>
               <h4>
-                To get started, you will need to choose a plan for your needs.
-                You can opt in for the monthly of annual options and go with one
-                fo the three listed below.
+                {props.getString(props.prefs.langId, compId, "label_desc")}
               </h4>
             </GridItem>
           </GridContainer>
@@ -66,64 +62,12 @@ export default function PricingPage() {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionPricing />
+          <SectionSubscriptions {...props} />
           <hr />
-          <SectionFeatures />
+          <SectionFAQ {...props} />
         </div>
       </div>
-      <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-pricing"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
-          </div>
-        }
-      />
+      <br />
     </div>
   );
 }

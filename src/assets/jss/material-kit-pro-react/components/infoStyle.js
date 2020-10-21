@@ -17,8 +17,7 @@ const infoStyle = {
   },
   iconWrapper: {
     float: "left",
-    marginTop: "24px",
-    marginRight: "10px"
+    margin: "24px 10px 0px 10px"
   },
   primary: {
     color: primaryColor[0]
@@ -58,7 +57,7 @@ const infoStyle = {
   description: {
     color: grayColor[0],
     overflow: "hidden",
-    marginTop: "0px",
+    margin: "0px 5px",
     "& p": {
       color: grayColor[0],
       fontSize: "14px"

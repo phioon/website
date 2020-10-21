@@ -6,6 +6,9 @@ export const project = {
   info: {
     name: "PHIOON",
     website: "https://phioon.com",
+
+    webapp: "https://app.phioon.com",
+    webapp_signUp: "https://app.phioon.com/auth/register/",
   },
   img: {
     branding: {
@@ -50,6 +53,12 @@ export const project = {
           heigth: 1470,
           src: "https://storage.googleapis.com/phioon-static/assets/img/branding/icon/icon_original.png"
         },
+        green: {
+          alt: "P H I O O N",
+          width: 1470,
+          heigth: 1470,
+          src: "https://storage.googleapis.com/phioon-static/assets/img/branding/icon/icon_green.png"
+        },
         black: {
           alt: "P H I O O N",
           width: 1470,
@@ -81,20 +90,24 @@ export const project = {
   },
   social: {
     facebook: {
-      label: "P H I O O N",
-      href: "https://www.facebook.com/phioon"
+      label: "PHIOON",
+      href: "https://www.facebook.com/phioon/"
     },
     instagram: {
       label: "@phioon_app",
       href: "https://www.instagram.com/phioon_app/"
     },
+    linkedin: {
+      label: "PHIOON",
+      href: "https://www.linkedin.com/company/phioon/"
+    },
     twitter: {
       label: "@phioon_app",
-      href: "https://twitter.com/phioon_app"
+      href: "https://twitter.com/phioon_app/"
     },
     youtube: {
-      label: "phioon",
-      href: "https://www.youtube.com/channel/UCwqBySgPRbirNwtjyRdprvA"
+      label: "PHIOON",
+      href: "https://www.youtube.com/channel/UCwqBySgPRbirNwtjyRdprvA/"
     }
   }
 }

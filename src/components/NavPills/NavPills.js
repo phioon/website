@@ -20,8 +20,12 @@ const useStyles = makeStyles(styles);
 
 export default function NavPills(props) {
   const [active, setActive] = React.useState(props.active);
+
   const handleChange = (event, active) => {
     setActive(active);
+
+    if (props.onChange)
+      props.onChange(active);
   };
   const handleChangeIndex = index => {
     setActive(index);
@@ -92,11 +96,11 @@ export default function NavPills(props) {
       <GridItem {...horizontal.contentGrid}>{tabContent}</GridItem>
     </GridContainer>
   ) : (
-    <div>
-      {tabButtons}
-      {tabContent}
-    </div>
-  );
+      <div>
+        {tabButtons}
+        {tabContent}
+      </div>
+    );
 }
 
 NavPills.defaultProps = {

@@ -19,7 +19,7 @@ const reusableStylesForImgs = {
     ", 0.2)"
 };
 
-const componentsFloatingStyle = theme => ({
+const strategiesStyle = theme => ({
   container,
   mlAuto,
   title: {
@@ -70,17 +70,13 @@ const componentsFloatingStyle = theme => ({
     float: "left"
   },
   cardStrategy1: {
-    [theme.breakpoints.down("md")]: {
-      top: "-10%",
-      left: "18%",
-    },
     [theme.breakpoints.down("sm")]: {
       top: "5%",
       left: "-10%",
     },
     ...reusableStylesForImgs,
-    top: "-14%",
-    left: "3%",
+    top: "-2%",
+    left: "6%",
     height: "125px",
     borderRadius: "3px",
     WebkitAnimation: "Floatingy 11s ease-in-out infinite"
@@ -128,13 +124,13 @@ const componentsFloatingStyle = theme => ({
   },
   actionsImage: {
     [theme.breakpoints.down("md")]: {
-      top: "56%"
+      top: "64%"
     },
     [theme.breakpoints.down("sm")]: {
       top: "52%"
     },
     ...reusableStylesForImgs,
-    top: "56%",
+    top: "64%",
     left: "0%",
     height: "25px",
     borderRadius: "3px",
@@ -142,4 +138,4 @@ const componentsFloatingStyle = theme => ({
   }
 });
 
-export default componentsFloatingStyle;
+export default strategiesStyle;

@@ -27,6 +27,7 @@ export default function Header(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [showBrandIcon, setShowBrandIcon] = React.useState(true)
 
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -70,22 +71,24 @@ export default function Header(props) {
           <Link to="/">
             {showBrandIcon ?
               <img
-                alt={project.img.branding.icon.original.alt}
-                width={project.img.branding.icon.original.width * 0.025}
-                height={project.img.branding.icon.original.heigth * 0.025}
-                src={project.img.branding.icon.original.src}
+                alt={project.img.branding.icon[props.brandIconId].alt}
+                width={project.img.branding.icon[props.brandIconId].width * 0.025}
+                height={project.img.branding.icon[props.brandIconId].heigth * 0.025}
+                src={project.img.branding.icon[props.brandIconId].src}
               /> :
               <img
-                alt={project.img.branding.logo.white.alt}
-                width={project.img.branding.logo.white.width * 0.06}
-                height={project.img.branding.logo.white.heigth * 0.06}
-                src={project.img.branding.logo.white.src}
+                alt={project.img.branding.logo[props.brandLogoId].alt}
+                width={project.img.branding.logo[props.brandLogoId].width * 0.06}
+                height={project.img.branding.logo[props.brandLogoId].heigth * 0.06}
+                src={project.img.branding.logo[props.brandLogoId].src}
               />
             }
           </Link>
         </Button>
         <Hidden smDown implementation="css" className={classes.hidden}>
-          <div className={classes.collapse}>{links}</div>
+          <div className={classes.collapse}>
+            {links}
+          </div>
         </Hidden>
         <Hidden mdUp>
           <IconButton

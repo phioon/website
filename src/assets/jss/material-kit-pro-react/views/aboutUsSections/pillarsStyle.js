@@ -5,12 +5,12 @@ import {
   mlAuto
 } from "assets/jss/material-kit-pro-react.js";
 
-const servicesStyle = {
+const style = {
   title,
   mrAuto,
   mlAuto,
-  services: {
-    paddingTop: "10px",
+  pillars: {
+    paddingTop: "50px",
     paddingBottom: "80px"
   },
   textCenter: {
@@ -19,4 +19,4 @@ const servicesStyle = {
   description
 };
 
-export default servicesStyle;
+export default style;

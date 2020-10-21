@@ -52,7 +52,7 @@ export default function PhiTraderPage(props) {
       />
       <Parallax
         className={classes.pageHeader}
-        filter={"primary"}>
+        filter={"secondary"}>
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
       <div className={classes.container}>
@@ -136,9 +136,9 @@ export default function PhiTraderPage(props) {
             </GridItem>
             <GridItem xs={12} sm={12} md={12} lg={4}>
               <div className={classes.phoneContainer}>
-                <img 
-                  src={props.getImage(props.prefs.langId, "phitrader_summary")} 
-                  alt="PhiTrader" 
+                <img
+                  src={props.getImage(props.prefs.langId, "phitrader_summary")}
+                  alt="PhiTrader"
                 />
               </div>
             </GridItem>
@@ -161,7 +161,7 @@ export default function PhiTraderPage(props) {
         {/* Summary END */}
         {/* Technical Condition */}
         <div className={classes.features3}>
-        <GridContainer>
+          <GridContainer>
             <GridItem
               xs={12}
               sm={8}
@@ -207,9 +207,9 @@ export default function PhiTraderPage(props) {
             </GridItem>
             <GridItem xs={12} sm={12} md={12} lg={4}>
               <div className={classes.imageContainer}>
-                <img 
-                  src = {props.getImage(props.prefs.langId, "phitrader_technical")} 
-                  alt="PhiTrader" 
+                <img
+                  src={props.getImage(props.prefs.langId, "phitrader_technical")}
+                  alt="PhiTrader"
                 />
               </div>
             </GridItem>

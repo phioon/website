@@ -83,18 +83,18 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
+        <Link to="/pricing" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_pricing")}
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/components" className={classes.navLink}>
+        <Link to="/about-us" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_aboutUs")}
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://app.phioon.com/auth/login" target="_blank"
+          href={props.project.info.webapp} target="_blank"
           color={"success"}
           className={classes.navButton}
           round

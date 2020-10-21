@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
 import Business from "@material-ui/icons/Business";
-import ChildFriendly from "@material-ui/icons/ChildFriendly";
+import TouchAppOutlined from "@material-ui/icons/TouchAppOutlined";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 import TrendingUp from "@material-ui/icons/TrendingUp";
@@ -33,8 +33,9 @@ export default function StrategiesPage(props) {
   return (
     <div>
       <Header
-        brand={props.project.info.name}
-        links={<HeaderLinks {...props} dropdownHoverColor="info" />}
+        brandIconId="original"
+        brandLogoId="white"
+        links={<HeaderLinks {...props} dropdownHoverColor="primary" />}
         fixed
         color="white"
         changeColorOnScroll={{
@@ -44,7 +45,7 @@ export default function StrategiesPage(props) {
       />
       <Parallax
         className={classes.pageHeader}
-        filter={"primary"}>
+        filter={"info"}>
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
       <div className={classes.container}>
@@ -57,11 +58,11 @@ export default function StrategiesPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</strong>,
+                  <b>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</b>,
                   {" "}
                   {props.getString(props.prefs.langId, compId, "desc_p2")}
                   {" "}
-                  <strong>{props.getString(props.prefs.langId, "keywords", "label_time")}</strong>.
+                  <b>{props.getString(props.prefs.langId, "keywords", "label_time")}</b>.
                 </h5>
               </GridItem>
             </GridContainer>
@@ -118,7 +119,7 @@ export default function StrategiesPage(props) {
               />
               <InfoArea
                 className={classes.infoArea}
-                icon={ChildFriendly}
+                icon={TouchAppOutlined}
                 title={props.getString(props.prefs.langId, compId, "sec2_infoarea2_title")}
                 description={props.getString(props.prefs.langId, compId, "sec2_infoarea2_desc")}
                 iconColor="primary"
@@ -137,9 +138,7 @@ export default function StrategiesPage(props) {
         <div className={classes.features4}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}
-              className={
-                classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
-              }
+              className={classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter}
             >
               <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
               <h5 className={classes.description}>

@@ -101,7 +101,7 @@ export default function CustomTabs(props) {
 }
 
 CustomTabs.defaultProps = {
-  headerColor: "purple"
+  headerColor: "primary"
 };
 
 CustomTabs.propTypes = {

@@ -96,6 +96,17 @@ export default function Footer(props) {
             </li>
             <li>
               <Button
+                href={props.project.social.linkedin.href}
+                target="_blank"
+                color="linkedin"
+                justIcon
+                simple
+              >
+                <i className="fab fa-linkedin" />
+              </Button>
+            </li>
+            <li>
+              <Button
                 href={props.project.social.youtube.href}
                 target="_blank"
                 color="youtube"
@@ -105,6 +116,18 @@ export default function Footer(props) {
                 <i className="fab fa-youtube" />
               </Button>
             </li>
+            <li>
+              <Button
+                href={props.project.social.twitter.href}
+                target="_blank"
+                color="twitter"
+                justIcon
+                simple
+              >
+                <i className="fab fa-twitter" />
+              </Button>
+            </li>
+
           </ul>
         </div>
       </div>

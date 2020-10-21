@@ -23,7 +23,7 @@ const presentationStyle = {
   },
   container: {
     ...container,
-    zIndex: 1
+    zIndex: 2
   },
   title: {
     ...title,
@@ -39,14 +39,16 @@ const presentationStyle = {
       position: "relative"
     }
   },
-  proBadge: {
+  slogan: {
+    color: whiteColor,
+    margin: "30px 0px"
+  },
+  badge: {
     position: "relative",
-    fontSize: "22px",
-    textTransform: "uppercase",
-    fontWeight: "700",
-    right: "-10px",
+    fontSize: "18px",
+    fontWeight: "350",
     padding: "10px 18px",
-    top: "-30px",
+    top: "30px",
     background: whiteColor,
     borderRadius: "3px",
     color: grayColor[18],

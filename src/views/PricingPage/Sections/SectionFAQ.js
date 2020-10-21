@@ -15,26 +15,28 @@ import featuresStyle from "assets/jss/material-kit-pro-react/views/pricingSectio
 
 const useStyles = makeStyles(featuresStyle);
 
-export default function SectionFeatures() {
+export default function SectionFAQ(props) {
+  const compId = "pricingfaq"
+
   const classes = useStyles();
   return (
     <div className={classes.featuresSection}>
       <div className={classes.textCenter}>
-        <h3 className={classes.title}>Frequently Asked Questions</h3>
+        <h3 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h3>
       </div>
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Can I cancel my subscription?"
-            description="Yes, you can cancel and perform other actions on your subscriptions via the My Account page."
+            title={props.getString(props.prefs.langId, compId, "label_q1_title")}
+            description={props.getString(props.prefs.langId, compId, "label_q1_desc")}
             icon={CardMembership}
             iconColor="info"
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Is there any discount for an annual subscription?"
-            description="Yes, we offer a 40% discount if you choose annual subscription for any plan."
+            title={props.getString(props.prefs.langId, compId, "label_q2_title")}
+            description={props.getString(props.prefs.langId, compId, "label_q2_desc")}
             icon={CardGiftCard}
             iconColor="success"
           />
@@ -43,16 +45,24 @@ export default function SectionFeatures() {
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Which payment methods do you take?"
-            description="WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account payments), BACS, and cash on delivery for accepting payments."
+            title={props.getString(props.prefs.langId, compId, "label_q3_title")}
+            description={props.getString(props.prefs.langId, compId, "label_q3_desc")}
             icon={AttachMoney}
             iconColor="success"
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Any other questions we can answer?"
-            description="We are happy to help you. Contact us."
+            title={props.getString(props.prefs.langId, compId, "label_q4_title")}
+            description={
+              <>
+                {props.getString(props.prefs.langId, compId, "label_q4_desc")}
+                {" "}
+                <a href={"mailto:" + props.getString(props.prefs.langId, "emails", "support")}>
+                  {props.getString(props.prefs.langId, compId, "label_contactUs")}
+                </a>
+              </>
+            }
             icon={QuestionAnswer}
             iconColor="rose"
           />

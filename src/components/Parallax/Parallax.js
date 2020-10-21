@@ -61,6 +61,7 @@ Parallax.propTypes = {
   className: PropTypes.string,
   filter: PropTypes.oneOf([
     "primary",
+    "secondary",
     "rose",
     "dark",
     "info",

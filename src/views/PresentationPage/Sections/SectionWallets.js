@@ -9,9 +9,9 @@ import GridItem from "components/Grid/GridItem.js";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import cardsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle.js";
+import walletsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/walletsStyle.js";
 
-const useStyles = makeStyles(cardsStyle);
+const useStyles = makeStyles(walletsStyle);
 
 export default function SectionWallets(props) {
   const compId = "sectionwallets"

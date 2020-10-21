@@ -15,11 +15,7 @@ import SectionDescription from "views/PresentationPage/Sections/SectionDescripti
 import SectionStrategies from "views/PresentationPage/Sections/SectionStrategies.js";
 import SectionWallets from "views/PresentationPage/Sections/SectionWallets.js";
 import SectionPhiTrader from "views/PresentationPage/Sections/SectionPhiTrader.js";
-import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
-import SectionExamples from "views/PresentationPage/Sections/SectionExamples.js";
-import SectionFreeDemo from "views/PresentationPage/Sections/SectionFreeDemo.js";
-import SectionOverview from "views/PresentationPage/Sections/SectionOverview.js";
-import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
+import SectionFooter from "views/PresentationPage/Sections/SectionFooter.js";
 
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
@@ -36,8 +32,9 @@ export default function PresentationPage(props) {
   return (
     <div>
       <Header
-        brand={props.project.info.name}
-        links={<HeaderLinks {...props} dropdownHoverColor="info" />}
+        brandIconId="white"
+        brandLogoId="white"
+        links={<HeaderLinks {...props} dropdownHoverColor="primary" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -46,7 +43,8 @@ export default function PresentationPage(props) {
         }}
       />
       <Parallax
-        image={props.project.img.bg.app_clean_reverse.src}
+        // image={props.project.img.bg.app_clean_reverse.src}
+        filter={"secondary"}
         className={classes.parallax}
       >
         <div className={classes.container}>
@@ -54,13 +52,19 @@ export default function PresentationPage(props) {
             <GridItem>
               <div className={classes.brand}>
                 <img
-                  alt={props.project.img.branding.logo.original.alt}
-                  width={props.project.img.branding.logo.original.width * 0.15}
-                  height={props.project.img.branding.logo.original.heigth * 0.15}
-                  src={props.project.img.branding.logo.original.src}
+                  alt={props.project.img.branding.logo.white.alt}
+                  width={window.innerWidth < 567 ?
+                    props.project.img.branding.logo.white.width * 0.15 :
+                    props.project.img.branding.logo.white.width * 0.23
+                  }
+                  height={window.innerWidth < 567 ?
+                    props.project.img.branding.logo.white.height * 0.15 :
+                    props.project.img.branding.logo.white.height * 0.23
+                  }
+                  src={props.project.img.branding.logo.white.src}
                 />
-                <h4 className={classes.title}>
-                  {props.getString(props.prefs.langId, compId, "label_title")}
+                <h4 className={classes.slogan}>
+                  {props.getString(props.prefs.langId, compId, "label_slogan")}
                 </h4>
               </div>
             </GridItem>
@@ -69,15 +73,12 @@ export default function PresentationPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionDescription {...props} />
+        <br />
         <SectionStrategies {...props} />
         <SectionWallets {...props} />
         <SectionPhiTrader {...props} />
-        <SectionSections />
-        <SectionExamples />
-        <SectionFreeDemo />
-        <SectionOverview />
       </div>
-      <SectionPricing />
+      <SectionFooter {...props} />
     </div>
   );
 }
