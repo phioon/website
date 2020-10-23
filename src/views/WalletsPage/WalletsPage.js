@@ -42,6 +42,8 @@ export default function WalletsPage(props) {
     autoplaySpeed: 7000,
   };
   const classes = useStyles();
+
+  console.log(props)
   return (
     <div>
       <Header
@@ -134,7 +136,7 @@ export default function WalletsPage(props) {
                   vertical
                   className={classes.infoArea5}
                   icon={Extension}
-                  iconColor="black"
+                  iconColor="primary"
                   title={props.getString(props.prefs.langId, compId, "sec2_infoarea1_title")}
                   description={<p>{props.getString(props.prefs.langId, compId, "sec2_infoarea1_desc")}</p>}
                 />
@@ -159,7 +161,7 @@ export default function WalletsPage(props) {
                   vertical
                   className={classes.infoArea5}
                   icon={TableChart}
-                  iconColor="black"
+                  iconColor="primary"
                   title={props.getString(props.prefs.langId, compId, "sec2_infoarea2_title")}
                   description={<p>{props.getString(props.prefs.langId, compId, "sec2_infoarea2_desc")}</p>}
                 />

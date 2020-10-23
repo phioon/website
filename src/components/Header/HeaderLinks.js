@@ -60,6 +60,9 @@ export default function HeaderLinks(props) {
   var onClickSections = {};
 
   const classes = useStyles();
+
+  console.log(props)
+
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
@@ -91,6 +94,16 @@ export default function HeaderLinks(props) {
         <Link to="/about-us" className={classes.navLink}>
           {props.getString(props.prefs.langId, compId, "label_aboutUs")}
         </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color={"success"}
+          className={classes.navButton}
+          round
+          onClick={() => props.setLangId("enUS")}
+        >
+          Change it
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button

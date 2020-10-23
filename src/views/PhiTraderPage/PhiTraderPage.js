@@ -38,7 +38,7 @@ export default function PhiTraderPage(props) {
       <Header
         brandIconId="original"
         brandLogoId="white"
-        links={<HeaderLinks {...props} dropdownHoverColor="prymary" />}
+        links={<HeaderLinks {...props} dropdownHoverColor="primary" />}
         fixed
         color="white"
         changeColorOnScroll={{

@@ -60,14 +60,14 @@ const styles = {
   },
   features3: {
     padding: "80px 0",
-    "& $phoneContainer": {
+    "& $imageContainer": {
       maxWidth: "220px",
       margin: "0 auto"
     }
   },
   features4: {
     padding: "80px 0",
-    "& $phoneContainer": {
+    "& $imageContainer": {
       maxWidth: "260px",
       margin: "60px auto 0"
     }
