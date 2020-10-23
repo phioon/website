@@ -13,7 +13,7 @@ import sectionFooterStyle from "assets/jss/material-kit-pro-react/views/presenta
 const useStyles = makeStyles(sectionFooterStyle);
 
 export default function SectionFooter(props) {
-  const compId = "sectionfooter"
+  const compId = "presentationfooter"
   const classes = useStyles();
   return (
     <div className={classes.section}>

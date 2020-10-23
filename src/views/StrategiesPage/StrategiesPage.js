@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
+import CallMade from "@material-ui/icons/CallMade";
 import Business from "@material-ui/icons/Business";
 import TouchAppOutlined from "@material-ui/icons/TouchAppOutlined";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 import TrendingUp from "@material-ui/icons/TrendingUp";
 // core components
+import Button from "components/CustomButtons/Button.js";
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -156,6 +159,39 @@ export default function StrategiesPage(props) {
                   title="Strategies"
                 />
               </div>
+            </GridItem>
+          </GridContainer>
+        </div>
+        {/* Footer */}
+        <div className={classes.section}>
+          <GridContainer>
+            <GridItem md={8} sm={10} className={classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)}>
+              <h3 className={classes.title}>
+                {props.getString(props.prefs.langId, compId, "footer_title")}
+              </h3>
+              <Button
+                href={props.getString(props.prefs.langId, compId, "footer_reactLink")}
+                color={"white"}
+                round
+                onClick={e => e.preventDefault()}
+              >
+                <Link to={props.getString(props.prefs.langId, compId, "footer_reactLink")} >
+                  {props.getString(props.prefs.langId, compId, "footer_btn")}
+                  {" "}
+                  <CallMade className={classes.icons} />
+                </Link>
+              </Button>
+              <br /><br />
+              <h4 className={classes.description}>
+                {props.getString(props.prefs.langId, compId, "footer_desc_p1")}
+                {" "}
+                <a href={"mailto:" + props.getString(props.prefs.langId, compId, "footer_mailto")}>
+                  {props.getString(props.prefs.langId, compId, "footer_mailto")}
+                </a>.
+              </h4>
+              <h4 className={classes.description}>
+                {props.getString(props.prefs.langId, compId, "footer_desc_p2")}
+              </h4>
             </GridItem>
           </GridContainer>
         </div>

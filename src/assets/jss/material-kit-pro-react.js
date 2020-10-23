@@ -90,8 +90,8 @@ const successColor = [
   "#91c7b0",
   "#91c7b0",
   "#91c7b0",
-  "#91c7b0",
-  "#91c7b0"
+  "#3c775d",
+  "#3c775d"
 ];
 const infoColor = [
   "#4c7587",
@@ -100,8 +100,8 @@ const infoColor = [
   "#4c7587",
   "#4c7587",
   "#4c7587",
-  "#4c7587",
-  "#4c7587"
+  "#375562",
+  "#375562"
 ];
 const roseColor = ["#e91e63", "#ec407a", "#d81b60", "#f8bbd0", "#f06292"];
 const grayColor = [

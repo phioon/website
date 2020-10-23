@@ -14,7 +14,7 @@ import walletsStyle from "assets/jss/material-kit-pro-react/views/presentationSe
 const useStyles = makeStyles(walletsStyle);
 
 export default function SectionWallets(props) {
-  const compId = "sectionwallets"
+  const compId = "presentationwallets"
 
   const [goToWalletsPage, setGoToWalletsPage] = React.useState(undefined)
   const classes = useStyles();

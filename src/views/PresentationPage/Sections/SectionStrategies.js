@@ -12,7 +12,7 @@ import strategiesStyle from "assets/jss/material-kit-pro-react/views/presentatio
 const useStyles = makeStyles(strategiesStyle);
 
 export default function SectionStrategies(props) {
-  const compId = "sectionstrategies"
+  const compId = "presentationstrategies"
 
   const [goToStrategiesPage, setGoToStrategiesPage] = React.useState(undefined)
   const classes = useStyles();

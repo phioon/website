@@ -82,36 +82,33 @@ const strings = {
       desc_title: "Technical Analysis with AI",
       desc_p1: "Nothing like technology working to our advantage...",
       desc_p2: "Phi",
-      desc_p3: "is one more tool that we developed to assist your",
-      desc_p4: "dicision making",
+      desc_p3: "is our bot, designed to assist your",
+      desc_p4: "operational development",
 
-      sec1_infoarea1_title: "Create",
-      sec1_infoarea1_desc: "There is a correlation between the price and its indicators over a given period of time. We call this correlation Strategy.",
-      sec1_infoarea2_title: "Execute",
-      sec1_infoarea2_desc: "It works like a radar. When we find an asset that matches the given technical condition, we add it into a list for you.",
-      sec1_infoarea3_title: "Analyze",
-      sec1_infoarea3_desc: "Done! You have a list of potential opportunities waiting for you. ;)",
+      sec1_infoarea1_title: "Accuracy",
+      sec1_infoarea1_desc: "More than 10 years history data, with validation and integrity systems that garantee a high data quality.",
+      sec1_infoarea2_title: "Individual Analysis",
+      sec1_infoarea2_desc: "There is a technical behavior for every asset, isn't that right? Because of that, Phi works with each one in a distinct way.",
+      sec1_infoarea3_title: "Advisory",
+      sec1_infoarea3_desc: "Detailed informations in order to support your technical development in the stock market.",
 
-      sec2_title: "Simple is better than complex",
-      sec2_infoarea1_title: "Hundreds of Assets",
-      sec2_infoarea1_desc: "Before, it used to take a lot out of you looking for opportunities in 10, 20, 30 assets everyday... Now, you filter hundreds of them in just one click.",
-      sec2_infoarea2_title: "Easy to Use",
-      sec2_infoarea2_desc: "Looking only at the last two periods (candles) of a chart, we can see not only the correlation between price and other indicators, but also its transitions and moviments, such as: when price crosses a moving average.",
-      sec2_infoarea3_title: "Your Way",
-      sec2_infoarea3_desc: "Keep using your methods, your strategies, your setups. Nothing better than your knowledge and experiences aligned to an opportunity. Ease and efficiency when investing.",
+      sec2_title: "Phi operates with you",
+      sec2_desc: "He has his own portfolio (Swing Trade) and you can follow up all his positions and analysis.",
+      sec2_infoarea1_title: "Self-Validation",
+      sec2_infoarea1_desc: "We teach Phi the best technical strategies on the market. And he takes care of validating them for each asset.",
+      sec2_infoarea2_title: "High Performance",
+      sec2_infoarea2_desc: "Based on asset's history, Phi only opens a position if there is a high probability of success.",
+      sec2_infoarea3_title: "More confidence",
+      sec2_infoarea3_desc: "The informations of each position are calculated to complement your knowledge. For us, what really matters is your development in the financial market.",
+      sec2_infoarea4_title: "Panoramic Sight",
+      sec2_infoarea4_desc: "Far beyond the current technical condition, Phi brings the asset's history. More experience for your decision making.",
 
-      sec3_title: "How does it work?",
-      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)",
-      sec3_infoarea1_title: "Technical Condition",
-      sec3_infoarea1_desc: "More experience and information for your decision making",
-      sec3_infoarea2_title: "Success Rate",
-      sec3_infoarea2_desc: "Setup's success rate for this Asset in the las four years",
-      sec3_infoarea3_title: "Estimated Time",
-      sec3_infoarea3_desc: "Base on its history, that's an estimative of how long it may take to reach the target",
-      sec3_infoarea4_title: "Occurrencies",
-      sec3_infoarea4_desc: "Amount of times this Technical Condition occurred for this asset in the last four years",
-      sec3_infoarea5_title: "Last Occurrence",
-      sec3_infoarea5_desc: "Last time this Technical Condition occurred for this asset",
+      footer_title: "Phi Trader is ready to show you the best opportunities of the market. What about you?",
+      footer_btn: "See Subscriptions",
+      footer_reactLink: "/pricing",
+      footer_desc_p1: "Want to learn more about the product? Write us at",
+      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_mailto: "helpme@phioon.com",
     },
     presentationpage: {
       label_slogan: "Technology for Investments",
@@ -126,6 +123,26 @@ const strings = {
       label_infoarea2_desc: "We take care of the hard working and taking time tasks, so you can focus on what really matters... Technical Analysis was never so simple.",
       label_infoarea3_title: "Control",
       label_infoarea3_desc: "Not only to your investments, but also for your emotional and psychological behavior as a investor and trader.",
+    },
+    presentationfooter: {
+      label_title: "Ready to leverage your performance in the stock market?",
+      label_signUp: "Join PHIOON",
+      label_share: "Share this idea with your friends and make their lives easier too!"
+    },
+    presentationphitrader: {
+      label_title: "Phi Trader",
+      label_desc: "The Artificial Intelligence that operates with you.",
+      btn_details: "Learn more"
+    },
+    presentationstrategies: {
+      label_title: "Strategies",
+      label_desc: "Stop wasting time analysing tons of charts every day. Let us take care of it for you.",
+      btn_details: "Learn more"
+    },
+    presentationwallets: {
+      label_title: "Wallets",
+      label_desc: "Bring your wallets to PHIOON",
+      btn_details: "See features"
     },
     pricingpage: {
       label_title: "Pricing",
@@ -160,7 +177,9 @@ const strings = {
       label_runs: "runs",
 
       label_stockExchange: "Stock Exchange",
+      label_stockExchange_hint: "Soon, other stock exchanges will be included in PHIOON. ;)",
       label_stockExchanges: "Stock Exchanges",
+      label_stockExchanges_hint: "Soon, other stock exchanges will be included in PHIOON. ;)",
       label_wallets: "Wallets",
       label_staticPanels: "Position Panels",
       label_staticPanels_hint: "",
@@ -171,26 +190,6 @@ const strings = {
       label_phiTrader: "Phi Trader",
 
       btn_getStarted: "Get Started"
-    },
-    sectionfooter: {
-      label_title: "Ready to leverage your performance in the stock market?",
-      label_signUp: "Join PHIOON",
-      label_share: "Share this idea with your friends and make their lives easier too!"
-    },
-    sectionphitrader: {
-      label_title: "Phi Trader",
-      label_desc: "The Artificial Intelligence that operates with you.",
-      btn_details: "Learn more"
-    },
-    sectionstrategies: {
-      label_title: "Strategies",
-      label_desc: "Stop wasting time analysing tons of charts every day. Let us take care of it for you.",
-      btn_details: "Learn more"
-    },
-    sectionwallets: {
-      label_title: "Wallets",
-      label_desc: "Bring your wallets to PHIOON",
-      btn_details: "See features"
     },
     strategiespage: {
       label_title: "Strategies",
@@ -215,7 +214,14 @@ const strings = {
       sec2_infoarea3_desc: "We work hard to keep everything organized as soon as possible, so that you receive the most up to date information.",
 
       sec3_title: "How does it work?",
-      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, they're super objective. ;)"
+      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, they're super objective. ;)",
+
+      footer_title: "Ready to be even more efficient in your technical analysis?",
+      footer_btn: "See Subscriptions",
+      footer_reactLink: "/pricing",
+      footer_desc_p1: "Want to learn more about the product? Write us at",
+      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_mailto: "helpme@phioon.com",
     },
     walletspage: {
       label_title: "Wallets",
@@ -239,7 +245,13 @@ const strings = {
       sec2_infoarea2_desc: "The data is the same... How should they be presented? You decide. ;)",
 
       sec3_title: "How does it work?",
-      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)"
+      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)",
+
+      footer_title: "Manage your wallets with us. Besides everything, it's free!",
+      footer_btn: "Join PHIOON",
+      footer_desc_p1: "Want to learn more about the product? Write us at",
+      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_mailto: "helpme@phioon.com",
     },
   },
   ptBR: {
@@ -309,37 +321,33 @@ const strings = {
       desc_title: "Análise Técnica com IA",
       desc_p1: "Nada como a tecnologia trabalhando ao nosso favor... O",
       desc_p2: "Phi",
-      desc_p3: "é mais uma ferramenta que desenvolvemos para auxiliar a sua",
-      desc_p4: "tomada de decisão",
+      desc_p3: "é o nosso robô, desenvolvido para auxiliar seu",
+      desc_p4: "desenvolvimento operacional",
 
-      sec1_infoarea1_title: "Phi",
-      sec1_infoarea1_desc: "Sou o Phi, a Inteligência Artificial por trás das estratégias de mercado do PHIOON.",
-      sec1_infoarea2_title: "Comportamento",
-      sec1_infoarea2_desc: "Cada ativo possui um comportamento técnico, não é mesmo? O que torna difícil criar padrões que funcionem para todos.",
-      sec1_infoarea3_title: "Aprenda",
-      sec1_infoarea3_desc: "Por isso, criamos o Phi! Para mapear estes comportamentos e auxiliar no aprendizado de cada um deles.",
+      sec1_infoarea1_title: "Precisão",
+      sec1_infoarea1_desc: "São mais de 10 anos de dados históricos, com sistemas de validação e integridade que garantem uma alta qualidade dos dados.",
+      sec1_infoarea2_title: "Análise Individual",
+      sec1_infoarea2_desc: "Cada ativo possui um comportamento técnico, não é mesmo? Por isso, o Phi analisa cada um de forma distinta.",
+      sec1_infoarea3_title: "Didático",
+      sec1_infoarea3_desc: "Informações detalhadas para auxiliar seu desenvolvimento técnico no mercado financeiro.",
 
-      sec2_infoarea1_title: "Fácil Aprendizado",
-      sec2_infoarea1_desc: "Ele tem sua própria carteira de operações Swing Trade e você acompanha suas análises e entradas na íntegra.",
-      sec2_infoarea2_title: "Preço Máximo",
-      sec2_infoarea2_desc: "Preço limite para compra nessa operação. Este pode mudar considerando o gerenciamento de risco.",
-      sec2_infoarea3_title: "Stop Loss",
-      sec2_infoarea3_desc: "Ponto de segurança onde o Phi acredita que não alcance novamente.",
-      sec2_infoarea4_title: "Alvo",
-      sec2_infoarea4_desc: "Estimativa de onde o preço pode alcançar. Em sua maoria é utilizado a sequência de Fibonacci.",
-      sec2_infoarea5_title: "Risco / Retorno",
-      sec2_infoarea5_desc: "Ganho potencial dividido pela possível perda. Quanto maior este número melhor",
+      sec2_title: "O Phi opera junto com você",
+      sec2_desc: "Ele tem sua própria carteira de operações (Swing Trade) e você acompanha suas análises e entradas na íntegra.",
+      sec2_infoarea1_title: "Auto-Validação",
+      sec2_infoarea1_desc: "Ensinamos as melhores estratégias técnicas do mercado para o Phi. E ele se encarrega de valida-las para cada ativo.",
+      sec2_infoarea2_title: "Alta Performance",
+      sec2_infoarea2_desc: "Considerando o histórico do ativo, o Phi inicia uma operação apenas em caso de alta probabilidade de sucesso.",
+      sec2_infoarea3_title: "Mais Confiança",
+      sec2_infoarea3_desc: "As informações de cada operação são calculadas para complementar o seu conhecimento. Pra gente, o que importa mesmo é o seu desenvolvimento no mercado financeiro.",
+      sec2_infoarea4_title: "Visão Panorâmica",
+      sec2_infoarea4_desc: "Muito além da condição técnica atual, o Phi trabalha o histórico do ativo. Mais experiência para sua tomada de decisão.",
 
-      sec3_infoarea1_title: "Condição Técnica",
-      sec3_infoarea1_desc: "Mais experiência e informação para sua tomada de decisão ",
-      sec3_infoarea2_title: "Taxa de Sucesso",
-      sec3_infoarea2_desc: "Porcentagem de sucesso desse Setup para este ativo nos últimos anos.",
-      sec3_infoarea3_title: "Prazo Estimado",
-      sec3_infoarea3_desc: "Previsão estimada para que o papel alcance o alvo com base histórica.",
-      sec3_infoarea4_title: "Ocorrências",
-      sec3_infoarea4_desc: "Quantidade de vezes que está condição técnica ocorreu para esse ativo nos últimos anos.",
-      sec3_infoarea5_title: "Última Ocorrência",
-      sec3_infoarea5_desc: "Última vez que está condição ocorreu para este Ativo.",
+      footer_title: "Phi Trader está pronto para te mostrar as melhores oportunidades do mercado. E você?",
+      footer_btn: "Ver Planos",
+      footer_reactLink: "/pricing",
+      footer_desc_p1: "Quer saber mais sobre o produto? Escreva pra gente no",
+      footer_desc_p2: "Vai ser um prazer conversar com você! ;)",
+      footer_mailto: "meajuda@phioon.com",
     },
     presentationpage: {
       label_slogan: "Tecnologia para Investimentos",
@@ -354,9 +362,29 @@ const strings = {
       label_infoarea3_title: "Controle",
       label_infoarea3_desc: "Não apenas para os seus investimentos, mas também para seu comportamento emocional e psicológico enquanto investidor e trader.",
     },
+    presentationfooter: {
+      label_title: "Preparado para alavancar a sua performance no mercado financeiro?",
+      label_signUp: "Quero ser PHIOON",
+      label_share: "Compartilhe essa ideia com seus amigos e facilite a vida deles também!"
+    },
+    presentationphitrader: {
+      label_title: "Phi Trader",
+      label_desc: "A Inteligência Artificial que opera com você.",
+      btn_details: "Saiba como funciona"
+    },
+    presentationstrategies: {
+      label_title: "Estratégias",
+      label_desc: "Pare de perder tempo todos os dias, analisando gráficos de dezenas de ativos. Deixe isso com a gente.",
+      btn_details: "Saiba como funciona"
+    },
+    presentationwallets: {
+      label_title: "Carteiras",
+      label_desc: "Traga sua carteira para o PHIOON.",
+      btn_details: "Ver funcionalidades"
+    },
     pricingpage: {
       label_title: "Planos",
-      label_desc: "Temos um plano para cada necessidade. Qual é a sua?",
+      label_desc: "Existe um plano para cada necessidade. Qual é a sua?",
     },
     pricingfaq: {
       label_title: "Perguntas Frequentes",
@@ -389,7 +417,9 @@ const strings = {
       label_runs: "execuções",
 
       label_stockExchange: "Bolsa de Valores",
+      label_stockExchange_hint: "Em breve, mais mercados serão inclusos no PHIOON. ;)",
       label_stockExchanges: "Bolsas de Valores",
+      label_stockExchanges_hint: "Em breve, mais mercados serão inclusos no PHIOON. ;)",
       label_wallets: "Carteiras",
       label_staticPanels: "Painéis de Posições",
       label_staticPanels_hint: "Auto-Refresh não disponível.",
@@ -400,26 +430,6 @@ const strings = {
       label_phiTrader: "Phi Trader",
 
       btn_getStarted: "Começar"
-    },
-    sectionfooter: {
-      label_title: "Preparado para alavancar a sua performance no mercado financeiro?",
-      label_signUp: "Quero ser PHIOON",
-      label_share: "Compartilhe essa ideia com seus amigos e facilite a vida deles também!"
-    },
-    sectionphitrader: {
-      label_title: "Phi Trader",
-      label_desc: "A Inteligência Artificial que opera com você.",
-      btn_details: "Saiba como funciona"
-    },
-    sectionstrategies: {
-      label_title: "Estratégias",
-      label_desc: "Pare de perder tempo todos os dias, analisando gráficos de dezenas de ativos. Deixe isso com a gente.",
-      btn_details: "Saiba como funciona"
-    },
-    sectionwallets: {
-      label_title: "Carteiras",
-      label_desc: "Traga sua carteira para o PHIOON.",
-      btn_details: "Ver funcionalidades"
     },
     strategiespage: {
       label_title: "Estratégias",
@@ -439,12 +449,18 @@ const strings = {
       sec2_infoarea1_title: "Centenas de Ativos",
       sec2_infoarea1_desc: "Antes, você se desgastava procurando oportunidades em 10, 20, 30 ativos por dia... Agora, você filtra centenas em apenas um clique.",
       sec2_infoarea2_title: "Fácil de Usar",
-      sec2_infoarea2_desc: "Observando os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço atravessa uma média móvel.",
+      sec2_infoarea2_desc: "Observando os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço supera uma média móvel.",
       sec2_infoarea3_title: "Do seu Jeito",
       sec2_infoarea3_desc: "Continue utilizando os seus métodos, suas estratégias, seus setups. Nada melhor que seu conhecimento e experiências alinhados à oportunidade. Facilidade e eficiência na hora de investir.",
 
       sec3_title: "Como funciona na prática?",
-      sec3_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)"
+      sec3_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)",
+
+      footer_title: "Preparado para ser ainda mais eficiente em suas análises técnicas?",
+      footer_btn: "Ver Planos",
+      footer_desc_p1: "Quer saber mais sobre o produto? Escreva pra gente no",
+      footer_desc_p2: "Vai ser um prazer conversar com você! ;)",
+      footer_mailto: "meajuda@phioon.com",
     },
     walletspage: {
       label_title: "Carteiras",
@@ -468,7 +484,13 @@ const strings = {
       sec2_infoarea2_desc: "Os dados são os mesmos... Como eles devem ser aprensentados? Você decide. ;)",
 
       sec3_title: "Como funciona na prática?",
-      sec3_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)"
+      sec3_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)",
+
+      footer_title: "Gerencie suas carteiras com a gente. Além de tudo, é de graça!",
+      footer_btn: "Quero ser PHIOON",
+      footer_desc_p1: "Quer saber mais sobre o produto? Escreva pra gente no",
+      footer_desc_p2: "Vai ser um prazer conversar com você! ;)",
+      footer_mailto: "meajuda@phioon.com",
     },
   }
 }

@@ -19,11 +19,7 @@ export default function SectionContact(props) {
   return (
     <div className={classes.aboutUs}>
       <GridContainer>
-        <GridItem
-          md={8}
-          sm={8}
-          className={classNames(classes.mrAuto, classes.mlAuto)}
-        >
+        <GridItem md={8} sm={8} className={classNames(classes.mrAuto, classes.mlAuto)}>
           <h3 className={classNames(classes.title, classes.textCenter)}>
             {props.getString(props.prefs.langId, compId, "label_title")}
           </h3>

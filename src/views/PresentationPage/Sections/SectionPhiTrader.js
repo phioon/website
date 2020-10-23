@@ -16,7 +16,7 @@ import phiTraderStyle from "assets/jss/material-kit-pro-react/views/presentation
 const useStyles = makeStyles(phiTraderStyle);
 
 export default function SectionPhiTrader(props) {
-  const compId = "sectionphitrader"
+  const compId = "presentationphitrader"
   const [goToPhiTraderPage, setGoToPhiTraderPage] = React.useState(undefined)
   const classes = useStyles();
   return (
@@ -53,14 +53,14 @@ export default function SectionPhiTrader(props) {
               <div className={classes.animeImg2}>
                 <ScrollAnimation animateIn="animate__fadeInUp">
                   <img
-                    src={props.getImage(props.prefs.langId, "phitrader_technicalConditions")}
+                    src={props.getImage(props.prefs.langId, "phitrader_tc")}
                     alt="PhiTrader"
                     className={classes.img2}
                   />
                 </ScrollAnimation>
               </div>
               <img
-                src={props.getImage(props.prefs.langId, "phitrader_ipad")}
+                src={props.getImage(props.prefs.langId, "phitrader_summary_ipad")}
                 alt="PhiTrader"
                 className={classes.ipadImg}
               />

@@ -56,6 +56,7 @@ export default function SectionSubscriptions(props) {
         </GridItem>
       </GridContainer>
       <GridContainer>
+        {/* FREE */}
         <GridItem md={4} sm={4}>
           <Card plain pricing>
             <CardBody pricing>
@@ -69,9 +70,18 @@ export default function SectionSubscriptions(props) {
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>
               </h1>
               <ul>
-                {/* <li>
+                <li>
                   <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchange")}
-                </li> */}
+                  <Button
+                    size="sm"
+                    justIcon
+                    round
+                    link
+                    onClick={e => handleTooltip(e.currentTarget, props.getString(props.prefs.langId, compId, "label_stockExchange_hint"))}
+                  >
+                    <span className="material-icons">help_outline</span>
+                  </Button>
+                </li>
                 <li>
                   <b>2</b> {props.getString(props.prefs.langId, compId, "label_wallets")}
                 </li>
@@ -104,6 +114,7 @@ export default function SectionSubscriptions(props) {
             </CardBody>
           </Card>
         </GridItem>
+        {/* PREMIUM */}
         <GridItem md={4} sm={4}>
           <Card raised pricing color="info">
             <CardBody pricing>
@@ -117,9 +128,18 @@ export default function SectionSubscriptions(props) {
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>
               </h1>
               <ul>
-                {/* <li>
-                  <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchange")}
-                </li> */}
+                <li>
+                  <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchanges")}
+                  <Button
+                    size="sm"
+                    justIcon
+                    round
+                    link
+                    onClick={e => handleTooltip(e.currentTarget, props.getString(props.prefs.langId, compId, "label_stockExchanges_hint"))}
+                  >
+                    <span className="material-icons">help_outline</span>
+                  </Button>
+                </li>
                 <li>
                   <b>5</b> {props.getString(props.prefs.langId, compId, "label_wallets")}
                 </li>
@@ -152,6 +172,7 @@ export default function SectionSubscriptions(props) {
             </CardBody>
           </Card>
         </GridItem>
+        {/* PLATINUM */}
         <GridItem md={4} sm={4}>
           <Card plain pricing>
             <CardBody pricing>
@@ -167,9 +188,18 @@ export default function SectionSubscriptions(props) {
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>
               </h1>
               <ul>
-                {/* <li>
-                  <b>3</b> {props.getString(props.prefs.langId, compId, "label_stockExchanges")}
-                </li> */}
+                <li>
+                  <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchange")}
+                  <Button
+                    size="sm"
+                    justIcon
+                    round
+                    link
+                    onClick={e => handleTooltip(e.currentTarget, props.getString(props.prefs.langId, compId, "label_stockExchanges_hint"))}
+                  >
+                    <span className="material-icons">help_outline</span>
+                  </Button>
+                </li>
                 <li>
                   <b>10</b> {props.getString(props.prefs.langId, compId, "label_wallets")}
                 </li>

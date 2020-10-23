@@ -123,25 +123,20 @@ const styles = {
   gridContainer: {},
   gridItem: {},
   textCenter: {
-    textAlign: "center"
-  },
-  phoneContainer: {
-    "& img": {
-      width: "100%"
-    }
+    textAlign: "center!important"
   },
   imageContainer: {
     maxWidth: "1000",
     position: "relative",
+    display: "flex",
     height: "550px",
     marginTop: "58px",
+    justifyContent: "center",
 
     "& img": {
-        maxWidth: "1000px",
-        left: "100px",
-        top: "0",
-        height: "100%",
-        position: "absolute",
+      top: "0",
+      height: "100%",
+      position: "absolute",
     }
   },
   infoArea: {

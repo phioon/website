@@ -8,9 +8,10 @@ import strategies_card1_enus from "assets/img/phioon_app/strategies/card-1_enus.
 import strategies_card2_enus from "assets/img/phioon_app/strategies/card-2_enus.png";
 import strategies_iphone_enus from "assets/img/phioon_app/strategies/iphone_enus.png";
 import strategies_macbook_enus from "assets/img/phioon_app/strategies/macbook_enus.png";
-import phitrader_ipad_enus from "assets/img/phioon_app/phitrader/ipad_enus.png";
-import phitrader_analysis_enus from "assets/img/phioon_app/phitrader/summary_enus.png";
-import phitrader_technicalConditions_enus from "assets/img/phioon_app/phitrader/conditions_enus.png";
+import phitrader_summary_ipad_enus from "assets/img/phioon_app/phitrader/summary_ipad_enus.png";
+import phitrader_summary_enus from "assets/img/phioon_app/phitrader/summary_enus.png";
+import phitrader_cards1_enus from "assets/img/phioon_app/phitrader/cards1_enus.png";
+import phitrader_tc_enus from "assets/img/phioon_app/phitrader/tc_enus.png";
 import phitrader_summary_iphone_enus from "assets/img/phioon_app/phitrader/summary_iphone_enus.png";
 import phitrader_technical_enus from "assets/img/phioon_app/phitrader/ipad3_enus.png";
 
@@ -22,9 +23,10 @@ import strategies_card1_ptbr from "assets/img/phioon_app/strategies/card-1_ptbr.
 import strategies_card2_ptbr from "assets/img/phioon_app/strategies/card-2_ptbr.png";
 import strategies_iphone_ptbr from "assets/img/phioon_app/strategies/iphone_ptbr.png";
 import strategies_macbook_ptbr from "assets/img/phioon_app/strategies/macbook_ptbr.png";
-import phitrader_ipad_ptbr from "assets/img/phioon_app/phitrader/ipad_ptbr.png";
+import phitrader_summary_ipad_ptbr from "assets/img/phioon_app/phitrader/summary_ipad_ptbr.png";
 import phitrader_summary_ptbr from "assets/img/phioon_app/phitrader/summary_ptbr.png";
-import phitrader_technicalConditions_ptbr from "assets/img/phioon_app/phitrader/technicalCondition_ptbr.png";
+import phitrader_cards1_ptbr from "assets/img/phioon_app/phitrader/cards1_ptbr.png";
+import phitrader_tc_ptbr from "assets/img/phioon_app/phitrader/tc_ptbr.png";
 import phitrader_summary_iphone_ptbr from "assets/img/phioon_app/phitrader/summary_iphone_ptbr.png";
 import phitrader_technical_ptbr from "assets/img/phioon_app/phitrader/ipad3_ptbr.png";
 
@@ -52,10 +54,11 @@ const images = {
     strategies_iphone: strategies_iphone_enus,
     strategies_macbook: strategies_macbook_enus,
 
-    phitrader_ipad: phitrader_ipad_enus,
-    phitrader_summary: phitrader_analysis_enus,
-    phitrader_technicalConditions: phitrader_technicalConditions_enus,
+    phitrader_summary: phitrader_summary_enus,
+    phitrader_summary_ipad: phitrader_summary_ipad_enus,
     phitrader_summary_iphone: phitrader_summary_iphone_enus,
+    phitrader_cards1: phitrader_cards1_enus,
+    phitrader_technicalCondition: phitrader_tc_enus,
     phitrader_technical: phitrader_technical_enus,
 
   },
@@ -70,10 +73,11 @@ const images = {
     strategies_iphone: strategies_iphone_ptbr,
     strategies_macbook: strategies_macbook_ptbr,
 
-    phitrader_ipad: phitrader_ipad_ptbr,
     phitrader_summary: phitrader_summary_ptbr,
-    phitrader_technicalConditions: phitrader_technicalConditions_ptbr,
+    phitrader_summary_ipad: phitrader_summary_ipad_ptbr,
     phitrader_summary_iphone: phitrader_summary_iphone_ptbr,
+    phitrader_cards1: phitrader_cards1_ptbr,
+    phitrader_tc: phitrader_tc_ptbr,
     phitrader_technical: phitrader_technical_ptbr,
   }
 }

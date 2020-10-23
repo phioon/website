@@ -38,7 +38,7 @@ export default function SectionDescription(props) {
                 title={props.getString(props.prefs.langId, compId, "label_infoarea1_title")}
                 description={props.getString(props.prefs.langId, compId, "label_infoarea1_desc")}
                 icon={TouchApp}
-                iconColor="danger"
+                iconColor="warning"
                 vertical={true}
               />
             </GridItem>
