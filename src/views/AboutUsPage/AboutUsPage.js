@@ -41,7 +41,7 @@ export default function AboutUsPage(props) {
           color: "primary"
         }}
       />
-      <Parallax image={require("assets/img/bg12.jpg")} filter="dark" medium>
+      <Parallax image={require("assets/img/bg/bg1.jpg")} filter="dark" medium>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem
