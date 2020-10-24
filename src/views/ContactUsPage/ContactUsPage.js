@@ -69,7 +69,7 @@ export default function ContactUsPage(props) {
                   <br />
                   {props.getString(props.prefs.langId, compId, "label_desc_p2")}
                 </h5>
-                <br />
+                <br /><br /><br />
               </GridItem>
             </GridContainer>
             <GridContainer>
@@ -147,8 +147,7 @@ export default function ContactUsPage(props) {
               </GridItem>
             </GridContainer>
 
-            <br /><br />
-            <hr />
+            <br /><br /><br />
             <GridContainer>
               <GridItem
                 md={8}
