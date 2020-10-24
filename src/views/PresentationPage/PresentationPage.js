@@ -29,6 +29,7 @@ export default function PresentationPage(props) {
     document.body.scrollTop = 0;
   });
   const classes = useStyles();
+
   return (
     <div>
       <Header
@@ -43,7 +44,6 @@ export default function PresentationPage(props) {
         }}
       />
       <Parallax
-        // image={props.project.img.bg.app_clean_reverse.src}
         filter={"secondary"}
         className={classes.parallax}
       >

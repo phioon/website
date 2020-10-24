@@ -26,8 +26,8 @@ export default function SectionContact(props) {
           <h4 className={classNames(classes.description, classes.textCenter)}>
             {props.getString(props.prefs.langId, compId, "label_desc_p1")}
             {" "}
-            <a href={"mailto:" + props.getString(props.prefs.langId, compId, "label_mailto")}>
-              {props.getString(props.prefs.langId, compId, "label_mailto")}
+            <a href={"mailto:" + props.getString(props.prefs.langId, "emails", "newIdeas")}>
+              {props.getString(props.prefs.langId, "emails", "newIdeas")}
             </a>
             {" "}
             {props.getString(props.prefs.langId, compId, "label_desc_p2")}

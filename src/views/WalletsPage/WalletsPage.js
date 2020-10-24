@@ -43,7 +43,6 @@ export default function WalletsPage(props) {
   };
   const classes = useStyles();
 
-  console.log(props)
   return (
     <div>
       <Header
@@ -191,8 +190,8 @@ export default function WalletsPage(props) {
             <h4 className={classes.description}>
               {props.getString(props.prefs.langId, compId, "footer_desc_p1")}
               {" "}
-              <a href={"mailto:" + props.getString(props.prefs.langId, compId, "footer_mailto")}>
-                {props.getString(props.prefs.langId, compId, "footer_mailto")}
+              <a href={"mailto:" + props.getString(props.prefs.langId, "emails", "support")}>
+                {props.getString(props.prefs.langId, "emails", "support")}
               </a>.
               </h4>
             <h4 className={classes.description}>

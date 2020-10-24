@@ -18,6 +18,12 @@ const useStyles = makeStyles(styles);
 
 export default function Footer(props) {
   const [redirectTo, setRedirectTo] = React.useState(undefined)
+  const redirecting = (redirectingTo) => {
+    if (redirectingTo !== redirectTo)
+      setRedirectTo(redirectingTo)
+    else
+      setRedirectTo(undefined)
+  }
 
   var { children, content, theme, big, className } = props;
   const classes = useStyles();
@@ -43,7 +49,7 @@ export default function Footer(props) {
             <img
               alt={props.project.img.branding.logo.original.alt}
               width={props.project.img.branding.logo.original.width * 0.06}
-              height={props.project.img.branding.logo.original.heigth * 0.06}
+              height={props.project.img.branding.logo.original.height * 0.06}
               src={props.project.img.branding.logo.original.src}
             />
           </Link>
@@ -54,7 +60,7 @@ export default function Footer(props) {
             <ListItem className={classes.inlineBlock}>
               <Button
                 className={classes.block}
-                onClick={() => setRedirectTo("/about-us")}
+                onClick={() => redirecting("/about-us")}
                 link >
                 {props.getString(props.prefs.langId, "footerlinks", "label_aboutUs")}
               </Button>
@@ -62,7 +68,7 @@ export default function Footer(props) {
             <ListItem className={classes.inlineBlock}>
               <Button
                 className={classes.block}
-                onClick={() => setRedirectTo("/contact-us")}
+                onClick={() => redirecting("/contact-us")}
                 link>
                 {props.getString(props.prefs.langId, "footerlinks", "label_contactUs")}
               </Button>
@@ -127,7 +133,6 @@ export default function Footer(props) {
                 <i className="fab fa-twitter" />
               </Button>
             </li>
-
           </ul>
         </div>
       </div>

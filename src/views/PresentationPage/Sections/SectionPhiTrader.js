@@ -17,7 +17,8 @@ const useStyles = makeStyles(phiTraderStyle);
 
 export default function SectionPhiTrader(props) {
   const compId = "presentationphitrader"
-  const [goToPhiTraderPage, setGoToPhiTraderPage] = React.useState(undefined)
+
+  const [redirectTo, setRedirectTo] = React.useState(undefined)
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -29,8 +30,8 @@ export default function SectionPhiTrader(props) {
               <h3 className={classes.description}>
                 {props.getString(props.prefs.langId, compId, "label_desc")}
               </h3>
-              {goToPhiTraderPage && <Redirect to="/products/phitrader" />}
-              <Button color={"success"} onClick={() => setGoToPhiTraderPage(true)} link>
+              {redirectTo && <Redirect to={redirectTo} />}
+              <Button color={"success"} onClick={() => setRedirectTo("/products/phitrader")} link>
                 <h5>
                   {props.getString(props.prefs.langId, compId, "btn_details")}
                   {" "}

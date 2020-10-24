@@ -4,14 +4,17 @@ import React from "react";
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
-
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-
+// @material-ui/icons components
+import Language from "@material-ui/icons/Language";
 // core components
 import Button from "components/CustomButtons/Button.js";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
+
+import { getLangList } from "../../core/lang";
 
 import styles from "assets/jss/material-kit-pro-react/components/headerLinksStyle.js";
 
@@ -19,6 +22,7 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const compId = "headerlinks"
+  const { dropdownHoverColor } = props;
 
   const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2;
@@ -26,7 +30,6 @@ export default function HeaderLinks(props) {
     t--;
     return (-c / 2) * (t * (t - 2) - 1) + b;
   };
-
   const smoothScroll = (e, target) => {
     if (window.location.pathname === "/sections") {
       var isMobile = navigator.userAgent.match(
@@ -59,9 +62,22 @@ export default function HeaderLinks(props) {
   };
   var onClickSections = {};
 
-  const classes = useStyles();
+  const langOptions = () => {
+    let langList = getLangList()
+    return langList.map((langId, key) => {
+      return (
+        <a
+          key={key}
+          className={classes.dropdownLink}
+          onClick={() => props.setLangId(langId)}
+        >
+          {props.getString(props.prefs.langId, "languages", langId)}
+        </a>
+      )
+    });
+  }
 
-  console.log(props)
+  const classes = useStyles();
 
   return (
     <List className={classes.list + " " + classes.mlAuto}>
@@ -96,14 +112,18 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          color={"success"}
-          className={classes.navButton}
-          round
-          onClick={() => props.setLangId("enUS")}
-        >
-          Change it
-        </Button>
+        <CustomDropdown
+          noLiPadding
+          navDropdown
+          hoverColor={dropdownHoverColor}
+          // buttonText="Components"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={Language}
+          dropdownList={langOptions()}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button

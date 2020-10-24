@@ -14,7 +14,7 @@ const useStyles = makeStyles(strategiesStyle);
 export default function SectionStrategies(props) {
   const compId = "presentationstrategies"
 
-  const [goToStrategiesPage, setGoToStrategiesPage] = React.useState(undefined)
+  const [redirectTo, setRedirectTo] = React.useState(undefined)
   const classes = useStyles();
   return (
     <div>
@@ -25,8 +25,8 @@ export default function SectionStrategies(props) {
             <h3 className={classes.description}>
               {props.getString(props.prefs.langId, compId, "label_desc")}
             </h3>
-            {goToStrategiesPage && <Redirect to="/products/strategies" />}
-            <Button color={"success"} onClick={() => setGoToStrategiesPage(true)} link>
+            {redirectTo && <Redirect to={redirectTo} />}
+            <Button color={"success"} onClick={() => setRedirectTo("/products/strategies")} link>
               <h5>
                 {props.getString(props.prefs.langId, compId, "btn_details")}
                 {" "}

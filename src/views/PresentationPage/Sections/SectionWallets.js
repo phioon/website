@@ -16,7 +16,7 @@ const useStyles = makeStyles(walletsStyle);
 export default function SectionWallets(props) {
   const compId = "presentationwallets"
 
-  const [goToWalletsPage, setGoToWalletsPage] = React.useState(undefined)
+  const [redirectTo, setRedirectTo] = React.useState(undefined)
   const classes = useStyles();
   return (
     <div className={classNames(classes.section, classes.sectionDark)}>
@@ -33,8 +33,8 @@ export default function SectionWallets(props) {
               <h3 className={classes.description}>
                 {props.getString(props.prefs.langId, compId, "label_desc")}
               </h3>
-              {goToWalletsPage && <Redirect to="/products/wallets" />}
-              <Button color={"success"} onClick={() => setGoToWalletsPage(true)} link>
+              {redirectTo && <Redirect to={redirectTo} />}
+              <Button color={"success"} onClick={() => setRedirectTo("/products/wallets")} link>
                 <h5 className={classes.whiteColor}>
                   {props.getString(props.prefs.langId, compId, "btn_details")}
                   {" "}

@@ -16,11 +16,15 @@ import { getImage } from "core/images";
 import { project } from "core/projectData";
 
 var hist = createBrowserHistory();
+var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];
+browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
+browserLanguage = browserLanguage && browserLanguage.startsWith("pt") ? "ptBR" : "enUS"
 
-const App = () => {
+export default function App() {
+
   const [prefsData, setPrefsData] = React.useState({
     prefs: {
-      langId: "ptBR",
+      langId: browserLanguage,
       currency: {
         code: "BRL",
         symbol: "R$",
@@ -31,10 +35,11 @@ const App = () => {
   const setLangId = (newLangId) => {
     let langList = getLangList()
 
-    if (prefsData.prefs.langId !== newLangId && langList.includes(newLangId))
-      prefsData.prefs.langId = newLangId
-
-    setPrefsData(prefsData)
+    if (langList.includes(newLangId) && prefsData.prefs.langId !== newLangId) {
+      let newPrefs = { ...prefsData }
+      newPrefs.prefs.langId = newLangId
+      setPrefsData(newPrefs)
+    }
   }
 
   const projectData = { project: project }
@@ -43,7 +48,6 @@ const App = () => {
     setLangId: setLangId,
     getImage: getImage,
   }
-
 
   return (
     <Router history={hist}>
@@ -59,6 +63,4 @@ const App = () => {
       <Footer theme="white" {...prefsData} {...projectData} {...functions} />
     </Router>
   )
-}
-
-export default App;
+};

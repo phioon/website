@@ -12,8 +12,8 @@ import {
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import PinDrop from "@material-ui/icons/PinDrop";
-import Phone from "@material-ui/icons/Phone";
+import EmojiPeople from "@material-ui/icons/EmojiPeople";
+import EmailOutlined from "@material-ui/icons/EmailOutlined";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -59,89 +59,106 @@ export default function ContactUsPage(props) {
         <div className={classes.contactContent}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem md={6} sm={6}>
-                <p>
-                  {props.getString(props.prefs.langId, compId, "label_desc")}
+              <GridItem
+                md={8}
+                sm={8}
+                className={classNames(classes.mrAuto, classes.mlAuto)}
+              >
+                <h5 className={classNames(classes.description, classes.textCenter)}>
+                  {props.getString(props.prefs.langId, compId, "label_desc_p1")}
                   <br />
-                  <br />
-                </p>
-                <form>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Email address"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Phone"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Your message"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      multiline: true,
-                      rows: 6
-                    }}
-                  />
-                  <div className={classes.textCenter}>
-                    <Button color="primary" round>
-                      Contact us
-                    </Button>
-                  </div>
-                </form>
+                  {props.getString(props.prefs.langId, compId, "label_desc_p2")}
+                </h5>
+                <br />
               </GridItem>
-              <GridItem md={4} sm={4} className={classes.mlAuto}>
+            </GridContainer>
+            <GridContainer>
+              <GridItem md={6} className={classNames(classes.mlAuto, classes.mrAuto)}>
                 <InfoArea
                   className={classes.info}
-                  title="Find us at the office"
+                  title={props.getString(props.prefs.langId, compId, "label_infoarea1_title")}
                   description={
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                      <br /> Romania
+                      {props.getString(props.prefs.langId, compId, "label_infoarea1_desc")}
+                      {" "}
+                      <a href={"mailto:" + props.getString(props.prefs.langId, "emails", "support")}>
+                        {props.getString(props.prefs.langId, "emails", "support")}
+                      </a>.
                     </p>
                   }
-                  icon={PinDrop}
+                  icon={EmailOutlined}
                   iconColor="primary"
                 />
                 <InfoArea
                   className={classes.info}
-                  title="Give us a ring"
-                  description={
-                    <p>
-                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
-                      8:00-22:00
-                    </p>
-                  }
-                  icon={Phone}
+                  title={props.getString(props.prefs.langId, compId, "label_infoarea2_title")}
+                  icon={EmojiPeople}
                   iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
-                  title="Legal Information"
                   description={
-                    <p>
-                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                      EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
-                    </p>
+                    <div>
+                      <Button
+                        href={props.project.social.facebook.href}
+                        target="_blank"
+                        color="facebook"
+                        justIcon
+                        simple
+                      >
+                        <i className="fab fa-facebook" />
+                      </Button>
+                      <Button
+                        href={props.project.social.instagram.href}
+                        target="_blank"
+                        color="instagram"
+                        justIcon
+                        simple
+                      >
+                        <i className="fab fa-instagram" />
+                      </Button>
+                      <Button
+                        href={props.project.social.linkedin.href}
+                        target="_blank"
+                        color="linkedin"
+                        justIcon
+                        simple
+                      >
+                        <i className="fab fa-linkedin" />
+                      </Button>
+                      <Button
+                        href={props.project.social.youtube.href}
+                        target="_blank"
+                        color="youtube"
+                        justIcon
+                        simple
+                      >
+                        <i className="fab fa-youtube" />
+                      </Button>
+                      <Button
+                        href={props.project.social.twitter.href}
+                        target="_blank"
+                        color="twitter"
+                        justIcon
+                        simple
+                      >
+                        <i className="fab fa-twitter" />
+                      </Button>
+                    </div>
                   }
-                  icon={BusinessCenter}
-                  iconColor="primary"
                 />
+              </GridItem>
+            </GridContainer>
+
+            <br /><br />
+            <hr />
+            <GridContainer>
+              <GridItem
+                md={8}
+                sm={8}
+                className={classNames(classes.mrAuto, classes.mlAuto)}
+              >
+                <h5 className={classNames(classes.description, classes.textCenter)}>
+                  {props.getString(props.prefs.langId, compId, "label_footer")}
+                </h5>
+                <br />
               </GridItem>
             </GridContainer>
           </div>

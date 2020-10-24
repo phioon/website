@@ -1,34 +1,37 @@
 // Any
 import strategies_actions from "assets/img/phioon_app/strategies/actions.png";
+
 // enUS
 import wallets_cards1_enus from "assets/img/phioon_app/wallets/cards1_enus.png";
 import wallets_cards2_enus from "assets/img/phioon_app/wallets/cards2_enus.png";
 import wallets_cards3_enus from "assets/img/phioon_app/wallets/cards3_enus.png";
+
 import strategies_card1_enus from "assets/img/phioon_app/strategies/card-1_enus.png";
 import strategies_card2_enus from "assets/img/phioon_app/strategies/card-2_enus.png";
 import strategies_iphone_enus from "assets/img/phioon_app/strategies/iphone_enus.png";
 import strategies_macbook_enus from "assets/img/phioon_app/strategies/macbook_enus.png";
+
 import phitrader_summary_ipad_enus from "assets/img/phioon_app/phitrader/summary_ipad_enus.png";
 import phitrader_summary_enus from "assets/img/phioon_app/phitrader/summary_enus.png";
 import phitrader_cards1_enus from "assets/img/phioon_app/phitrader/cards1_enus.png";
 import phitrader_tc_enus from "assets/img/phioon_app/phitrader/tc_enus.png";
 import phitrader_summary_iphone_enus from "assets/img/phioon_app/phitrader/summary_iphone_enus.png";
-import phitrader_technical_enus from "assets/img/phioon_app/phitrader/ipad3_enus.png";
 
 // ptBR
 import wallets_cards1_ptbr from "assets/img/phioon_app/wallets/cards1_ptbr.png";
 import wallets_cards2_ptbr from "assets/img/phioon_app/wallets/cards2_ptbr.png";
 import wallets_cards3_ptbr from "assets/img/phioon_app/wallets/cards3_ptbr.png";
+
 import strategies_card1_ptbr from "assets/img/phioon_app/strategies/card-1_ptbr.png";
 import strategies_card2_ptbr from "assets/img/phioon_app/strategies/card-2_ptbr.png";
 import strategies_iphone_ptbr from "assets/img/phioon_app/strategies/iphone_ptbr.png";
 import strategies_macbook_ptbr from "assets/img/phioon_app/strategies/macbook_ptbr.png";
+
 import phitrader_summary_ipad_ptbr from "assets/img/phioon_app/phitrader/summary_ipad_ptbr.png";
 import phitrader_summary_ptbr from "assets/img/phioon_app/phitrader/summary_ptbr.png";
 import phitrader_cards1_ptbr from "assets/img/phioon_app/phitrader/cards1_ptbr.png";
 import phitrader_tc_ptbr from "assets/img/phioon_app/phitrader/tc_ptbr.png";
 import phitrader_summary_iphone_ptbr from "assets/img/phioon_app/phitrader/summary_iphone_ptbr.png";
-import phitrader_technical_ptbr from "assets/img/phioon_app/phitrader/ipad3_ptbr.png";
 
 
 export function getImage(langId, strId) {
@@ -58,8 +61,7 @@ const images = {
     phitrader_summary_ipad: phitrader_summary_ipad_enus,
     phitrader_summary_iphone: phitrader_summary_iphone_enus,
     phitrader_cards1: phitrader_cards1_enus,
-    phitrader_technicalCondition: phitrader_tc_enus,
-    phitrader_technical: phitrader_technical_enus,
+    phitrader_tc: phitrader_tc_enus,
 
   },
   ptBR: {
@@ -78,6 +80,5 @@ const images = {
     phitrader_summary_iphone: phitrader_summary_iphone_ptbr,
     phitrader_cards1: phitrader_cards1_ptbr,
     phitrader_tc: phitrader_tc_ptbr,
-    phitrader_technical: phitrader_technical_ptbr,
   }
 }

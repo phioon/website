@@ -73,13 +73,13 @@ export default function Header(props) {
               <img
                 alt={project.img.branding.icon[props.brandIconId].alt}
                 width={project.img.branding.icon[props.brandIconId].width * 0.025}
-                height={project.img.branding.icon[props.brandIconId].heigth * 0.025}
+                height={project.img.branding.icon[props.brandIconId].height * 0.025}
                 src={project.img.branding.icon[props.brandIconId].src}
               /> :
               <img
                 alt={project.img.branding.logo[props.brandLogoId].alt}
                 width={project.img.branding.logo[props.brandLogoId].width * 0.06}
-                height={project.img.branding.logo[props.brandLogoId].heigth * 0.06}
+                height={project.img.branding.logo[props.brandLogoId].height * 0.06}
                 src={project.img.branding.logo[props.brandLogoId].src}
               />
             }

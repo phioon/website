@@ -3,6 +3,7 @@ import {
   title,
   main,
   mainRaised,
+  mrAuto,
   mlAuto,
   description,
   whiteColor
@@ -12,6 +13,7 @@ const contactUsStyle = {
   main,
   mainRaised,
   title,
+  mrAuto,
   mlAuto,
   description,
   pageHeader: {

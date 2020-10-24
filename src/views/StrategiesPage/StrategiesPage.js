@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -27,6 +27,7 @@ const useStyles = makeStyles(strategyPageStyle);
 
 export default function StrategiesPage(props) {
   const compId = "strategiespage"
+  const [redirectTo, setRedirectTo] = React.useState(undefined)
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,6 +36,7 @@ export default function StrategiesPage(props) {
   const classes = useStyles();
   return (
     <div>
+      {redirectTo && <Redirect to={redirectTo} />}
       <Header
         brandIconId="original"
         brandLogoId="white"
@@ -61,11 +63,11 @@ export default function StrategiesPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <b>{props.getString(props.prefs.langId, "keywords", "label_strategies")}</b>,
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p2")}</b>,
                   {" "}
-                  {props.getString(props.prefs.langId, compId, "desc_p2")}
+                  {props.getString(props.prefs.langId, compId, "desc_p3")}
                   {" "}
-                  <b>{props.getString(props.prefs.langId, "keywords", "label_time")}</b>.
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p4")}</b>.
                 </h5>
               </GridItem>
             </GridContainer>
@@ -170,23 +172,20 @@ export default function StrategiesPage(props) {
                 {props.getString(props.prefs.langId, compId, "footer_title")}
               </h3>
               <Button
-                href={props.getString(props.prefs.langId, compId, "footer_reactLink")}
                 color={"white"}
                 round
-                onClick={e => e.preventDefault()}
+                onClick={() => setRedirectTo(props.getString(props.prefs.langId, compId, "footer_redirectTo"))}
               >
-                <Link to={props.getString(props.prefs.langId, compId, "footer_reactLink")} >
-                  {props.getString(props.prefs.langId, compId, "footer_btn")}
-                  {" "}
-                  <CallMade className={classes.icons} />
-                </Link>
+                {props.getString(props.prefs.langId, compId, "footer_btn")}
+                {" "}
+                <CallMade className={classes.icons} />
               </Button>
               <br /><br />
               <h4 className={classes.description}>
                 {props.getString(props.prefs.langId, compId, "footer_desc_p1")}
                 {" "}
-                <a href={"mailto:" + props.getString(props.prefs.langId, compId, "footer_mailto")}>
-                  {props.getString(props.prefs.langId, compId, "footer_mailto")}
+                <a href={"mailto:" + props.getString(props.prefs.langId, "emails", "support")}>
+                  {props.getString(props.prefs.langId, "emails", "support")}
                 </a>.
               </h4>
               <h4 className={classes.description}>
