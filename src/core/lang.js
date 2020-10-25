@@ -19,7 +19,7 @@ const strings = {
   enUS: {
     aboutuspage: {
       label_title: "About us",
-      label_desc: "A bit of our story, ideals and what to expect for the future."
+      label_desc: "A bit of our story, ideas and what to expect for the future."
     },
     aboutuscontact: {
       label_title: "So... Do you have an amazing idea and would like to see it at PHIOON?",
@@ -27,13 +27,13 @@ const strings = {
       label_desc_p2: "and let's build bridges together! ;)",
     },
     aboutusdescription: {
-      label_desc: "We are just born and we love making things simpler. Our goal is to transform ideals, break limitations down and serve as a support for you to go much further."
+      label_desc: "We were just born and we love making things simpler. Our goal is to revolutionize, break down limitations and serve as support for you to go much further."
     },
     aboutuspillars: {
       label_title: "Pillars",
 
       label_infoarea1_title: "Technology",
-      label_infoarea1_desc: "We love Technology. Even more when we can use it to make our customers lives easier.",
+      label_infoarea1_desc: "We love Technology. We love it even more when we can use it to make our customers lives easier.",
       label_infoarea2_title: "Efficiency",
       label_infoarea2_desc: "We question any task that could be executed with less resources or in less time.",
       label_infoarea3_title: "Customer Experience",
@@ -42,10 +42,10 @@ const strings = {
     aboutustext: {
       label_title: "Since the beginning...",
 
-      label_text_p1: "Brazilians have never been so active in the financial market as they are lately. The last few years have been marked by an increasing number of active people in the Brazilian stock exchange.",
-      label_text_p2: "And our story was born in this scenario, at the end of 2019, when the creator of the idea began to see the financial market from a more technological and technical perspective.",
-      label_text_p3: "The initial goal was to develop a simple report/dashboard that could make it easier to analyze variable income assets. Then, we noticed a possibility of something much bigger! And we thought: why not share this idea?",
-      label_text_p4: "At this point, PHIOON emerged: an intelligent and robust platform designed to accelerate investors and traders performance in the financial market.",
+      label_text_p1: "Brazilians have never been so active in the financial market as they are lately. The last few years have been marked by an increasing number of people investing.",
+      label_text_p2: "Our story started in this scenario, at the end of 2019, when the creator of the idea began to see the financial market from a more technological and technical perspective.",
+      label_text_p3: "The initial goal was to develop a simple report/dashboard that could make it easier to analyze variable income assets. Then we noticed a possibility for something much bigger! And we thought: why not share this idea with others?",
+      label_text_p4: "At that point, PHIOON emerged: an intelligent and robust platform designed to accelerate the performance of investors and traders in the financial market.",
       label_text_p5: "Since then, our team has been working hard on new solutions to make this journey as simple as possible.",
 
       label_quote_text: "It was never about shortcuts, but about using technology as a bridge to the next challenge.",
@@ -88,24 +88,24 @@ const strings = {
       desc_title: "Technical Analysis with AI",
       desc_p1: "Nothing like technology working to our advantage...",
       desc_p2: "Phi",
-      desc_p3: "is our bot, designed to assist your",
+      desc_p3: "is our bot, designed to assist you in your",
       desc_p4: "operational development",
 
       sec1_infoarea1_title: "Accuracy",
-      sec1_infoarea1_desc: "More than 10 years history data, with validation and integrity systems that garantee a high data quality.",
+      sec1_infoarea1_desc: "More than 10 years of history data, with validation and integrity systems that garantee high quality data.",
       sec1_infoarea2_title: "Individual Analysis",
-      sec1_infoarea2_desc: "There is a technical behavior for every asset, isn't that right? Because of that, Phi works with each one in a distinct way.",
+      sec1_infoarea2_desc: "There is a technical behavior for every asset, isn't that right? That's why Phi works with each one in a distinct way.",
       sec1_infoarea3_title: "Advisory",
-      sec1_infoarea3_desc: "Detailed informations in order to support your technical development in the stock market.",
+      sec1_infoarea3_desc: "Detailed information in order to support your technical development in the stock market.",
 
       sec2_title: "Phi operates with you",
       sec2_desc: "He has his own portfolio (Swing Trade) and you can follow up all his positions and analysis.",
       sec2_infoarea1_title: "Self-Validation",
-      sec2_infoarea1_desc: "We teach Phi the best technical strategies in the market. And he takes care of validating them for each asset.",
+      sec2_infoarea1_desc: "We teach Phi the best technical strategies on the market. And he takes care of validating them for each asset.",
       sec2_infoarea2_title: "High Performance",
       sec2_infoarea2_desc: "Based on asset's history, Phi only opens a position if there is a high probability of success.",
       sec2_infoarea3_title: "More confidence",
-      sec2_infoarea3_desc: "The informations of each position are calculated to complement your knowledge. For us, what really matters is your development in the financial market.",
+      sec2_infoarea3_desc: "The information of each position is calculated to fulfill for knowledge. Your development in the financial market is what matters most to us.",
       sec2_infoarea4_title: "Panoramic Sight",
       sec2_infoarea4_desc: "Far beyond the current technical condition, Phi brings the asset's history. More experience for your decision making.",
 
@@ -113,7 +113,7 @@ const strings = {
       footer_btn: "See Subscriptions",
       footer_redirectTo: "/pricing",
       footer_desc_p1: "Want to learn more about the product? Write us at",
-      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_desc_p2: "It'll be a pleasure to speak with you! ;)",
     },
     presentationpage: {
       label_slogan: "Technology for Investments",
@@ -125,9 +125,9 @@ const strings = {
       label_infoarea1_title: "Convenience",
       label_infoarea1_desc: "There are certain things that only human beings can handle, right? But why not rely on Technology for some of them?",
       label_infoarea2_title: "Efficiency",
-      label_infoarea2_desc: "We take care of the hard working and taking time tasks, so you can focus on what really matters... Technical Analysis was never so simple.",
+      label_infoarea2_desc: "We take care of those difficult and time taking tasks, so you can focus on what really matters... Technical Analysis has never been so simple.",
       label_infoarea3_title: "Control",
-      label_infoarea3_desc: "Not only to your investments, but also for your emotional and psychological behavior as a investor and trader.",
+      label_infoarea3_desc: "Not only of your investments, but also of your emotional and psychological well-being as an investor and trader.",
     },
     presentationfooter: {
       label_title: "Ready to leverage your performance in the stock market?",
@@ -157,11 +157,11 @@ const strings = {
       label_title: "Frequently Asked Questions",
 
       label_q1_title: "Can I cancel my Subscription?",
-      label_q1_desc: "Yes, you can cancel and perform other actions on your subscriptions via the My Account page.",
-      label_q2_title: "Is there any discount for an annual subscription?",
-      label_q2_desc: "Yes, we offer a 20% discount if you choose annual subscription for any plan.",
-      label_q3_title: "Which payment methods do you take?",
-      label_q3_desc: "We are working to offer you the best service. So, don't worry, until the end of 2020, it's everything on us.",
+      label_q1_desc: "Yes, you can cancel and perform other actions on your subscription via the Profile page on the App.",
+      label_q2_title: "Is there a discount for an annual subscription?",
+      label_q2_desc: "Yes, we offer a 20% discount if you choose an annual subscription for any plan.",
+      label_q3_title: "Which payment methods do you accept?",
+      label_q3_desc: "We are working to offer you the best service. So, don't worry, until the end of 2020, everything is on us.",
       label_q4_title: "Any other questions we can answer?",
       label_q4_desc: "We are happy to help you.",
 
@@ -200,7 +200,7 @@ const strings = {
       label_title: "Strategies",
 
       desc_title: "Smart Technical Analysis",
-      desc_p1: "Our goal is to optimize the way you look for opportunities market offers... So, we developed",
+      desc_p1: "Our goal is to optimize the way you look for opportunities that the market offers... So, we developed",
       desc_p2: "Strategies",
       desc_p3: "to save your most precious asset:",
       desc_p4: "time",
@@ -214,7 +214,7 @@ const strings = {
 
       sec2_title: "Simple is better than complex",
       sec2_infoarea1_title: "Hundreds of Assets",
-      sec2_infoarea1_desc: "Some time ago, it used to take a lot out of you looking for opportunities in 10, 20, 30 assets everyday... Now, you filter hundreds of them in just one click.",
+      sec2_infoarea1_desc: "Some time ago, it used to take a lot out of you as you looked for opportunities in 10, 20, 30 assets everyday... Now, you can filter hundreds of them in just one click.",
       sec2_infoarea2_title: "Easy to Use",
       sec2_infoarea2_desc: "Focusing on the last two periods (candles) of a chart, we noticed not only the correlation between price and other indicators, but also its transitions and moviments, such as: when price crosses a moving average.",
       sec2_infoarea3_title: "Your own way",
@@ -227,7 +227,7 @@ const strings = {
       footer_btn: "See Subscriptions",
       footer_redirectTo: "/pricing",
       footer_desc_p1: "Want to learn more about the product? Write us at",
-      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_desc_p2: "It'll be a pleasure to speak with you! ;)",
     },
     walletspage: {
       label_title: "Wallets",
@@ -241,9 +241,9 @@ const strings = {
       sec1_infoarea1_title: "Investment Income",
       sec1_infoarea1_desc: "Designed for stock market, real estate funds and indexes funds.",
       sec1_infoarea2_title: "Dashboards",
-      sec1_infoarea2_desc: "Charts and metrics designed to assist your behavioral and psychological development.",
+      sec1_infoarea2_desc: "Charts and metrics designed to assist you in your behavioral and psychological development.",
       sec1_infoarea3_title: "Insights",
-      sec1_infoarea3_desc: "Extract the most relevant informations from your wallet.",
+      sec1_infoarea3_desc: "Extract the most relevant information from your wallet.",
 
       sec2_infoarea1_title: "Filters and Dimensions",
       sec2_infoarea1_desc: "The way you invest says a lot about you. Explore your behavior in the financial market from the different perspectives that each chart offers.",
@@ -253,10 +253,10 @@ const strings = {
       sec3_title: "How does it work?",
       sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, the videos are super objective. ;)",
 
-      footer_title: "Manage your wallets with us. Besides everything, it's free!",
+      footer_title: "Manage your wallets with us. Above all, it's free!",
       footer_btn: "Join PHIOON",
       footer_desc_p1: "Want to learn more about the product? Write us at",
-      footer_desc_p2: "It's going to be a pleasure talk with you! ;)",
+      footer_desc_p2: "It'll be a pleasure to speak with you! ;)",
     },
   },
   ptBR: {

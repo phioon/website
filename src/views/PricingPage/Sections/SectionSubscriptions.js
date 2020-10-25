@@ -129,7 +129,7 @@ export default function SectionSubscriptions(props) {
               </h1>
               <ul>
                 <li>
-                  <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchanges")}
+                  <b>1</b> {props.getString(props.prefs.langId, compId, "label_stockExchange")}
                   <Button
                     size="sm"
                     justIcon
