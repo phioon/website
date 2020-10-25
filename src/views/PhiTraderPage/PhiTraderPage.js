@@ -50,7 +50,7 @@ export default function PhiTraderPage(props) {
       />
       <Parallax
         className={classes.pageHeader}
-        filter={"secondary"}>
+        filter={"success"}>
         <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "label_title")}</h2>
       </Parallax>
       <div className={classes.container}>

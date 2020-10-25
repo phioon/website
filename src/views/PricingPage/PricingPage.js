@@ -41,7 +41,7 @@ export default function PricingPage(props) {
       />
 
       <Parallax small
-        filter="success" >
+        filter="secondary" >
         <div className={classes.container}>
           <GridContainer>
             <GridItem
