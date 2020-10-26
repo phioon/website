@@ -171,8 +171,6 @@ const strings = {
       label_tab_monthly: "Monthly",
       label_tab_yearly: "Yearly",
 
-      label_currency_code: "$",
-
       label_subscription1_name: "Free",
       label_subscription2_name: "Premium",
       label_subscription3_name: "Platinum",
@@ -413,7 +411,6 @@ const strings = {
       label_tab_monthly: "Mensal",
       label_tab_yearly: "Anual",
 
-      label_currency_code: "R$",
       label_month: "mês",
       label_year: "ano",
 
