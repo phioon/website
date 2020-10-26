@@ -22,7 +22,6 @@ browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
 browserLanguage = browserLanguage && browserLanguage.startsWith("pt") ? "ptBR" : "enUS"
 
 export default function App() {
-
   const [prefsData, setPrefsData] = React.useState({
     prefs: {
       langId: browserLanguage,
@@ -46,8 +45,8 @@ export default function App() {
   const projectData = { project: project }
   const functions = {
     getString: getString,
-    setLangId: setLangId,
     getImage: getImage,
+    setLangId: setLangId,
   }
 
   return (
