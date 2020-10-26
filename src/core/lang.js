@@ -278,16 +278,16 @@ const strings = {
       label_infoarea2_title: "Eficiência",
       label_infoarea2_desc: "Questionamos quaisquer tarefas que possam ser executadas com menos recursos ou em menos tempo.",
       label_infoarea3_title: "Experiência do Usuário",
-      label_infoarea3_desc: "Afinal, tudo o que construimos é para o auto-desenvolvimento dos nossos clientes.",
+      label_infoarea3_desc: "Afinal, tudo o que construimos é para o autodesenvolvimento dos nossos clientes.",
     },
     aboutustext: {
       label_title: "Desde o início...",
 
       label_text_p1: "Os brasileiros nunca foram tão ativos no mercado financeiro quanto nos dias atuais, não é mesmo? Os últimos anos estão sendo marcados por uma quantidade crescente de pessoas investindo na bolsa de valores brasileira.",
       label_text_p2: "E nossa história nasceu neste cenário, no final de 2019, quando o idealizador da ideia, passou a enxergar o mercado financeiro de uma perspectiva mais tecnológica e técnica.",
-      label_text_p3: "O objetivo inicial era desenvolver um simples relatório que pudesse facilitar a análise técnica dos ativos de renda variável. Logo, enxergamos a possibilidade de algo muito maior! E por que não compartilhar essa ideia com outras pessoas?",
-      label_text_p4: "A partir daí, surgiu o PHIOON: uma plataforma inteligente, robusta e planejada para acelerar o desempenho de investidores e traders na bolsa de valores.",
-      label_text_p5: "Desde então, nosso time vem investindo fortemente em novas soluções que sirvam de suporte para tornar essa jornada o mais simples possível.",
+      label_text_p3: "O objetivo inicial era desenvolver um simples relatório que pudesse facilitar a análise técnica dos ativos de renda variável. Logo enxergamos a possibilidade de algo muito maior! E por que não compartilhar essa ideia com outras pessoas?",
+      label_text_p4: "A partir daí surgiu o PHIOON: uma plataforma inteligente, robusta e planejada para acelerar o desempenho de investidores e traders na bolsa de valores.",
+      label_text_p5: "Desde então nosso time vem investindo fortemente em novas soluções que sirvam de suporte para tornar essa jornada o mais simples possível.",
 
       label_quote_text: "Nunca foi sobre atalhos, mas sobre usar a tecnologia como ponte para o próximo desafio.",
       label_quote_signature: "Fundador",
@@ -342,11 +342,11 @@ const strings = {
       sec2_title: "O Phi opera junto com você",
       sec2_desc: "Ele tem sua própria carteira de operações (Swing Trade) e você acompanha suas análises e entradas na íntegra.",
       sec2_infoarea1_title: "Auto-Validação",
-      sec2_infoarea1_desc: "Ensinamos as melhores estratégias técnicas do mercado para o Phi. E ele se encarrega de valida-las para cada ativo.",
+      sec2_infoarea1_desc: "Ensinamos as melhores estratégias técnicas do mercado para o Phi. E ele se encarrega de validá-las para cada ativo.",
       sec2_infoarea2_title: "Alta Performance",
       sec2_infoarea2_desc: "Considerando o histórico do ativo, o Phi inicia uma operação apenas em caso de alta probabilidade de sucesso.",
       sec2_infoarea3_title: "Mais Confiança",
-      sec2_infoarea3_desc: "As informações de cada operação são calculadas para complementar o seu conhecimento. Pra gente, o que importa mesmo é o seu desenvolvimento no mercado financeiro.",
+      sec2_infoarea3_desc: "As informações de cada operação são calculadas para complementar o seu conhecimento. Pra gente o que importa mesmo é o seu desenvolvimento no mercado financeiro.",
       sec2_infoarea4_title: "Visão Panorâmica",
       sec2_infoarea4_desc: "Muito além da condição técnica atual, o Phi trabalha o histórico do ativo. Mais experiência para sua tomada de decisão.",
 
@@ -381,7 +381,7 @@ const strings = {
     },
     presentationstrategies: {
       label_title: "Estratégias",
-      label_desc: "Pare de perder tempo todos os dias, analisando gráficos de dezenas de ativos. Deixe isso com a gente.",
+      label_desc: "Pare de perder tempo todos os dias analisando gráficos de dezenas de ativos. Deixe isso com a gente.",
       btn_details: "Saiba como funciona"
     },
     presentationwallets: {
@@ -457,7 +457,7 @@ const strings = {
       sec2_infoarea1_title: "Centenas de Ativos",
       sec2_infoarea1_desc: "Antes, você se desgastava procurando oportunidades em 10, 20, 30 ativos por dia... Agora, você filtra centenas em apenas um clique.",
       sec2_infoarea2_title: "Fácil de Usar",
-      sec2_infoarea2_desc: "Observando os dois últimos períodos (candles) de um gráfico, podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço supera uma média móvel.",
+      sec2_infoarea2_desc: "Observando os dois últimos períodos (candles) de um gráfico podemos perceber não apenas a correlação do preço e outros indicadores, mas também suas transições e movimentos, como por exemplo: quando o preço supera uma média móvel.",
       sec2_infoarea3_title: "Do seu Jeito",
       sec2_infoarea3_desc: "Continue utilizando os seus métodos, suas estratégias, seus setups. Nada melhor que seu conhecimento e experiências alinhados à oportunidade. Facilidade e eficiência na hora de investir.",
 

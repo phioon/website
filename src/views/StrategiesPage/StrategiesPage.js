@@ -63,7 +63,7 @@ export default function StrategiesPage(props) {
                 <h5 className={classes.description}>
                   {props.getString(props.prefs.langId, compId, "desc_p1")}
                   {" "}
-                  <b>{props.getString(props.prefs.langId, compId, "desc_p2")}</b>,
+                  <b>{props.getString(props.prefs.langId, compId, "desc_p2")}</b>
                   {" "}
                   {props.getString(props.prefs.langId, compId, "desc_p3")}
                   {" "}
