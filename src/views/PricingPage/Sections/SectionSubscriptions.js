@@ -64,7 +64,7 @@ export default function SectionSubscriptions(props) {
                 {props.getString(props.prefs.langId, compId, "label_subscription1_name")}
               </h6>
               <h1 className={classes.cardTitle}>
-                <small>{props.getString(props.prefs.langId, compId, "label_currency_code")}</small>
+                <small>{props.prefs.currency.symbol}</small>
                 0
                 {" "}
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>
@@ -122,7 +122,7 @@ export default function SectionSubscriptions(props) {
                 {props.getString(props.prefs.langId, compId, "label_subscription2_name")}
               </h6>
               <h1 className={classes.cardTitleWhite}>
-                <small>{props.getString(props.prefs.langId, compId, "label_currency_code")}</small>
+                <small>{props.prefs.currency.symbol}</small>
                 {termIndex === 0 ? 49 : 39}
                 {" "}
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>
@@ -182,7 +182,7 @@ export default function SectionSubscriptions(props) {
                 {props.getString(props.prefs.langId, compId, "label_subscription3_name")}
               </h6>
               <h1 className={classes.cardTitle}>
-                <small>{props.getString(props.prefs.langId, compId, "label_currency_code")}</small>
+                <small>{props.prefs.currency.symbol}</small>
                 {termIndex === 0 ? 69 : 54}
                 {" "}
                 <small>/{props.getString(props.prefs.langId, compId, "label_month")}</small>

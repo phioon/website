@@ -156,7 +156,7 @@ const strings = {
     pricingfaq: {
       label_title: "Frequently Asked Questions",
 
-      label_q1_title: "Can I cancel my Subscription?",
+      label_q1_title: "Can I cancel my subscription?",
       label_q1_desc: "Yes, you can cancel and perform other actions on your subscription via the Profile page on the App.",
       label_q2_title: "Is there a discount for an annual subscription?",
       label_q2_desc: "Yes, we offer a 20% discount if you choose an annual subscription for any plan.",
