@@ -15,6 +15,8 @@ import { getString, getLangList } from "core/lang";
 import { getImage } from "core/images";
 import { project } from "core/projectData";
 
+import useGoogleAnalytics from "core/useGoogleAnalytics"
+
 var hist = createBrowserHistory();
 
 var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];
@@ -22,6 +24,9 @@ browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
 browserLanguage = browserLanguage && browserLanguage.startsWith("pt") ? "ptBR" : "enUS"
 
 export default function App() {
+
+  useGoogleAnalytics()
+
   const [prefsData, setPrefsData] = React.useState({
     prefs: {
       langId: browserLanguage,
@@ -52,13 +57,13 @@ export default function App() {
   return (
     <Router history={hist}>
       <Switch>
-        <Route path="/about-us" render={() => <AboutUsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/contact-us" render={() => <ContactUsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/pricing" render={() => <PricingPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/products/strategies" render={() => <StrategiesPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/products/wallets" render={() => <WalletsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/products/phitrader" render={() => <PhiTraderPage {...prefsData} {...projectData} {...functions} />} />
-        <Route path="/" render={() => <PresentationPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/about-us" render={() => <AboutUsPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/contact-us" render={() => <ContactUsPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/pricing" render={() => <PricingPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/products/strategies" render={() => <StrategiesPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/products/wallets" render={() => <WalletsPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/products/phitrader" render={() => <PhiTraderPage {...prefsData} {...projectData} {...functions} />} />
+        <Route exact path="/" render={() => <PresentationPage {...prefsData} {...projectData} {...functions} />} />
       </Switch>
       <Footer theme="white" {...prefsData} {...projectData} {...functions} />
     </Router>
