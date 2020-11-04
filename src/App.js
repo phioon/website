@@ -46,8 +46,8 @@ export default function App() {
 
   return (
     <Router history={hist}>
-      <Routes {...prefsData} {...projectData} {...managers} {...functions} />
-      <Footer {...prefsData} {...projectData} {...managers} {...functions} theme="white" />
+      <Routes {...prefsData} {...projectData} {...functions} />
+      <Footer {...prefsData} {...projectData} {...functions} theme="white" />
     </Router>
   )
 };
