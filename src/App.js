@@ -2,7 +2,6 @@ import React from "react";
 import { Router } from "react-router";
 import { createBrowserHistory } from "history";
 // core components
-import AnalyticsManager from "./core/managers/AnalyticsManager";
 import Routes from "./Routes";
 import Footer from "components/Footer/Footer.js";
 
@@ -10,13 +9,8 @@ import { getString, getLangList } from "core/lang";
 import { getImage } from "core/images";
 import { project } from "core/projectData";
 
-// Initialize google analytics page view tracking
-const analytics = new AnalyticsManager()
 
 const hist = createBrowserHistory();
-// hist.listen(location => {
-//   analytics.sendPageView(undefined, location)   // Update the user's current page
-// });
 
 var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];
 browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
@@ -44,9 +38,6 @@ export default function App() {
   }
 
   const projectData = { project: project }
-  const managers = {
-    analytics: analytics
-  }
   const functions = {
     getString: getString,
     getImage: getImage,
