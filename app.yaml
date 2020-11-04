@@ -5,15 +5,14 @@ resources:
   memory_gb: 2
 
 handlers:
-# This configures Google App Engine to serve the files in static folder
-# directory.
-- url: /static
-  static_dir: build/static/
+  - url: /static
+    static_dir: build/static
 
-# This handler routes all requests not caught above to your main app. It is
-# required when static routes are defined, but can be omitted (along with
-# the entire handlers section) when there are no static files defined.
-- url: /.*
-  secure: always
-  redirect_http_response_code: 301
-  script: auto
+  - url: /(.*\.(css|js|png|ico))$
+    static_files: build/\1
+    upload: build/.*\.(css|js|png|ico)$
+
+  - url: /.*
+    secure: always
+    static_files: build/index.html
+    upload: build/index.html
