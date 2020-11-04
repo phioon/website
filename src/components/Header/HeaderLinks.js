@@ -116,7 +116,6 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          // buttonText="Components"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"

@@ -1,32 +1,28 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router";
+import { Router } from "react-router";
 import { createBrowserHistory } from "history";
 // core components
+import AnalyticsManager from "./core/managers/AnalyticsManager";
+import Routes from "./Routes";
 import Footer from "components/Footer/Footer.js";
-import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
-import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
-import PricingPage from "views/PricingPage/PricingPage.js";
-import PresentationPage from "views/PresentationPage/PresentationPage.js";
-import StrategiesPage from "views/StrategiesPage/StrategiesPage.js";
-import WalletsPage from "views/WalletsPage/WalletsPage.js";
-import PhiTraderPage from "views/PhiTraderPage/PhiTraderPage.js";
 
 import { getString, getLangList } from "core/lang";
 import { getImage } from "core/images";
 import { project } from "core/projectData";
 
-import useGoogleAnalytics from "core/useGoogleAnalytics"
+// Initialize google analytics page view tracking
+const analytics = new AnalyticsManager()
 
-var hist = createBrowserHistory();
+const hist = createBrowserHistory();
+// hist.listen(location => {
+//   analytics.sendPageView(undefined, location)   // Update the user's current page
+// });
 
 var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];
 browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
 browserLanguage = browserLanguage && browserLanguage.startsWith("pt") ? "ptBR" : "enUS"
 
 export default function App() {
-
-  useGoogleAnalytics()
-
   const [prefsData, setPrefsData] = React.useState({
     prefs: {
       langId: browserLanguage,
@@ -48,6 +44,9 @@ export default function App() {
   }
 
   const projectData = { project: project }
+  const managers = {
+    analytics: analytics
+  }
   const functions = {
     getString: getString,
     getImage: getImage,
@@ -56,16 +55,8 @@ export default function App() {
 
   return (
     <Router history={hist}>
-      <Switch>
-        <Route exact path="/about-us" render={() => <AboutUsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/contact-us" render={() => <ContactUsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/pricing" render={() => <PricingPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/products/strategies" render={() => <StrategiesPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/products/wallets" render={() => <WalletsPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/products/phitrader" render={() => <PhiTraderPage {...prefsData} {...projectData} {...functions} />} />
-        <Route exact path="/" render={() => <PresentationPage {...prefsData} {...projectData} {...functions} />} />
-      </Switch>
-      <Footer theme="white" {...prefsData} {...projectData} {...functions} />
+      <Routes {...prefsData} {...projectData} {...managers} {...functions} />
+      <Footer {...prefsData} {...projectData} {...managers} {...functions} theme="white" />
     </Router>
   )
 };
