@@ -9,7 +9,6 @@ import { getString, getLangList } from "core/lang";
 import { getImage } from "core/images";
 import { project } from "core/projectData";
 
-
 const hist = createBrowserHistory();
 
 var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];

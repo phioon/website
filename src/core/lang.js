@@ -171,7 +171,7 @@ const strings = {
       label_tab_monthly: "Monthly",
       label_tab_yearly: "Yearly",
 
-      label_month: "month",
+      label_month: "mon",
       label_year: "year",
 
       label_subscription1_name: "Free",
