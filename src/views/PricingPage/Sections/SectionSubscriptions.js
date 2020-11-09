@@ -103,7 +103,7 @@ export default function SectionSubscriptions(props) {
                   </Link>
                   :
                   {" "}
-                  2 {props.getString(props.prefs.langId, compId, "label_runs")}
+                  5 {props.getString(props.prefs.langId, compId, "label_runs")}
                   {" "}
                   {props.getString(props.prefs.langId, compId, "label_perDay")}
                 </li>
