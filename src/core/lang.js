@@ -157,7 +157,7 @@ const strings = {
       label_title: "Frequently Asked Questions",
 
       label_q1_title: "Can I cancel my subscription?",
-      label_q1_desc: "Yes, you can cancel and perform other actions on your subscription via the Profile page on the App.",
+      label_q1_desc: "Yes, you can cancel and perform other actions on your subscription via the \"Subscription\" page on the App.",
       label_q2_title: "Is there a discount for an annual subscription?",
       label_q2_desc: "Yes, we offer a 20% discount if you choose an annual subscription for any plan.",
       label_q3_title: "Which payment methods do you accept?",
@@ -221,8 +221,24 @@ const strings = {
       sec2_infoarea3_title: "Your own way",
       sec2_infoarea3_desc: "Keep your methods, your strategies and setups. Nothing better than your knowledge and experience aligned to opportunities. Ease and efficiency when investing.",
 
-      sec3_title: "How does it work?",
-      sec3_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, they're super objective. ;)",
+      sec3_title: "Main Features",
+      sec3_desc_p1: "There are 3 categories of Strategy:",
+      sec3_desc_p2: "Basic, Transaction and Advanced",
+      sec3_desc_p3: "Each of them is made for a need. You can also combine them in order to make your Strategy even more efficient.",
+      sec3_desc_p4: "Basic and Transaction strategies are constantly working together. And both use the concept of comparison.",
+      sec3_desc_p5: "In other hand, Advanced Strategy provides sophisticated options that could make a difference for your decision making, including:",
+      sec3_desc_p6: "comparison, distance and slope",
+      sec3_infoarea1_title: "Comparison",
+      sec3_infoarea1_desc: "It's the tool most used by technical analysts. A simple use case would be identify assets with their moving averages crossing each other.",
+      sec3_infoarea2_title: "Distance",
+      sec3_infoarea2_desc: "By any chance, would it be good to know if indicators are close each other? Using the tool Distance, it's not only possible but very easy!",
+      sec3_infoarea3_title: "Slope",
+      sec3_infoarea3_desc: "Looking for indicators sloping upwards or downwards? Use this tool to improve your strategy, focusing your effort only on assets in a desired technical conditions.",
+
+      sec4_title: "How does it work?",
+      sec4_desc: "We prepared a playlist for you to familiarize yourself with the product. Don't even need popcorn, they're super objective. ;)",
+
+      label_seeTutorial: "See tutorial",
 
       footer_title: "Ready to be even more efficient in your technical analysis?",
       footer_btn: "See Subscriptions",
@@ -400,7 +416,7 @@ const strings = {
       label_title: "Perguntas Frequentes",
 
       label_q1_title: "Posso cancelar minha Assinatura?",
-      label_q1_desc: "Sim, você pode cancelar e realizar outras ações em sua Assinatura através da página \"Perfil\" do App.",
+      label_q1_desc: "Sim, você pode cancelar e realizar outras ações em sua Assinatura através da página \"Assinatura\" do App.",
       label_q2_title: "Tem algum desconto para Assinatura anual?",
       label_q2_desc: "Sim, oferecemos desconto de 20% se você escolher pela Assinatura anual de qualquer plano.",
       label_q3_title: "Quais os meios de pagamento?",
@@ -464,8 +480,24 @@ const strings = {
       sec2_infoarea3_title: "Do seu Jeito",
       sec2_infoarea3_desc: "Continue utilizando os seus métodos, suas estratégias, seus setups. Nada melhor que seu conhecimento e experiências alinhados à oportunidade. Facilidade e eficiência na hora de investir.",
 
-      sec3_title: "Como funciona na prática?",
-      sec3_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)",
+      sec3_title: "Principais Funcionalidades",
+      sec3_desc_p1: "Existem 3 categorias de Estratégia:",
+      sec3_desc_p2: "Básica, Transição e Avançada",
+      sec3_desc_p3: "Uma para cada necessidade. Você também pode combina-las para tornar a sua Estratégia ainda mais eficiente.",
+      sec3_desc_p4: "A Básica e a de Transição trabalham juntas com frequência. Ambas utilizam o conceito de comparação.",
+      sec3_desc_p5: "Já na Estratégia Avançada, há mais liberdade para o analista que procura por ferramentas sofisticadas que fazem toda a diferença para a tomada de decisão, entre elas:",
+      sec3_desc_p6: "comparação, distância e inclinação",
+      sec3_infoarea1_title: "Comparação",
+      sec3_infoarea1_desc: "É a ferramenta mais utilizada por analistas técnicos. Um caso de uso simples seria identificar ativos em que suas médias móveis estejam se cruzando.",
+      sec3_infoarea2_title: "Distância",
+      sec3_infoarea2_desc: "Em algum momento, seria interessante saber se os indicadores estão próximos um do outro? Com a ferramenta Distância, além de ser possível, é super simples!",
+      sec3_infoarea3_title: "Inclinação",
+      sec3_infoarea3_desc: "Procurando por indicadores inclinados para cima ou para baixo? Use esta ferramenta para aprimorar sua Estratégia, focando o seu esforço apenas em ativos em condições técnicas desejadas.",
+
+      sec4_title: "Como funciona na prática?",
+      sec4_desc: "Preparamos alguns vídeos para você se familiarizar com o produto. Nem precisa de pipoca, eles são super objetivos. ;)",
+
+      label_seeTutorial: "Ver tutorial",
 
       footer_title: "Preparado para ser ainda mais eficiente em suas análises técnicas?",
       footer_btn: "Ver Planos",

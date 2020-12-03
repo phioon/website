@@ -108,7 +108,7 @@ export default function SectionSubscriptions(props) {
                   {props.getString(props.prefs.langId, compId, "label_perDay")}
                 </li>
               </ul>
-              <Button href={props.project.info.webapp_signUp} color="info" target="_blank" round>
+              <Button id="choose_plan_free" href={props.project.info.webapp_signUp} color="info" target="_blank" round>
                 {props.getString(props.prefs.langId, compId, "btn_getStarted")}
               </Button>
             </CardBody>
@@ -166,7 +166,7 @@ export default function SectionSubscriptions(props) {
                   </Link>
                 </li>
               </ul>
-              <Button href={props.project.info.webapp_signUp} color="white" target="_blank" round>
+              <Button id="choose_plan_premium" href={props.project.info.webapp_signUp} color="white" target="_blank" round>
                 {props.getString(props.prefs.langId, compId, "btn_getStarted")}
               </Button>
             </CardBody>
@@ -226,7 +226,7 @@ export default function SectionSubscriptions(props) {
                   </Link>
                 </li>
               </ul>
-              <Button href={props.project.info.webapp_signUp} color="info" target="_blank" round>
+              <Button id="choose_plan_platinum" href={props.project.info.webapp_signUp} color="info" target="_blank" round>
                 {props.getString(props.prefs.langId, compId, "btn_getStarted")}
               </Button>
             </CardBody>

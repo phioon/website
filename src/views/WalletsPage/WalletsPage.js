@@ -178,6 +178,7 @@ export default function WalletsPage(props) {
               {props.getString(props.prefs.langId, compId, "footer_title")}
             </h3>
             <Button
+              id="go_to_register"
               href={props.project.info.webapp_signUp}
               color={"white"}
               round

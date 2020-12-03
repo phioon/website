@@ -56,14 +56,14 @@ const styles = {
     padding: "80px 0"
   },
   features2: {
-    padding: "80px 0"
-  },
-  features3: {
     padding: "80px 0",
     "& $phoneContainer": {
       maxWidth: "220px",
       margin: "0 auto"
     }
+  },
+  features3: {
+    padding: "80px 0"
   },
   features4: {
     padding: "80px 0",

@@ -6,6 +6,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
+import CompareArrows from "@material-ui/icons/CompareArrows";
 import CallMade from "@material-ui/icons/CallMade";
 import Business from "@material-ui/icons/Business";
 import TouchAppOutlined from "@material-ui/icons/TouchAppOutlined";
@@ -106,7 +107,7 @@ export default function StrategiesPage(props) {
           </div>
         </div>
         {/* Section 2 */}
-        <div className={classes.features3}>
+        <div className={classes.features2}>
           <GridContainer>
             <GridItem xs={12} sm={5}>
               <div className={classes.phoneContainer}>
@@ -140,14 +141,93 @@ export default function StrategiesPage(props) {
           </GridContainer>
         </div>
         {/* Section 3 */}
+        <div className={classes.features3}>
+          <GridContainer>
+            <GridItem
+              xs={12}
+              sm={10}
+              md={10}
+              className={classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter}
+            >
+              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
+              <h5 className={classes.description}>
+                {props.getString(props.prefs.langId, compId, "sec3_desc_p1")}
+                {" "}
+                <b>{props.getString(props.prefs.langId, compId, "sec3_desc_p2")}</b>.
+                {" "}
+                {props.getString(props.prefs.langId, compId, "sec3_desc_p3")}
+                <br />
+                {props.getString(props.prefs.langId, compId, "sec3_desc_p4")}
+                <br />
+                {props.getString(props.prefs.langId, compId, "sec3_desc_p5")}
+                {" "}
+                <b>{props.getString(props.prefs.langId, compId, "sec3_desc_p6")}</b>.
+              </h5>
+            </GridItem>
+          </GridContainer>
+          <GridContainer>
+            <GridItem xs={12} sm={4} md={4}>
+              <InfoArea
+                icon={CompareArrows}
+                title={props.getString(props.prefs.langId, compId, "sec3_infoarea1_title")}
+                description={
+                  <span>
+                    <p>
+                      {props.getString(props.prefs.langId, compId, "sec3_infoarea1_desc")}
+                    </p>
+                    <a href="https://youtu.be/CAAvWYnDR9E" target="_blank" rel="noopener noreferrer">
+                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
+                    </a>
+                  </span>
+                }
+                iconColor="info"
+              />
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <InfoArea
+                icon={"open_in_full"}
+                title={props.getString(props.prefs.langId, compId, "sec3_infoarea2_title")}
+                description={
+                  <span>
+                    <p>
+                      {props.getString(props.prefs.langId, compId, "sec3_infoarea2_desc")}
+                    </p>
+                    <a href="https://youtu.be/CAAvWYnDR9E" target="_blank" rel="noopener noreferrer">
+                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
+                    </a>
+                  </span>
+                }
+                iconColor="warning"
+              />
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <InfoArea
+                icon={TrendingUp}
+                title={props.getString(props.prefs.langId, compId, "sec3_infoarea3_title")}
+                description={
+                  <span>
+                    <p>
+                      {props.getString(props.prefs.langId, compId, "sec3_infoarea3_desc")}
+                    </p>
+                    <a href="https://youtu.be/2RXensTNS3E" target="_blank" rel="noopener noreferrer">
+                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
+                    </a>
+                  </span>
+                }
+                iconColor="success"
+              />
+            </GridItem>
+          </GridContainer>
+        </div>
+        {/* Section 4 */}
         <div className={classes.features4}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}
               className={classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter}
             >
-              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
+              <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec4_title")}</h2>
               <h5 className={classes.description}>
-                {props.getString(props.prefs.langId, compId, "sec3_desc")}
+                {props.getString(props.prefs.langId, compId, "sec4_desc")}
               </h5>
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>

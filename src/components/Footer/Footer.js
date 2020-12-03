@@ -82,55 +82,60 @@ export default function Footer(props) {
               <Button
                 href={props.project.social.facebook.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 color="facebook"
                 justIcon
                 simple
               >
-                <i className="fab fa-facebook" />
+                <i id="go_to_facebook" className="fab fa-facebook" />
               </Button>
             </li>
             <li>
               <Button
                 href={props.project.social.instagram.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 color="instagram"
                 justIcon
                 simple
               >
-                <i className="fab fa-instagram" />
+                <i id="go_to_instagram" className="fab fa-instagram" />
               </Button>
             </li>
             <li>
               <Button
                 href={props.project.social.linkedin.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 color="linkedin"
                 justIcon
                 simple
               >
-                <i className="fab fa-linkedin" />
+                <i id="go_to_linkedin" className="fab fa-linkedin" />
               </Button>
             </li>
             <li>
               <Button
                 href={props.project.social.youtube.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 color="youtube"
                 justIcon
                 simple
               >
-                <i className="fab fa-youtube" />
+                <i id="go_to_youtube" className="fab fa-youtube" />
               </Button>
             </li>
             <li>
               <Button
                 href={props.project.social.twitter.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 color="twitter"
                 justIcon
                 simple
               >
-                <i className="fab fa-twitter" />
+                <i id="go_to_twitter" className="fab fa-twitter" />
               </Button>
             </li>
           </ul>
