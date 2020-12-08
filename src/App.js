@@ -14,7 +14,6 @@ const hist = createBrowserHistory();
 var browserLanguage = window.navigator.userLanguage || window.navigator.language || window.navigator.languages[0];
 browserLanguage = String(browserLanguage).replace(/[^a-zA-Z0-9]+/g, "")
 browserLanguage = browserLanguage && browserLanguage.startsWith("pt") ? "ptBR" : "enUS"
-browserLanguage = "ptBR"
 
 export default function App() {
   const [prefsData, setPrefsData] = React.useState({
