@@ -52,7 +52,7 @@ const strings = {
       label_quote_signature: "Founder",
     },
     contactus: {
-      label_title: "Talk with us",
+      label_title: "Talk to us",
       label_desc_p1: "Do you still have a question or would like to know more about our products?",
       label_desc_p2: "Feel free to contact us any time!",
       label_footer: "We'll get back to you as soon as possible! ;)",
@@ -67,7 +67,7 @@ const strings = {
     },
     footerlinks: {
       label_aboutUs: "About us",
-      label_contactUs: "Talk with us",
+      label_contactUs: "Talk to us",
     },
     headerlinks: {
       label_home: "Home",
@@ -165,7 +165,7 @@ const strings = {
       label_q4_title: "Any other questions we can answer?",
       label_q4_desc: "We are happy to help you.",
 
-      label_contactUs: "Talk with us."
+      label_contactUs: "Talk to us."
     },
     pricingsubscriptions: {
       label_tab_monthly: "Monthly",
