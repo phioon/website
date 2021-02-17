@@ -14,7 +14,7 @@ import Language from "@material-ui/icons/Language";
 import Button from "components/CustomButtons/Button.js";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 
-import { getLangList } from "../../core/lang";
+import { localeList } from "../../core/locales";
 
 import styles from "assets/jss/material-kit-pro-react/components/headerLinksStyle.js";
 
@@ -62,9 +62,9 @@ export default function HeaderLinks(props) {
   };
   var onClickSections = {};
 
-  const langOptions = () => {
-    let langList = getLangList()
-    return langList.map((langId, key) => {
+  const localeOptions = () => {
+    let locales = localeList()
+    return locales.map((langId, key) => {
       return (
         <a
           key={key}
@@ -121,7 +121,7 @@ export default function HeaderLinks(props) {
             color: "transparent"
           }}
           buttonIcon={Language}
-          dropdownList={langOptions()}
+          dropdownList={localeOptions()}
         />
       </ListItem>
       <ListItem className={classes.listItem}>

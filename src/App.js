@@ -5,7 +5,7 @@ import { createBrowserHistory } from "history";
 import Routes from "./Routes";
 import Footer from "components/Footer/Footer.js";
 
-import { getString, getLangList } from "core/lang";
+import { getTranslation, localeList } from "core/locales";
 import { getImage } from "core/images";
 import { project } from "core/projectData";
 
@@ -27,9 +27,9 @@ export default function App() {
   })
 
   const setLangId = (newLangId) => {
-    let langList = getLangList()
+    let locales = localeList()
 
-    if (langList.includes(newLangId) && prefsData.prefs.langId !== newLangId) {
+    if (locales.includes(newLangId) && prefsData.prefs.langId !== newLangId) {
       let newPrefs = { ...prefsData }
       newPrefs.prefs.langId = newLangId
       setPrefsData(newPrefs)
@@ -38,7 +38,7 @@ export default function App() {
 
   const projectData = { project: project }
   const functions = {
-    getString: getString,
+    getString: getTranslation,
     getImage: getImage,
     setLangId: setLangId,
   }

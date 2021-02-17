@@ -15,7 +15,6 @@ import phitrader_summary_ipad_enus from "assets/img/phioon_app/phitrader/summary
 import phitrader_summary_enus from "assets/img/phioon_app/phitrader/summary_enus.png";
 import phitrader_cards1_enus from "assets/img/phioon_app/phitrader/cards1_enus.png";
 import phitrader_tc_enus from "assets/img/phioon_app/phitrader/tc_enus.png";
-import phitrader_summary_iphone_enus from "assets/img/phioon_app/phitrader/summary_iphone_enus.png";
 
 // ptBR
 import wallets_cards1_ptbr from "assets/img/phioon_app/wallets/cards1_ptbr.png";
@@ -31,7 +30,6 @@ import phitrader_summary_ipad_ptbr from "assets/img/phioon_app/phitrader/summary
 import phitrader_summary_ptbr from "assets/img/phioon_app/phitrader/summary_ptbr.png";
 import phitrader_cards1_ptbr from "assets/img/phioon_app/phitrader/cards1_ptbr.png";
 import phitrader_tc_ptbr from "assets/img/phioon_app/phitrader/tc_ptbr.png";
-import phitrader_summary_iphone_ptbr from "assets/img/phioon_app/phitrader/summary_iphone_ptbr.png";
 
 
 export function getImage(langId, strId) {
@@ -59,7 +57,6 @@ const images = {
 
     phitrader_summary: phitrader_summary_enus,
     phitrader_summary_ipad: phitrader_summary_ipad_enus,
-    phitrader_summary_iphone: phitrader_summary_iphone_enus,
     phitrader_cards1: phitrader_cards1_enus,
     phitrader_tc: phitrader_tc_enus,
 
@@ -77,7 +74,6 @@ const images = {
 
     phitrader_summary: phitrader_summary_ptbr,
     phitrader_summary_ipad: phitrader_summary_ipad_ptbr,
-    phitrader_summary_iphone: phitrader_summary_iphone_ptbr,
     phitrader_cards1: phitrader_cards1_ptbr,
     phitrader_tc: phitrader_tc_ptbr,
   }
