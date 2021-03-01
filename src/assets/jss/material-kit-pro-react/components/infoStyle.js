@@ -68,7 +68,8 @@ const infoStyle = {
   },
   iconVertical: {
     width: "61px",
-    height: "61px"
+    height: "61px",
+    fontSize: "3.75rem"
   }
 };
 

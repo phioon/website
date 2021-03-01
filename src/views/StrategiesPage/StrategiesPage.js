@@ -5,13 +5,9 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import AddCircleOutline from "@material-ui/icons/AddCircleOutline";
-import CompareArrows from "@material-ui/icons/CompareArrows";
+import FindInPageOutlined from "@material-ui/icons/FindInPageOutlined";
 import CallMade from "@material-ui/icons/CallMade";
-import Business from "@material-ui/icons/Business";
-import TouchAppOutlined from "@material-ui/icons/TouchAppOutlined";
-import Fingerprint from "@material-ui/icons/Fingerprint";
-import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
+// import Radar from "@material-ui/icons/Radar";
 import TrendingUp from "@material-ui/icons/TrendingUp";
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -77,7 +73,7 @@ export default function StrategiesPage(props) {
                 <InfoArea
                   vertical
                   className={classes.infoArea}
-                  icon={AddCircleOutline}
+                  icon={FindInPageOutlined}
                   title={props.getString(props.prefs.langId, compId, "sec1_infoarea1_title")}
                   description={props.getString(props.prefs.langId, compId, "sec1_infoarea1_desc")}
                   iconColor="warning"
@@ -87,7 +83,7 @@ export default function StrategiesPage(props) {
                 <InfoArea
                   vertical
                   className={classes.infoArea}
-                  icon={PlayCircleOutline}
+                  icon={"radar"}
                   title={props.getString(props.prefs.langId, compId, "sec1_infoarea2_title")}
                   description={props.getString(props.prefs.langId, compId, "sec1_infoarea2_desc")}
                   iconColor="info"
@@ -104,35 +100,46 @@ export default function StrategiesPage(props) {
                 />
               </GridItem>
             </GridContainer>
+            <br /><br />
+            <Button
+              href={props.project.info.webapp_signUp}
+              color="success"
+              round
+              target="_blank"
+            >
+              {props.getString(props.prefs.langId, compId, "btn_signUp")}
+              {" "}
+              <CallMade className={classes.icons} />
+            </Button>
           </div>
         </div>
         {/* Section 2 */}
         <div className={classes.features2}>
           <GridContainer>
-            <GridItem xs={12} sm={5}>
+            <GridItem xs={12} sm={7}>
               <div className={classes.phoneContainer}>
                 <img src={props.getImage(props.prefs.langId, "strategies_iphone")} alt="..." />
               </div>
             </GridItem>
-            <GridItem xs={12} sm={7}>
+            <GridItem xs={12} sm={5}>
               <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec2_title")}</h2>
               <InfoArea
                 className={classes.infoArea}
-                icon={Business}
+                icon={"insights"}
                 title={props.getString(props.prefs.langId, compId, "sec2_infoarea1_title")}
                 description={props.getString(props.prefs.langId, compId, "sec2_infoarea1_desc")}
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
-                icon={TouchAppOutlined}
+                icon={"groups"}
                 title={props.getString(props.prefs.langId, compId, "sec2_infoarea2_title")}
                 description={props.getString(props.prefs.langId, compId, "sec2_infoarea2_desc")}
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
-                icon={Fingerprint}
+                icon={"all_inclusive"}
                 title={props.getString(props.prefs.langId, compId, "sec2_infoarea3_title")}
                 description={props.getString(props.prefs.langId, compId, "sec2_infoarea3_desc")}
                 iconColor="primary"
@@ -152,32 +159,23 @@ export default function StrategiesPage(props) {
               <h2 className={classes.title}>{props.getString(props.prefs.langId, compId, "sec3_title")}</h2>
               <h5 className={classes.description}>
                 {props.getString(props.prefs.langId, compId, "sec3_desc_p1")}
+                <br />
+                {props.getString(props.prefs.langId, compId, "sec3_desc_p2")}
                 {" "}
-                <b>{props.getString(props.prefs.langId, compId, "sec3_desc_p2")}</b>.
-                {" "}
-                {props.getString(props.prefs.langId, compId, "sec3_desc_p3")}
+                <b>{props.getString(props.prefs.langId, compId, "sec3_desc_p3")}</b>.
                 <br />
                 {props.getString(props.prefs.langId, compId, "sec3_desc_p4")}
-                <br />
-                {props.getString(props.prefs.langId, compId, "sec3_desc_p5")}
-                {" "}
-                <b>{props.getString(props.prefs.langId, compId, "sec3_desc_p6")}</b>.
               </h5>
             </GridItem>
           </GridContainer>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
-                icon={CompareArrows}
+                icon={"fact_check"}
                 title={props.getString(props.prefs.langId, compId, "sec3_infoarea1_title")}
                 description={
                   <span>
-                    <p>
-                      {props.getString(props.prefs.langId, compId, "sec3_infoarea1_desc")}
-                    </p>
-                    <a href="https://youtu.be/CAAvWYnDR9E" target="_blank" rel="noopener noreferrer">
-                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
-                    </a>
+                    <p>{props.getString(props.prefs.langId, compId, "sec3_infoarea1_desc")}</p>
                   </span>
                 }
                 iconColor="info"
@@ -185,16 +183,11 @@ export default function StrategiesPage(props) {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <InfoArea
-                icon={"open_in_full"}
+                icon={"center_focus_strong"}
                 title={props.getString(props.prefs.langId, compId, "sec3_infoarea2_title")}
                 description={
                   <span>
-                    <p>
-                      {props.getString(props.prefs.langId, compId, "sec3_infoarea2_desc")}
-                    </p>
-                    <a href="https://youtu.be/CAAvWYnDR9E" target="_blank" rel="noopener noreferrer">
-                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
-                    </a>
+                    <p>{props.getString(props.prefs.langId, compId, "sec3_infoarea2_desc")}</p>
                   </span>
                 }
                 iconColor="warning"
@@ -206,18 +199,26 @@ export default function StrategiesPage(props) {
                 title={props.getString(props.prefs.langId, compId, "sec3_infoarea3_title")}
                 description={
                   <span>
-                    <p>
-                      {props.getString(props.prefs.langId, compId, "sec3_infoarea3_desc")}
-                    </p>
-                    <a href="https://youtu.be/2RXensTNS3E" target="_blank" rel="noopener noreferrer">
-                      {props.getString(props.prefs.langId, compId, "label_seeTutorial")}...
-                    </a>
+                    <p>{props.getString(props.prefs.langId, compId, "sec3_infoarea3_desc")}</p>
                   </span>
                 }
                 iconColor="success"
               />
             </GridItem>
           </GridContainer>
+        </div>
+        {/* CTA */}
+        <div className={classes.textCenter}>
+          <Button
+            href={props.project.info.webapp_signUp}
+            color="success"
+            round
+            target="_blank"
+          >
+            {props.getString(props.prefs.langId, compId, "btn_signUp")}
+            {" "}
+            <CallMade className={classes.icons} />
+          </Button>
         </div>
         {/* Section 4 */}
         <div className={classes.features4}>
@@ -252,9 +253,11 @@ export default function StrategiesPage(props) {
                 {props.getString(props.prefs.langId, compId, "footer_title")}
               </h3>
               <Button
-                color={"white"}
+                href={props.project.info.webapp_signUp}
+                color="white"
                 round
-                onClick={() => setRedirectTo(props.getString(props.prefs.langId, compId, "footer_redirectTo"))}
+                target="_blank"
+              // onClick={() => setRedirectTo(props.getString(props.prefs.langId, compId, "footer_redirectTo"))}
               >
                 {props.getString(props.prefs.langId, compId, "footer_btn")}
                 {" "}
