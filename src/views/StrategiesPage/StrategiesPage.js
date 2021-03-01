@@ -102,6 +102,7 @@ export default function StrategiesPage(props) {
             </GridContainer>
             <br /><br />
             <Button
+              id={"go_to_signUp"}
               href={props.project.info.webapp_signUp}
               color="success"
               round
@@ -210,6 +211,7 @@ export default function StrategiesPage(props) {
         {/* CTA */}
         <div className={classes.textCenter}>
           <Button
+            id={"go_to_signUp"}
             href={props.project.info.webapp_signUp}
             color="success"
             round
@@ -253,11 +255,11 @@ export default function StrategiesPage(props) {
                 {props.getString(props.prefs.langId, compId, "footer_title")}
               </h3>
               <Button
+                id={"go_to_signUp"}
                 href={props.project.info.webapp_signUp}
                 color="white"
                 round
                 target="_blank"
-              // onClick={() => setRedirectTo(props.getString(props.prefs.langId, compId, "footer_redirectTo"))}
               >
                 {props.getString(props.prefs.langId, compId, "footer_btn")}
                 {" "}

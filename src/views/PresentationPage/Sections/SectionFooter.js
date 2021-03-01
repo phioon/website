@@ -23,7 +23,10 @@ export default function SectionFooter(props) {
             <h2 className={classes.title}>
               {props.getString(props.prefs.langId, compId, "label_title")}
             </h2>
-            <Button href={props.project.info.webapp_signUp} color={"white"} target="_blank" round>
+            <Button
+              id={"go_to_signUp"}
+              href={props.project.info.webapp_signUp}
+              color={"white"} target="_blank" round>
               {props.getString(props.prefs.langId, compId, "label_signUp")}
             </Button>
             <br /><br />
